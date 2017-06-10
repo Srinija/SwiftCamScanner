@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'SwiftCamScanner_Example' do
+  pod 'SwiftCamScanner', :path => '../'
+
+  target 'SwiftCamScanner_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
