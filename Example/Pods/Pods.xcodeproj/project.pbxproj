@@ -1,0 +1,727 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111A5ADEEF89C443B228A45988F2A634 /* SwiftCamScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B19105216E0A6E68D0A8D381A032C /* SwiftCamScanner-dummy.m */; };
+		21AFA4EA472B57948777B3146F15879F /* Pods-SwiftCamScanner_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F617B126297CB67D642632B4E0AF9F /* Pods-SwiftCamScanner_Tests-dummy.m */; };
+		27B4FA7A30D3AB145C1D54B4513FC7A2 /* SwiftCamScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C91DF5C4F1D3150D5751A07B2C43B8 /* SwiftCamScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		50C13179C6FB5FAA2E31003E5A079ED2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		59109A0F9205560027B117301B084FBE /* Pods-SwiftCamScanner_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CAFE763E1D7CB6F4135A464EFE33DA /* Pods-SwiftCamScanner_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8940A26749116646EBD2FD7A9066A748 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666D3C316AB431E0D5FDF3CF9FD3B5D1 /* ReplaceMe.swift */; };
+		95EACE14BE984A5B3B1965AC683D9C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A1B4B98439BC0C1359A6F68E3FDC91DD /* Pods-SwiftCamScanner_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AFD86B14289054DE757B52FDCACACD /* Pods-SwiftCamScanner_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC3CCDD961114EA1AB7490C5348387FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		E00EFBDEA20F60A109A1824A07E27E56 /* Pods-SwiftCamScanner_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DD99EC9DD9A871AABE2C447A74A47E /* Pods-SwiftCamScanner_Example-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1F2BB120C3DE93EF2BDF2CEC75B1086 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 546D1AA34B2EF97CB12F943A3FC3EF00;
+			remoteInfo = SwiftCamScanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		000B19105216E0A6E68D0A8D381A032C /* SwiftCamScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftCamScanner-dummy.m"; sourceTree = "<group>"; };
+		06735822E293FB73FA6F69C00D30CC04 /* Pods-SwiftCamScanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		15C4DA712C82AA7FB41135AC96901719 /* Pods-SwiftCamScanner_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCamScanner_Example-resources.sh"; sourceTree = "<group>"; };
+		1AEED836633919E79A3B43C46AF6D3E1 /* Pods-SwiftCamScanner_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCamScanner_Tests-resources.sh"; sourceTree = "<group>"; };
+		24DEC4A4CB48CC66471274EE46B775A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26E08693C1876570D39F3D534D9BA867 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27CAC648AA24F2F323F1E9E6C8BF2536 /* Pods_SwiftCamScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftCamScanner_Example.framework; path = "Pods-SwiftCamScanner_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2808DC56D7240E13B4DA439D3FB8587D /* Pods-SwiftCamScanner_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCamScanner_Example-frameworks.sh"; sourceTree = "<group>"; };
+		29AFD86B14289054DE757B52FDCACACD /* Pods-SwiftCamScanner_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftCamScanner_Tests-umbrella.h"; sourceTree = "<group>"; };
+		3DAAC99F0ED9B91CE5FDCD6C3182486C /* Pods-SwiftCamScanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Example.release.xcconfig"; sourceTree = "<group>"; };
+		410FFF5447D5E6EC8138B0ED166ADF81 /* Pods-SwiftCamScanner_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftCamScanner_Example.modulemap"; sourceTree = "<group>"; };
+		48D1A7D17FC340F95EBF741215855683 /* Pods-SwiftCamScanner_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftCamScanner_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4C0D43C9281C6B2BEDE0643DF0F2F7BC /* Pods-SwiftCamScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		4C4998A1976B3D8266EE5A830D0CE7C0 /* Pods-SwiftCamScanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		5028856D83AD1656085CAED34BCFD9C9 /* Pods-SwiftCamScanner_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCamScanner_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		666D3C316AB431E0D5FDF3CF9FD3B5D1 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		6A6732C7AB4A236EF0DF8D5A41C49498 /* Pods-SwiftCamScanner_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftCamScanner_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D91F19239E255A548C5496B09FE0ADF /* Pods-SwiftCamScanner_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftCamScanner_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		80F764D7322FF7E2FDDC91549F960F37 /* Pods_SwiftCamScanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftCamScanner_Tests.framework; path = "Pods-SwiftCamScanner_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9393053B985A9445E7ED1C70FE10659E /* SwiftCamScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCamScanner-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9A9BAFCD53ADB4CAA1768C11480E3990 /* SwiftCamScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftCamScanner.framework; path = SwiftCamScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8C91DF5C4F1D3150D5751A07B2C43B8 /* SwiftCamScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCamScanner-umbrella.h"; sourceTree = "<group>"; };
+		C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCamScanner.xcconfig; sourceTree = "<group>"; };
+		CA71619306FEF99A2249EDB486740FD2 /* Pods-SwiftCamScanner_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftCamScanner_Tests.modulemap"; sourceTree = "<group>"; };
+		D9DD99EC9DD9A871AABE2C447A74A47E /* Pods-SwiftCamScanner_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftCamScanner_Example-dummy.m"; sourceTree = "<group>"; };
+		E8CAFE763E1D7CB6F4135A464EFE33DA /* Pods-SwiftCamScanner_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftCamScanner_Example-umbrella.h"; sourceTree = "<group>"; };
+		EFB64C145E8754571BE4ADBF61A9E655 /* Pods-SwiftCamScanner_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftCamScanner_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		F14B7617ACDB15FF8A07DEF33B7DA8F7 /* SwiftCamScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftCamScanner.modulemap; sourceTree = "<group>"; };
+		F28781C563E302CA5E08B56156DF1702 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5F617B126297CB67D642632B4E0AF9F /* Pods-SwiftCamScanner_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftCamScanner_Tests-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0CD40813EED706D15171CD7C29D469A6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50C13179C6FB5FAA2E31003E5A079ED2 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33281ABCDABF6451C4AA0A278D2DD73B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC3CCDD961114EA1AB7490C5348387FD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B50A25D21A5F9896BCA22BE1478C907 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95EACE14BE984A5B3B1965AC683D9C14 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		031398A8155829A3F83976B698DFD15F /* Pods-SwiftCamScanner_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F28781C563E302CA5E08B56156DF1702 /* Info.plist */,
+				CA71619306FEF99A2249EDB486740FD2 /* Pods-SwiftCamScanner_Tests.modulemap */,
+				48D1A7D17FC340F95EBF741215855683 /* Pods-SwiftCamScanner_Tests-acknowledgements.markdown */,
+				EFB64C145E8754571BE4ADBF61A9E655 /* Pods-SwiftCamScanner_Tests-acknowledgements.plist */,
+				F5F617B126297CB67D642632B4E0AF9F /* Pods-SwiftCamScanner_Tests-dummy.m */,
+				5028856D83AD1656085CAED34BCFD9C9 /* Pods-SwiftCamScanner_Tests-frameworks.sh */,
+				1AEED836633919E79A3B43C46AF6D3E1 /* Pods-SwiftCamScanner_Tests-resources.sh */,
+				29AFD86B14289054DE757B52FDCACACD /* Pods-SwiftCamScanner_Tests-umbrella.h */,
+				4C4998A1976B3D8266EE5A830D0CE7C0 /* Pods-SwiftCamScanner_Tests.debug.xcconfig */,
+				06735822E293FB73FA6F69C00D30CC04 /* Pods-SwiftCamScanner_Tests.release.xcconfig */,
+			);
+			name = "Pods-SwiftCamScanner_Tests";
+			path = "Target Support Files/Pods-SwiftCamScanner_Tests";
+			sourceTree = "<group>";
+		};
+		108DA0DB089177D21796D17846088634 /* Pods-SwiftCamScanner_Example */ = {
+			isa = PBXGroup;
+			children = (
+				26E08693C1876570D39F3D534D9BA867 /* Info.plist */,
+				410FFF5447D5E6EC8138B0ED166ADF81 /* Pods-SwiftCamScanner_Example.modulemap */,
+				6A6732C7AB4A236EF0DF8D5A41C49498 /* Pods-SwiftCamScanner_Example-acknowledgements.markdown */,
+				7D91F19239E255A548C5496B09FE0ADF /* Pods-SwiftCamScanner_Example-acknowledgements.plist */,
+				D9DD99EC9DD9A871AABE2C447A74A47E /* Pods-SwiftCamScanner_Example-dummy.m */,
+				2808DC56D7240E13B4DA439D3FB8587D /* Pods-SwiftCamScanner_Example-frameworks.sh */,
+				15C4DA712C82AA7FB41135AC96901719 /* Pods-SwiftCamScanner_Example-resources.sh */,
+				E8CAFE763E1D7CB6F4135A464EFE33DA /* Pods-SwiftCamScanner_Example-umbrella.h */,
+				4C0D43C9281C6B2BEDE0643DF0F2F7BC /* Pods-SwiftCamScanner_Example.debug.xcconfig */,
+				3DAAC99F0ED9B91CE5FDCD6C3182486C /* Pods-SwiftCamScanner_Example.release.xcconfig */,
+			);
+			name = "Pods-SwiftCamScanner_Example";
+			path = "Target Support Files/Pods-SwiftCamScanner_Example";
+			sourceTree = "<group>";
+		};
+		4BA3458E332569D82C272F301FD2C9FC /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85B830F138572E4A0E0BA8388505594D /* SwiftCamScanner */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		72BFBFD2E98596ABCFC3183D4415D2C7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				108DA0DB089177D21796D17846088634 /* Pods-SwiftCamScanner_Example */,
+				031398A8155829A3F83976B698DFD15F /* Pods-SwiftCamScanner_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				4BA3458E332569D82C272F301FD2C9FC /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				CD7496F8F03F03DC86AF378DF6EB32FC /* Products */,
+				72BFBFD2E98596ABCFC3183D4415D2C7 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		85B830F138572E4A0E0BA8388505594D /* SwiftCamScanner */ = {
+			isa = PBXGroup;
+			children = (
+				9E7B46F418115D8A7CF090C8AF9E923C /* Support Files */,
+				9CD3088BA0A1AE2F5944AC63C6AD5A5A /* SwiftCamScanner */,
+			);
+			name = SwiftCamScanner;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		8E9A70C811D27BDE89C5F32CB508397D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				666D3C316AB431E0D5FDF3CF9FD3B5D1 /* ReplaceMe.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		9CD3088BA0A1AE2F5944AC63C6AD5A5A /* SwiftCamScanner */ = {
+			isa = PBXGroup;
+			children = (
+				8E9A70C811D27BDE89C5F32CB508397D /* Classes */,
+			);
+			name = SwiftCamScanner;
+			path = SwiftCamScanner;
+			sourceTree = "<group>";
+		};
+		9E7B46F418115D8A7CF090C8AF9E923C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				24DEC4A4CB48CC66471274EE46B775A6 /* Info.plist */,
+				F14B7617ACDB15FF8A07DEF33B7DA8F7 /* SwiftCamScanner.modulemap */,
+				C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */,
+				000B19105216E0A6E68D0A8D381A032C /* SwiftCamScanner-dummy.m */,
+				9393053B985A9445E7ED1C70FE10659E /* SwiftCamScanner-prefix.pch */,
+				A8C91DF5C4F1D3150D5751A07B2C43B8 /* SwiftCamScanner-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftCamScanner";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD7496F8F03F03DC86AF378DF6EB32FC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27CAC648AA24F2F323F1E9E6C8BF2536 /* Pods_SwiftCamScanner_Example.framework */,
+				80F764D7322FF7E2FDDC91549F960F37 /* Pods_SwiftCamScanner_Tests.framework */,
+				9A9BAFCD53ADB4CAA1768C11480E3990 /* SwiftCamScanner.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		33A0416CEA33E97B1C9F0F963A220370 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B4FA7A30D3AB145C1D54B4513FC7A2 /* SwiftCamScanner-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		602C2491087B1D24529DD0185B02F189 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1B4B98439BC0C1359A6F68E3FDC91DD /* Pods-SwiftCamScanner_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3FAC1C842623F997FC7E12435F91096 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59109A0F9205560027B117301B084FBE /* Pods-SwiftCamScanner_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		546D1AA34B2EF97CB12F943A3FC3EF00 /* SwiftCamScanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B355F776F2CFAD6EE291AAEDE155AB2 /* Build configuration list for PBXNativeTarget "SwiftCamScanner" */;
+			buildPhases = (
+				6B7912E8EDC6920CBB5238A9F731F421 /* Sources */,
+				4B50A25D21A5F9896BCA22BE1478C907 /* Frameworks */,
+				33A0416CEA33E97B1C9F0F963A220370 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftCamScanner;
+			productName = SwiftCamScanner;
+			productReference = 9A9BAFCD53ADB4CAA1768C11480E3990 /* SwiftCamScanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B38D3953B1E393DA33194ACF91313FC0 /* Pods-SwiftCamScanner_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9D001FE3A1737188B59218314AEE4AEB /* Build configuration list for PBXNativeTarget "Pods-SwiftCamScanner_Tests" */;
+			buildPhases = (
+				8EE3FA519D36B1115C064B49002E23FF /* Sources */,
+				33281ABCDABF6451C4AA0A278D2DD73B /* Frameworks */,
+				602C2491087B1D24529DD0185B02F189 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SwiftCamScanner_Tests";
+			productName = "Pods-SwiftCamScanner_Tests";
+			productReference = 80F764D7322FF7E2FDDC91549F960F37 /* Pods_SwiftCamScanner_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		EF04AE81F5E0B77D03C56DCB48A25437 /* Pods-SwiftCamScanner_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A417A730C82E34766AD198A393D62844 /* Build configuration list for PBXNativeTarget "Pods-SwiftCamScanner_Example" */;
+			buildPhases = (
+				C55B528059884E630A651383D6451AAC /* Sources */,
+				0CD40813EED706D15171CD7C29D469A6 /* Frameworks */,
+				F3FAC1C842623F997FC7E12435F91096 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E0BBF6F0C0DF17FB42E32F1996204747 /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftCamScanner_Example";
+			productName = "Pods-SwiftCamScanner_Example";
+			productReference = 27CAC648AA24F2F323F1E9E6C8BF2536 /* Pods_SwiftCamScanner_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = CD7496F8F03F03DC86AF378DF6EB32FC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF04AE81F5E0B77D03C56DCB48A25437 /* Pods-SwiftCamScanner_Example */,
+				B38D3953B1E393DA33194ACF91313FC0 /* Pods-SwiftCamScanner_Tests */,
+				546D1AA34B2EF97CB12F943A3FC3EF00 /* SwiftCamScanner */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6B7912E8EDC6920CBB5238A9F731F421 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8940A26749116646EBD2FD7A9066A748 /* ReplaceMe.swift in Sources */,
+				111A5ADEEF89C443B228A45988F2A634 /* SwiftCamScanner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EE3FA519D36B1115C064B49002E23FF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21AFA4EA472B57948777B3146F15879F /* Pods-SwiftCamScanner_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C55B528059884E630A651383D6451AAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E00EFBDEA20F60A109A1824A07E27E56 /* Pods-SwiftCamScanner_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E0BBF6F0C0DF17FB42E32F1996204747 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftCamScanner;
+			target = 546D1AA34B2EF97CB12F943A3FC3EF00 /* SwiftCamScanner */;
+			targetProxy = F1F2BB120C3DE93EF2BDF2CEC75B1086 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		03D3A2169C87E079AF1E8E5475D58553 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftCamScanner/SwiftCamScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftCamScanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftCamScanner/SwiftCamScanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftCamScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		4419EB5DBCEA09BE025D1252CCB2053F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0D43C9281C6B2BEDE0643DF0F2F7BC /* Pods-SwiftCamScanner_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Pods-SwiftCamScanner_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftCamScanner_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		558B8A426ADDA4B7D42B1BE2CC0F2CAE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftCamScanner/SwiftCamScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftCamScanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftCamScanner/SwiftCamScanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftCamScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6A6BB32132E79AA5D8B2719D7FC507FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06735822E293FB73FA6F69C00D30CC04 /* Pods-SwiftCamScanner_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftCamScanner_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftCamScanner_Tests/Pods-SwiftCamScanner_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftCamScanner_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B5ABD0992D01BBBA12254017D170C307 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3DAAC99F0ED9B91CE5FDCD6C3182486C /* Pods-SwiftCamScanner_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Pods-SwiftCamScanner_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftCamScanner_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FD5B0359013D7639521BAD1257FD4EE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C4998A1976B3D8266EE5A830D0CE7C0 /* Pods-SwiftCamScanner_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftCamScanner_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftCamScanner_Tests/Pods-SwiftCamScanner_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftCamScanner_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B355F776F2CFAD6EE291AAEDE155AB2 /* Build configuration list for PBXNativeTarget "SwiftCamScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03D3A2169C87E079AF1E8E5475D58553 /* Debug */,
+				558B8A426ADDA4B7D42B1BE2CC0F2CAE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9D001FE3A1737188B59218314AEE4AEB /* Build configuration list for PBXNativeTarget "Pods-SwiftCamScanner_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD5B0359013D7639521BAD1257FD4EE3 /* Debug */,
+				6A6BB32132E79AA5D8B2719D7FC507FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A417A730C82E34766AD198A393D62844 /* Build configuration list for PBXNativeTarget "Pods-SwiftCamScanner_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4419EB5DBCEA09BE025D1252CCB2053F /* Debug */,
+				B5ABD0992D01BBBA12254017D170C307 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

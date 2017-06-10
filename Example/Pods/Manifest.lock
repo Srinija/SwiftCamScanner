@@ -1,0 +1,16 @@
+PODS:
+  - SwiftCamScanner (0.1.0)
+
+DEPENDENCIES:
+  - SwiftCamScanner (from `../`)
+
+EXTERNAL SOURCES:
+  SwiftCamScanner:
+    :path: ../
+
+SPEC CHECKSUMS:
+  SwiftCamScanner: 3cc025b795254661db2f22d451f1ff789578cdd7
+
+PODFILE CHECKSUM: 48c2f6553e499b4ef1b8677ed8bc67da8c5bb669
+
+COCOAPODS: 1.2.1
