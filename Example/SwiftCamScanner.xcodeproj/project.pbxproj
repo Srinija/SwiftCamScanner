@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		216C254C1EEC68C50033E2F5 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216C25461EEC68C50033E2F5 /* CameraViewController.swift */; };
+		216C254D1EEC68C50033E2F5 /* CropViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216C25471EEC68C50033E2F5 /* CropViewController.swift */; };
+		216C254E1EEC68C50033E2F5 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216C25481EEC68C50033E2F5 /* ImageViewController.swift */; };
+		216C254F1EEC68C50033E2F5 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 216C25491EEC68C50033E2F5 /* CameraView.swift */; };
+		216C25501EEC68C50033E2F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216C254A1EEC68C50033E2F5 /* Main.storyboard */; };
+		216C25511EEC68C50033E2F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 216C254B1EEC68C50033E2F5 /* Assets.xcassets */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
-		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
-		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
-		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		64C47D6848DF0CDB9BE6D0FA /* Pods_SwiftCamScanner_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6181B0930851D6A8C57385D7 /* Pods_SwiftCamScanner_Example.framework */; };
@@ -28,24 +31,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		16AB1252EFE58F19B731047E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		16AB1252EFE58F19B731047E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		216C25461EEC68C50033E2F5 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		216C25471EEC68C50033E2F5 /* CropViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CropViewController.swift; sourceTree = "<group>"; };
+		216C25481EEC68C50033E2F5 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		216C25491EEC68C50033E2F5 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		216C254A1EEC68C50033E2F5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		216C254B1EEC68C50033E2F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		216C26C41EEC89DA0033E2F5 /* SwiftCamScanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftCamScanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		44717350314891426081C0E6 /* Pods-SwiftCamScanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCamScanner_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCamScanner_Example/Pods-SwiftCamScanner_Example.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SwiftCamScanner_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftCamScanner_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		607FACD71AFB9204008FA782 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		607FACDA1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		607FACDC1AFB9204008FA782 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		607FACDF1AFB9204008FA782 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		607FACE51AFB9204008FA782 /* SwiftCamScanner_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftCamScanner_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6181B0930851D6A8C57385D7 /* Pods_SwiftCamScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCamScanner_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B6BCE2141B3BE6E5BD4E3C9 /* Pods-SwiftCamScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCamScanner_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCamScanner_Example/Pods-SwiftCamScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		7FD2179CEDF8C5E111C8CEDE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		7FD2179CEDF8C5E111C8CEDE /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		80E8BC28A4088F3B600260E7 /* Pods-SwiftCamScanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCamScanner_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCamScanner_Tests/Pods-SwiftCamScanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A04BF2927D3FDBA9536BD42F /* Pods_SwiftCamScanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftCamScanner_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B74BC508C746C07CFB97625E /* SwiftCamScanner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftCamScanner.podspec; path = ../SwiftCamScanner.podspec; sourceTree = "<group>"; };
+		B74BC508C746C07CFB97625E /* SwiftCamScanner.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftCamScanner.podspec; path = ../SwiftCamScanner.podspec; sourceTree = "<group>"; };
 		C82D7FFD480EAD96B1A3ADEF /* Pods-SwiftCamScanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftCamScanner_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftCamScanner_Tests/Pods-SwiftCamScanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,10 +109,14 @@
 		607FACD21AFB9204008FA782 /* Example for SwiftCamScanner */ = {
 			isa = PBXGroup;
 			children = (
+				216C26C41EEC89DA0033E2F5 /* SwiftCamScanner-Bridging-Header.h */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				607FACD71AFB9204008FA782 /* ViewController.swift */,
-				607FACD91AFB9204008FA782 /* Main.storyboard */,
-				607FACDC1AFB9204008FA782 /* Images.xcassets */,
+				216C25461EEC68C50033E2F5 /* CameraViewController.swift */,
+				216C25471EEC68C50033E2F5 /* CropViewController.swift */,
+				216C25481EEC68C50033E2F5 /* ImageViewController.swift */,
+				216C25491EEC68C50033E2F5 /* CameraView.swift */,
+				216C254A1EEC68C50033E2F5 /* Main.storyboard */,
+				216C254B1EEC68C50033E2F5 /* Assets.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
 			);
@@ -248,9 +259,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
+				216C25511EEC68C50033E2F5 /* Assets.xcassets in Resources */,
+				216C25501EEC68C50033E2F5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,8 +372,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				216C254C1EEC68C50033E2F5 /* CameraViewController.swift in Sources */,
+				216C254E1EEC68C50033E2F5 /* ImageViewController.swift in Sources */,
+				216C254F1EEC68C50033E2F5 /* CameraView.swift in Sources */,
+				216C254D1EEC68C50033E2F5 /* CropViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,14 +399,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		607FACD91AFB9204008FA782 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				607FACDA1AFB9204008FA782 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		607FACDE1AFB9204008FA782 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -501,6 +507,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCamScanner-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -515,6 +522,7 @@
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftCamScanner-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

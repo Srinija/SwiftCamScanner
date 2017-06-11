@@ -10,9 +10,10 @@ Minimum iOS Version: 8.0
 SwiftCamScanner is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+## CocoaPods
 ```ruby
 pod "SwiftCamScanner"
-```
+``  
 
 ##Author
 

@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "CamScanner-Bridging-Header.h"
+#import "OpenCVWrapper.h"
 
 FOUNDATION_EXPORT double SwiftCamScannerVersionNumber;
 FOUNDATION_EXPORT const unsigned char SwiftCamScannerVersionString[];

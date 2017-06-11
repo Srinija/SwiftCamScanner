@@ -5,11 +5,9 @@
 //  Created by Srinija on 16/05/17.
 //  Copyright © 2017 Srinija Ammapalli. All rights reserved.
 //
-
-
 import UIKit
 
-class CropView: UIView {
+public class CropView: UIView {
     
     //Editable Variables
     public var borderColor: CGColor = UIColor.blue.cgColor
@@ -309,7 +307,7 @@ class CropView: UIView {
         border.path = beizierPath.cgPath
     }
     
-    func cropAndTransform(completionHandler :@escaping(_ image : UIImage) -> Void){
+    public func cropAndTransform(completionHandler :@escaping(_ image : UIImage) -> Void){
         //        let scale = cropImageView.image?.scale
         //        var corners = [CGPoint]()
         //        /*

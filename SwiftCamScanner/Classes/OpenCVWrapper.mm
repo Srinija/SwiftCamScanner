@@ -5,9 +5,11 @@
 //  Created by Srinija on 16/05/17.
 //  Copyright © 2017 Srinija Ammapalli. All rights reserved.
 //
-#import <opencv2/opencv.hpp>
 #import "OpenCVWrapper.h"
+#undef NO
+#import <opencv2/opencv.hpp>
 #import <opencv2/imgcodecs/ios.h>
+#import<opencv2/stitching.hpp>
 using namespace std;
 
 
@@ -59,10 +61,10 @@ using namespace std;
         
         NSArray *points = [NSArray array];
         points = @[
-                            [NSValue valueWithCGPoint:(CGPoint){largestRectangle[0].x, largestRectangle[0].y}],
-                            [NSValue valueWithCGPoint:(CGPoint){largestRectangle[1].x, largestRectangle[1].y}],
-                            [NSValue valueWithCGPoint:(CGPoint){largestRectangle[2].x, largestRectangle[2].y}],
-                            [NSValue valueWithCGPoint:(CGPoint){largestRectangle[3].x, largestRectangle[3].y}]                            ];
+                            [NSValue valueWithCGPoint:(CGPoint){(CGFloat)largestRectangle[0].x, (CGFloat)largestRectangle[0].y}],
+                            [NSValue valueWithCGPoint:(CGPoint){(CGFloat)largestRectangle[1].x, (CGFloat)largestRectangle[1].y}],
+                            [NSValue valueWithCGPoint:(CGPoint){(CGFloat)largestRectangle[2].x, (CGFloat)largestRectangle[2].y}],
+                            [NSValue valueWithCGPoint:(CGPoint){(CGFloat)largestRectangle[3].x, (CGFloat)largestRectangle[3].y}]                            ];
         
         CGPoint min = [points[0] CGPointValue];
         CGPoint max = min;

@@ -7,69 +7,962 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		111A5ADEEF89C443B228A45988F2A634 /* SwiftCamScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B19105216E0A6E68D0A8D381A032C /* SwiftCamScanner-dummy.m */; };
+		0093C0B53A70500D9D6ACE187C918A29 /* emdL1.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 63FF1574DE70EADEC6BF1EE4782B848E /* emdL1.hpp */; };
+		00DD113636A04224AC927C2445B0A6E6 /* cuda.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0EEE3080D709F8972DC219CE87B5DA58 /* cuda.hpp */; };
+		01C87CF4BC93339CCB3A35C42011178F /* intrin_cpp.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D0B4534D1228006D3A36BF3024D69768 /* intrin_cpp.hpp */; };
+		0275044B396FA0A9E86F0C61CE314A7A /* ptr.inl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 9D43C4C6093C92A39964DD31E27EA34E /* ptr.inl.hpp */; };
+		02B4356E3C4AC500962528C7FC998970 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CF9B5B4818DBFFE4EAD5B30A9CB99 /* Foundation.framework */; };
+		02E6E68810FA1CD2573593A2AA6B43AF /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EA943A965D26C60BAF44DD3DA8304C04 /* CoreVideo.framework */; };
+		0313F4FB1D0EE62125885E49DAFCDF6B /* ml.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B4B69B1F85EF3AABDAD18D62DE386964 /* ml.hpp */; };
+		0316812568EF843312A06879D3FB894B /* video.hpp in Copy video Public Headers */ = {isa = PBXBuildFile; fileRef = ACF82D4F6BACFA3EFCD6A4683D83D187 /* video.hpp */; };
+		03DDDAE713B3C4DAF8AA40EEE7F99363 /* all_indices.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D3F80EA3414C2AEA2FA9F338B1F63D /* all_indices.h */; };
+		04015DD3D8B7797C30D477D0AD2A10BB /* lsh_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D49C12F4E3896CEB944F8C6AC2E2CB /* lsh_table.h */; };
+		049E39D33959F62E86FA88DCFD72BBBC /* photo.hpp in Copy photo Public Headers */ = {isa = PBXBuildFile; fileRef = 9C2EC2AFEBDDBCA78C3B5C39D396A5C3 /* photo.hpp */; };
+		0532D5273148BEEDC785D7D913C95290 /* log.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BC75AE930BAF659B877E88BCB5FF9195 /* log.hpp */; };
+		056FCBF560B9C4A360AF106DD726D831 /* matx.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 2AEBB7D952AF108245A49019B669DBC1 /* matx.hpp */; };
+		0666F206974A4EAB6BC9F0516BB93725 /* opencv_modules.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB4460DFFA0DE89ED61548831F155653 /* opencv_modules.hpp */; };
+		0A8B4B8D5EDBE056AEC3786FF828AD5C /* OpenCVWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 63345712959359C44EFFA8B1B94BB482 /* OpenCVWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0AD7B0213531BD211C644A2667F8D014 /* persistence.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 9BD2DB7B87960CE13F27F5D021DB1D78 /* persistence.hpp */; };
+		0B4AD7A56363EB9822100745364C2DCF /* intrin_neon.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 50228EF9461C9A64364371C8550D28F3 /* intrin_neon.hpp */; };
+		0C37939CA1DBE132B8A0FF34B762101B /* objdetect_c.h in Copy objdetect Public Headers */ = {isa = PBXBuildFile; fileRef = 70E236CF81944AB8F11662EF50AA830D /* objdetect_c.h */; };
+		0D58F7B66C8886AD7F5B789473A94F15 /* core.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 6590A3187FC42DCE0579FFE77B38A725 /* core.hpp */; };
+		0DD9FE755114DF129A4065A2DF8EEA4F /* imgcodecs.hpp in Copy imgcodecs Public Headers */ = {isa = PBXBuildFile; fileRef = 788B64E6EC6B238FBD79D53D08D0C74C /* imgcodecs.hpp */; };
+		0E3763D256BBA868AA2DF4C23769A938 /* operations.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 9358FC0ECDF3C39938A63E7DA71C73DE /* operations.hpp */; };
+		0E3CDAE956204D0F0806DA632BFAAEC1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A9BF6FCD5D095D4DCE9EA99DF9440 /* UIKit.framework */; };
+		0EEDC5AC34A35E6B5DF9977CD189E944 /* general.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = EB5F9F0AC7C4F163594C627E3167FE5E /* general.h */; };
+		0F2B291674EC3722A4FB902CF597F1C0 /* videoio_c.h in Copy videoio Public Headers */ = {isa = PBXBuildFile; fileRef = 2C00CEBBD3959A8E758F7C44EB097CCF /* videoio_c.h */; };
+		109F66A2564B585DF6C4BA746478AFD0 /* camera.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8C7352A5EC18CCEF90196B68671BA111 /* camera.hpp */; };
+		10B70353A7CBEA16F490993161B5FD74 /* calib3d.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = F3D0D6E9237C8D3A9864865219DE075F /* calib3d.hpp */; };
+		1217DB8537C29A6098A48DCA122A8180 /* videostab.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = B3622D58B37D55A1F713F4D8307920B1 /* videostab.hpp */; };
+		121D98C7BE9229D41E988F23D511AE27 /* hal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 5894806B8B8415ED90B1A9DB506DAD6F /* hal.hpp */; };
+		12C11D7507ACDEA506CBC52056F53D35 /* video.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = AB8D964CEBFD5262A7D24B1A83CBFC68 /* video.hpp */; };
+		1306C518FA2E2B0E726C834948838D5F /* saving.h in Headers */ = {isa = PBXBuildFile; fileRef = AB61132F42166473E5F7E0006232C5C9 /* saving.h */; };
+		14716759A08D9C82A27715E44CEA8AB4 /* miniflann.hpp in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = C338F01433D09BD46D73636CBC2117CC /* miniflann.hpp */; };
+		14A0FCEA8A0D011F6E92FBCB2976000E /* opengl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 8BB80BF7A37DD4055D986C21917F41DB /* opengl.hpp */; };
+		14B62205442DD535AC2EEF5B692B1F3D /* index_testing.h in Headers */ = {isa = PBXBuildFile; fileRef = 6753A1F7B8E67C857002699B1CAEDFF5 /* index_testing.h */; };
+		14F5A3FD98D53480A6BE97F78125093B /* ovx.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 078F437A72770D2C3BAE9CB6013B0384 /* ovx.hpp */; };
+		153E948DCE50723E10709E16F66EC518 /* intrin_sse.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 756DE303098A22D30F8117DB1035D61E /* intrin_sse.hpp */; };
+		155EA039CB939618316585280D2A421C /* highgui.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 905AFB5AEE182C4A94F80D7D62673D00 /* highgui.hpp */; };
+		1665BF10E8F8CA859B8EC0FA49458D5A /* mat.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 9322EB3F4216DDD74E1171F62375C7F2 /* mat.hpp */; };
+		1851D69309F838273798F06FDAAB8DC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CF9B5B4818DBFFE4EAD5B30A9CB99 /* Foundation.framework */; };
+		186DD91227725735CBC33289D4932618 /* stitching.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9F9B38DD9DA2DB2FB2AAFB3AB9CF33F2 /* stitching.hpp */; };
+		18BAA009912735E3D7F617BC230BB84D /* composite_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = EB2AE1815939C181B7290A08DA02764F /* composite_index.h */; };
+		19BB8600B47EEF3D009B866DAD1317E4 /* deblurring.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = DC52CE8F422C54020DBF44916C0E1B3C /* deblurring.hpp */; };
+		1A432F76DD09D4A07F96B11CBAB7A20C /* highgui.hpp in Copy highgui Public Headers */ = {isa = PBXBuildFile; fileRef = EF00A6F175C41CBE7FE0EDF6914D59CB /* highgui.hpp */; };
+		1B399F16AE916CD6B16B05AA73F53E78 /* cap_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 204E586B16015AB9972AA8669F2CCAAD /* cap_ios.h */; };
+		1E664DA45064719B50C90FE9726D2A1F /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6671792EB688F5ED02350A7C415DBA /* CropView.swift */; };
+		1E8920A34A1644E8AC22A888EADEC440 /* sampling.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD497294DB6D238D69206417B56A8E6 /* sampling.h */; };
+		20A04C9DD61984E59EEC71CDC39C9392 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CF9B5B4818DBFFE4EAD5B30A9CB99 /* Foundation.framework */; };
+		21170AC947266E5381A4B2A8409B7AED /* photo_c.h in Copy photo Public Headers */ = {isa = PBXBuildFile; fileRef = FD3FF51190BEF2F0FE34E6C2ADF4CA53 /* photo_c.h */; };
+		21191754327E430C3F72D2D6CE81ED5F /* warpers.hpp in Copy stitching Public Headers */ = {isa = PBXBuildFile; fileRef = 192E039373BD598F3BF7EAD1249F5078 /* warpers.hpp */; };
 		21AFA4EA472B57948777B3146F15879F /* Pods-SwiftCamScanner_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F5F617B126297CB67D642632B4E0AF9F /* Pods-SwiftCamScanner_Tests-dummy.m */; };
-		27B4FA7A30D3AB145C1D54B4513FC7A2 /* SwiftCamScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C91DF5C4F1D3150D5751A07B2C43B8 /* SwiftCamScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		50C13179C6FB5FAA2E31003E5A079ED2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		59109A0F9205560027B117301B084FBE /* Pods-SwiftCamScanner_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CAFE763E1D7CB6F4135A464EFE33DA /* Pods-SwiftCamScanner_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8940A26749116646EBD2FD7A9066A748 /* ReplaceMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 666D3C316AB431E0D5FDF3CF9FD3B5D1 /* ReplaceMe.swift */; };
-		95EACE14BE984A5B3B1965AC683D9C14 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		225654279E32E5CDC103BAB43AD0888F /* base.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = CE8CA64A12C6D93598D81A3A04DF1C83 /* base.hpp */; };
+		23209A55C051B8AD76EB60FA8CBF4AC3 /* objdetect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8E965F47CF5DD95C415211EE2FD642DE /* objdetect.hpp */; };
+		237C19D1E43CE64755E4A9BB531BB4D5 /* ml.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7DD979BF0F8951CA3B97BC6D90E4B78C /* ml.hpp */; };
+		23825AA8F07EBE84F0526BC506D1DEA1 /* cuda_stream_accessor.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 44144AD531DF5B5C1211F85FF5A2574D /* cuda_stream_accessor.hpp */; };
+		254719A172822621CDB1CC8B7A203572 /* cvconfig.h in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 8DFB4B1DB800CE4FFE19C5032FB8E86C /* cvconfig.h */; };
+		257BF09726FB06973285D957F1746586 /* camera.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 8C7352A5EC18CCEF90196B68671BA111 /* camera.hpp */; };
+		25CB4881DAC4CB58753A7C001C4F7FD7 /* cuda_stream_accessor.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 44144AD531DF5B5C1211F85FF5A2574D /* cuda_stream_accessor.hpp */; };
+		263D1C7DE1EF28C3CC620379915FA84D /* shape.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 642E5C2CB901FEE236EAFB194CA0205A /* shape.hpp */; };
+		2790903EB9E3F65744FDF1A45331DF36 /* heap.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = C8728069A17B92A90652905E04EC191E /* heap.h */; };
+		2827FBEFE1AC662878D7E66E92D03E5A /* cap_ios.h in Copy videoio Public Headers */ = {isa = PBXBuildFile; fileRef = 204E586B16015AB9972AA8669F2CCAAD /* cap_ios.h */; };
+		2A2BDCF6184088E2AC8A7FC826010CCB /* optim.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 45DCD024056F0809C027E37B455402F2 /* optim.hpp */; };
+		2A7C210C7F39DD07863A8E76E5D53EDD /* interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 9EFE243B2D2CBC7F3925BD489CC629A4 /* interface.h */; };
+		2B1064581E05B3567B02244B59EDD93B /* dummy.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DCE9622207C160B8B01D9C94E7ACDAF /* dummy.h */; };
+		2B3FD9B88B92F425D1A66228D23BC396 /* seam_finders.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 853A28A69C2A8B01F39CBF9DFEC81810 /* seam_finders.hpp */; };
+		2BA14D205A8950EEDD63A5425AE6DC52 /* interface.h in Copy imgproc/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 9EFE243B2D2CBC7F3925BD489CC629A4 /* interface.h */; };
+		2CBFA4DB494399EA61507CB6065C11E2 /* matrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 59359652E6B8D09C4A72096759201C6F /* matrix.h */; };
+		2D1E15BF79F720EADA265E11F0DD1CC5 /* dynamic_bitset.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 95998BDED262FCE5EA9D09B7639DB76B /* dynamic_bitset.h */; };
+		2DDE40C991B1A2AC94A26EC888CFB319 /* motion_stabilizing.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F41A721254EE01E99F5057086198525E /* motion_stabilizing.hpp */; };
+		2E204506D8AE576F0DC5FF38F839EFBF /* objdetect_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 70E236CF81944AB8F11662EF50AA830D /* objdetect_c.h */; };
+		2FF69FF8733F4BA801E043FD82F6AD79 /* composite_index.h in Headers */ = {isa = PBXBuildFile; fileRef = EB2AE1815939C181B7290A08DA02764F /* composite_index.h */; };
+		301EA2CEDD7B91E9F560EFFBBB599EB5 /* hdf5.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 030B801DEEDD749B90EF5BA4A34B0E76 /* hdf5.h */; };
+		30B7CE11C4DD8E722EFB63BB2A207ADD /* miniflann.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C338F01433D09BD46D73636CBC2117CC /* miniflann.hpp */; };
+		31141D414F31A45F16A4785F7B6B476C /* hdf5.h in Headers */ = {isa = PBXBuildFile; fileRef = 030B801DEEDD749B90EF5BA4A34B0E76 /* hdf5.h */; };
+		3196ACF27975C2ECF461C739D6BABE05 /* params.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 47F984C4A63C4E6B0912B23BCD1D7DF3 /* params.h */; };
+		31E91D0CD84FE1DBC68669D6CAE04669 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B2A9BF6FCD5D095D4DCE9EA99DF9440 /* UIKit.framework */; };
+		3215128AB0D500A76EF807BBC0AA0856 /* config.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 9900B93A03CE4F0D79DC43166668EC82 /* config.h */; };
+		32F659496DF54EB06831CCE60E164F10 /* params.h in Headers */ = {isa = PBXBuildFile; fileRef = 47F984C4A63C4E6B0912B23BCD1D7DF3 /* params.h */; };
+		3397003EF3E3F2D503A8789508563BBD /* shape.hpp in Copy shape Public Headers */ = {isa = PBXBuildFile; fileRef = 642E5C2CB901FEE236EAFB194CA0205A /* shape.hpp */; };
+		3488772D59638295ECBE4B36E251D238 /* kmeans_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = E31E21D899A02EEB32BBB981F8FBC9EF /* kmeans_index.h */; };
+		34CB3BBC383C08AFBFFAC5C756BA7476 /* dummy.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 9DCE9622207C160B8B01D9C94E7ACDAF /* dummy.h */; };
+		34CF9CDE2AFEC534A1784AD2D1E1BD3B /* opengl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8BB80BF7A37DD4055D986C21917F41DB /* opengl.hpp */; };
+		358DA508DA886051725943B8A7B0F97D /* eigen.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 246BEC39A36E748E2A65BCC7EEFDBDD1 /* eigen.hpp */; };
+		36BD25D350B68AEB0459EE758CDFF45E /* shape_distance.hpp in Copy shape Public Headers */ = {isa = PBXBuildFile; fileRef = FEE4FB9124640BBC21A574FC5E275ACD /* shape_distance.hpp */; };
+		3732138AC95634A03986629BD6CE8D19 /* simplex_downhill.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 26B734E2229B0F0369C10FD4D49062C5 /* simplex_downhill.h */; };
+		37808D1D44F7E6DBEF20D7B3C0A5CA20 /* videoio.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 929ADEAF53DA0D8411A1ADE0BC1B669F /* videoio.hpp */; };
+		38E6FA1AE4228B4A02BA299D23B41349 /* saturate.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 6D8FB51A2C8B288F613E5FB27CA60C06 /* saturate.hpp */; };
+		390156139333EE59188521F775E6EC96 /* motion_core.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 0DFCC4DC233C4071128867F6E6A34A77 /* motion_core.hpp */; };
+		396D5A47FB95EF5F40004D86CEFF97A3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE2735970401B55FBA8625C9472B5D61 /* QuartzCore.framework */; };
+		3A310A3D1C49350EAA218E047BA62897 /* calib3d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6E5CF2461083EA545866301713258C06 /* calib3d.hpp */; };
+		3A7AAFB527930F8D78A48F7974F6A5DA /* cuda.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2EA143F18BE7BFF01EABC1EC86D27FFD /* cuda.hpp */; };
+		3B5A6EC878E0C918D45D07D3F22FA3EF /* allocator.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 955D507BA4059D22843379AAA7E31A52 /* allocator.h */; };
+		3B5E59DC8FEC3457CEB476A3ECD4D554 /* imgcodecs_c.h in Headers */ = {isa = PBXBuildFile; fileRef = DDA4AFDDD3B6B89C0EAA8F1960DDA071 /* imgcodecs_c.h */; };
+		3BD2D6DEB420B304B461F3CF6187CA67 /* imgproc_c.h in Copy imgproc Public Headers */ = {isa = PBXBuildFile; fileRef = D074DE687225228BE9CAD62F7CA7D52B /* imgproc_c.h */; };
+		3BD981508E8A43E7DD857F4F1EB64412 /* ground_truth.h in Headers */ = {isa = PBXBuildFile; fileRef = 41376CA89C4595E87023806A8151B894 /* ground_truth.h */; };
+		3BE03A0F76FDAB4889A7261B2FEBD42C /* types.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = F50B5FF9744ADFE26DFA168ED39DCBB4 /* types.hpp */; };
+		3C3105078DDDE164B41C36FC1814BC89 /* cvstd.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E2E4611409405BBFE9001F315E8F1FE5 /* cvstd.hpp */; };
+		3D04D9FBEF8C963EF693B454805BA6B4 /* imgcodecs.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D5F2317724CB0C62D61E27603BCF388B /* imgcodecs.hpp */; };
+		3D673CABE0200EC86D6FDA86BA10773A /* imgproc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 987BE2677EDA7EE112F1A0338A9400EB /* imgproc.hpp */; };
+		3DDBA9BE2908F33AC9D59258C185CB1C /* neon_utils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8382B42C1B54671ABADFADC9833FD6A1 /* neon_utils.hpp */; };
+		3DDFEE8D6CA5A0E756C1A3B9119EFF53 /* ippasync.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9195BDFABFE21860D75D441E17F2F5D2 /* ippasync.hpp */; };
+		3E9CD6A692168C5D67F76E693C4E8DFC /* motion_estimators.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D9E148B53244FB60C541FEB0121C48E9 /* motion_estimators.hpp */; };
+		3F4E45F00D821FC59C71ED2F77CDB766 /* dist.h in Headers */ = {isa = PBXBuildFile; fileRef = 1740E20CBEC3C18086896E51EC864533 /* dist.h */; };
+		3FAD28687893F79A15FDB3805C684E72 /* stabilizer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0E02E9390B86365BD13BB30302EC964A /* stabilizer.hpp */; };
+		407D14FDCD81647B875C4C7CEB1E49B5 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD717D60A5240A53BA416A1DC6D123 /* OpenCVWrapper.mm */; };
+		41858543A28BC9E66ACFCB7B5CF5B3B8 /* cuda.hpp in Copy photo Public Headers */ = {isa = PBXBuildFile; fileRef = 2EA143F18BE7BFF01EABC1EC86D27FFD /* cuda.hpp */; };
+		438DCBEACDA122A412CF1B334E7BE7F2 /* private.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DC67DD8FE6288D87FB2F6325B75EAEC2 /* private.hpp */; };
+		465152A82E79094263736258D26BD820 /* cvconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DFB4B1DB800CE4FFE19C5032FB8E86C /* cvconfig.h */; };
+		47B8E8BD865CBE6AF608E4261E2D39BC /* core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6590A3187FC42DCE0579FFE77B38A725 /* core.hpp */; };
+		47DA36ADA4B1D4FAF7935EE1C02696C2 /* wobble_suppression.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BC4DCF75050D3F3B70849A789943C038 /* wobble_suppression.hpp */; };
+		47DD3CDE1D1DF0A0C1AAF9D969EC9878 /* allocator.h in Headers */ = {isa = PBXBuildFile; fileRef = 955D507BA4059D22843379AAA7E31A52 /* allocator.h */; };
+		486721DACCBD6167144F071C58FE0FF6 /* motion_core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0DFCC4DC233C4071128867F6E6A34A77 /* motion_core.hpp */; };
+		487F9290C2BEDF2255C6DFD1A4CB8384 /* sampling.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = EFD497294DB6D238D69206417B56A8E6 /* sampling.h */; };
+		49081EFB67E6B08C3B6B4A4AAE166D0E /* fast_math.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9B82F679825409B6BF0A508CD5F644B8 /* fast_math.hpp */; };
+		4953A8ADAF9F5D28FFB000898CB8CF32 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17694F63B49D60F0E9B7238191D9C54D /* AssetsLibrary.framework */; };
+		4A5C7323DDF921EEA10432AEC79C91A7 /* optical_flow.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BAFBA19384CE096356B90E8F8952E7F7 /* optical_flow.hpp */; };
+		4B41D3A6F124DCCCA5FD10D5C4893D7A /* stabilizer.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 0E02E9390B86365BD13BB30302EC964A /* stabilizer.hpp */; };
+		4C046BE40BCDE68F3D20CDB4B5154BD7 /* hierarchical_clustering_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 56D009921D2517772E12993FC1844D22 /* hierarchical_clustering_index.h */; };
+		4D802254B3A8F432F12CFD893BCA04D0 /* heap.h in Headers */ = {isa = PBXBuildFile; fileRef = C8728069A17B92A90652905E04EC191E /* heap.h */; };
+		4E87C11573F2EB9BE91590747CA57794 /* optim.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 45DCD024056F0809C027E37B455402F2 /* optim.hpp */; };
+		4EEAB3AB5649B389667170C1135489CB /* highgui_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 528ECC79A8A4400CFB2A2026F144D636 /* highgui_c.h */; };
+		4F6DE2BB42FC44FEF7E67DE681164B08 /* imgcodecs.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = D5F2317724CB0C62D61E27603BCF388B /* imgcodecs.hpp */; };
+		4F8A799F4008093BD1CDB4A93EC9CA6F /* background_segm.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 876F9A8A82433CA8ED61E56991251D06 /* background_segm.hpp */; };
+		4FBDC14F7A95B39A92F3532A69F8FA51 /* cvdef.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EC7A9520CC1FFA8E061CE6D80C21882 /* cvdef.h */; };
+		5074CA7C12B9D9D337CBF985A5971A53 /* matx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2AEBB7D952AF108245A49019B669DBC1 /* matx.hpp */; };
+		521C1BFD355EB5248405BE11863DD73D /* private.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = DC67DD8FE6288D87FB2F6325B75EAEC2 /* private.hpp */; };
+		5241EE5A408B6406722C3D2B3CC8AD72 /* util.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 9F4B2D7D548F53CF36216F66E5303479 /* util.hpp */; };
+		52858E278222CD785EDBE46E8BACBA39 /* imgproc_c.h in Headers */ = {isa = PBXBuildFile; fileRef = D074DE687225228BE9CAD62F7CA7D52B /* imgproc_c.h */; };
+		532EAA5C2AA1B13C1B51175C7994FC96 /* result_set.h in Headers */ = {isa = PBXBuildFile; fileRef = 597F74731B49F90C3FC03D8CDD9543FC /* result_set.h */; };
+		533F9EA3DAE45336ECE1329F393ADF03 /* warpers.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 192E039373BD598F3BF7EAD1249F5078 /* warpers.hpp */; };
+		53D8D5C64B55632D91984D193286A49E /* videoio_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C00CEBBD3959A8E758F7C44EB097CCF /* videoio_c.h */; };
+		55887D351063B1F6FA7C6348767A7BE3 /* autocalib.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 53BFF195A2007D2AFC59F3972A54171A /* autocalib.hpp */; };
+		55C4E222FEA2E4580AF0388A9ADC0DF6 /* distortion_model.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 21270E36FE75103CAA57B22FF21729C8 /* distortion_model.hpp */; };
+		562429055826F548C8A738D9ACE7AD34 /* shape.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4AA2372430A377ACA42D9C01C0A9C3C /* shape.hpp */; };
+		56821D56F96DBBD10AEF4210D91F6706 /* bufferpool.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 78C56AD87FF61C001308655B6FC8066A /* bufferpool.hpp */; };
+		56CEBBB7527B682A0FFCF2725435742B /* stitching.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 9F9B38DD9DA2DB2FB2AAFB3AB9CF33F2 /* stitching.hpp */; };
+		5909E5787737C44BEA3A6D059084D3DE /* opencv.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 642FB7A9C04687C66468FC0DA0EE0CEF /* opencv.hpp */; };
+		5A0323685B5CAEF2CC867836D28F592F /* defines.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 7DD2C4575959881B4304B445E376BF39 /* defines.h */; };
+		5B1AD1B547BAC6920D62FD0BDACC4E4A /* cvstd.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 40313FD0C4B645D31737B535AA107460 /* cvstd.inl.hpp */; };
+		5CF0ED56136CA211826DC70B4AC973C0 /* fast_marching_inl.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 363F54F340920BCC97D9634B5AD22CCC /* fast_marching_inl.hpp */; };
+		5D6477C2428AB8CB696871601EDC335B /* mat.inl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 191365234F92D09C046148EA8B270402 /* mat.inl.hpp */; };
+		5DBC3603E1D02B94285A2F820C47A7B1 /* world.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = C4AD58521564C92081C43E751FF18CF6 /* world.hpp */; };
+		5E003C1F52120B08F3FABA7F0429323E /* distortion_model.hpp in Copy imgproc/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 21270E36FE75103CAA57B22FF21729C8 /* distortion_model.hpp */; };
+		662582583AFE1B2A9E5DA3A92528CEF8 /* cuda_types.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 0C86174CA5B64E54AF6C7E08280355BC /* cuda_types.hpp */; };
+		67204FBC48077EE0F24FE24937921C63 /* sse_utils.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 4A60431FA2D56827A70A13D7A63E8CFA /* sse_utils.hpp */; };
+		67265627FCF4C09C27EA8D05C251B3A9 /* outlier_rejection.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 8C89DBBD5685E352C56AC89B3B8E8F62 /* outlier_rejection.hpp */; };
+		685A1F06A3B8127FF8864BC743F658A0 /* ptr.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9D43C4C6093C92A39964DD31E27EA34E /* ptr.inl.hpp */; };
+		696A618B9232C18E645187561B308F7D /* cuda.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 01EA167C1CB3BBC981662D569F01F124 /* cuda.inl.hpp */; };
+		6AE0C7CBC4339F2BE3D5DE9BB7F6512D /* result_set.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 597F74731B49F90C3FC03D8CDD9543FC /* result_set.h */; };
+		6AE59138F4345478448E82D4BF0C0F09 /* sse_utils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4A60431FA2D56827A70A13D7A63E8CFA /* sse_utils.hpp */; };
+		6B2FAAEC9A98615068A2EC8FED80151B /* blenders.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DFB6210BEA998E447A977AF3831361BE /* blenders.hpp */; };
+		6BB617B63B764FB7598FBD169F5EDF0C /* core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B7F2A798BD5E1D9645733BCC6ED88454 /* core.hpp */; };
+		6C510D648964A3A0849CDF6123474E22 /* intrin_sse.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 756DE303098A22D30F8117DB1035D61E /* intrin_sse.hpp */; };
+		6C80413CB661C02245AF42E91A648FC3 /* any.h in Headers */ = {isa = PBXBuildFile; fileRef = CADA325BE3AA3FB3F7BA093D12737120 /* any.h */; };
+		6D262AC80B7F9AB45E4D5807F04E9395 /* hierarchical_clustering_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D009921D2517772E12993FC1844D22 /* hierarchical_clustering_index.h */; };
+		708E501A13ED064BD1ED6FCFE67E21E1 /* ground_truth.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 41376CA89C4595E87023806A8151B894 /* ground_truth.h */; };
+		70F228504023F8EF2B086F37948E58E6 /* random.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 6533CF613803EA79C3AA2FBC3E9F2187 /* random.h */; };
+		71494120D3160BC0A1CE0A0AB1DF6329 /* SwiftCamScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B19105216E0A6E68D0A8D381A032C /* SwiftCamScanner-dummy.m */; };
+		71AB2C5B7FD5CDCE1A1540F6C4123A5D /* version.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 85126FC684E57A69EC14C255A6BFE69C /* version.hpp */; };
+		7260D8CF3A77F6DC426FBF87540109AF /* shape_distance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FEE4FB9124640BBC21A574FC5E275ACD /* shape_distance.hpp */; };
+		7283523595D75630A2094CED8E4EE371 /* util_inl.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 6292CD8997D1132E3E047FBE7A9623B8 /* util_inl.hpp */; };
+		72A487AD00B46DED673963FF9C31487D /* va_intel.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 63AB71577607B284C6353317DB7ABC76 /* va_intel.hpp */; };
+		7331B96A7FA64329C63F2C4359FBFCF0 /* kdtree_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 420A5C9B66426A50292FFA23B3DE7A40 /* kdtree_index.h */; };
+		74AF3304D5844FC61F2B37A7FF391FAE /* flann_base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 609200F87AD6D2AE8273CEC4B1A96D4F /* flann_base.hpp */; };
+		75A1A0EC217118888CCBD2D42FFC8D43 /* util_inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6292CD8997D1132E3E047FBE7A9623B8 /* util_inl.hpp */; };
+		75A9F87AF3040B48F48F26ABA5E3CC84 /* operations.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9358FC0ECDF3C39938A63E7DA71C73DE /* operations.hpp */; };
+		75CB34BE6621CF131C601BAFB9009992 /* ovx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 078F437A72770D2C3BAE9CB6013B0384 /* ovx.hpp */; };
+		78B32DF7AF01B1FFBED4D8625AC11B7C /* detection_based_tracker.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E28818192F58C1B7CC64BD4F2F224E19 /* detection_based_tracker.hpp */; };
+		78C18355E3454FDD767B82F4A0DDE03B /* wimage.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0B2E8EC605180BAF532E2944CC8AD3F5 /* wimage.hpp */; };
+		78EA0EA92593B87F3C70A64A52DD7BDB /* photo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9C2EC2AFEBDDBCA78C3B5C39D396A5C3 /* photo.hpp */; };
+		7922C71CBBFEB9556D9A471772D43B4F /* defines.h in Headers */ = {isa = PBXBuildFile; fileRef = 7DD2C4575959881B4304B445E376BF39 /* defines.h */; };
+		7932DB08336FF4A58553A11F9A0449AA /* dynamic_bitset.h in Headers */ = {isa = PBXBuildFile; fileRef = 95998BDED262FCE5EA9D09B7639DB76B /* dynamic_bitset.h */; };
+		79763B23A7555ACB507C1A5E30C5B199 /* cuda.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 0EEE3080D709F8972DC219CE87B5DA58 /* cuda.hpp */; };
+		7A224E0F776E41E8A0466B2F3D66F744 /* ml.hpp in Copy ml Public Headers */ = {isa = PBXBuildFile; fileRef = B4B69B1F85EF3AABDAD18D62DE386964 /* ml.hpp */; };
+		7C3E7A699EB743EAFA4366CEBDC0BFEC /* imgproc.hpp in Copy imgproc Public Headers */ = {isa = PBXBuildFile; fileRef = 7B66DE29755DD92F8A1AB62AE5F4E682 /* imgproc.hpp */; };
+		7CD026DA01CD75FEAB0B70AD574F2C83 /* video.hpp in Headers */ = {isa = PBXBuildFile; fileRef = ACF82D4F6BACFA3EFCD6A4683D83D187 /* video.hpp */; };
+		7DAD4F745B054C4A34FC8ED695C65C1C /* features2d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1F8EB2EF6E751ED9EFE1120706274615 /* features2d.hpp */; };
+		7DADE88D3040663303BC482DD0988ED5 /* background_segm.hpp in Copy video Public Headers */ = {isa = PBXBuildFile; fileRef = 876F9A8A82433CA8ED61E56991251D06 /* background_segm.hpp */; };
+		7DE902D7D96D631E36BC04B29904924F /* cvdef.h in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 6EC7A9520CC1FFA8E061CE6D80C21882 /* cvdef.h */; };
+		7F3F3842A6ACEB995C69BF2DEB1282EA /* wobble_suppression.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = BC4DCF75050D3F3B70849A789943C038 /* wobble_suppression.hpp */; };
+		824CB31F04A9AD643109CF6276DB2A79 /* ocl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = D2B8C79EF07BD99C3081CC07FBE72A03 /* ocl.hpp */; };
+		829E5EA3455F2CDF9CB7CCB32740A188 /* util.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9F4B2D7D548F53CF36216F66E5303479 /* util.hpp */; };
+		848956B20CAFA6FFF52F3DE01EE97195 /* object_factory.h in Headers */ = {isa = PBXBuildFile; fileRef = A8D09FA1328B669A7DAB4D011C40D9B9 /* object_factory.h */; };
+		84A13E57089FD30DFF9AC6DC00B7D9A2 /* motion_estimators.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = D9E148B53244FB60C541FEB0121C48E9 /* motion_estimators.hpp */; };
+		84B3F91287F6FD6608662954EDF42A1C /* calib3d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F3D0D6E9237C8D3A9864865219DE075F /* calib3d.hpp */; };
+		857DDA27852C5C59C27C2EA49310919D /* kdtree_single_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 45917D2B24907D787AB9EB65F7A10DA1 /* kdtree_single_index.h */; };
+		85EC93D20403DC7C9A1ECB8E31F6C6F2 /* flann.hpp in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 7D05DE90E891C0B0B41EFF578A13AC4D /* flann.hpp */; };
+		8647E499B00863E59FCF8FD8D275C870 /* calib3d_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 147F9807A48CCF5B130E431A0315DD28 /* calib3d_c.h */; };
+		866DD90DA031DE111577442146BC5E3D /* core_c.h in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 02E34C244717C03F64D16846823C78C9 /* core_c.h */; };
+		86A913CD5597ADD51C6D32575F6790E3 /* warpers_inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 12324E134B9762A8F10F49BDE12AB0D3 /* warpers_inl.hpp */; };
+		870971843D05240C807BF3DE190B637E /* videoio.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = C1A018140725338001DABC1ECA8458AF /* videoio.hpp */; };
+		8721A5437D7573A40821A133F1A8ED47 /* matchers.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 3A0D27A148EAF1BFEC03B79C5F57B5D9 /* matchers.hpp */; };
+		87BBDE94DCE825C95FC1F29EE0CDD34D /* matchers.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 3A0D27A148EAF1BFEC03B79C5F57B5D9 /* matchers.hpp */; };
+		87FA6951AEACE3D33F37B955C38E4033 /* hal.hpp in Copy imgproc/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 5894806B8B8415ED90B1A9DB506DAD6F /* hal.hpp */; };
+		889B77A84C4BB3277796DC8175E1048D /* exposure_compensate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 16F9EBFCA5397D5B51E58FFE6EE76EE1 /* exposure_compensate.hpp */; };
+		89AAA7458F9125D49FC15810697A75F1 /* fast_marching.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = F613C089638D95A6DBACBC9E1F97EAAF /* fast_marching.hpp */; };
+		8A0D42974DEE5A46CFF71E8DFC9C174B /* intrin_neon.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 50228EF9461C9A64364371C8550D28F3 /* intrin_neon.hpp */; };
+		8A400084371ACB3B30DF4C50155F70C8 /* highgui.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 905AFB5AEE182C4A94F80D7D62673D00 /* highgui.hpp */; };
+		8C7D1F5575B3033D79C16291D01EDE8A /* linear_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = EC12CAC67970B9219B288AC3A8AACA3F /* linear_index.h */; };
+		8D5760AB309E31BFE13221D944FC9B89 /* core_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 02E34C244717C03F64D16846823C78C9 /* core_c.h */; };
+		8E67DA7BD811F1B4C99250D84AEFCA4F /* autocalib.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 53BFF195A2007D2AFC59F3972A54171A /* autocalib.hpp */; };
+		8EE598C6203AC7F75F0F798398592545 /* types_c.h in Copy imgproc Public Headers */ = {isa = PBXBuildFile; fileRef = 543329F56B699C9D8772A1CE0FD6D79E /* types_c.h */; };
+		8EF90FEB565929678BFC53875C6D4713 /* bufferpool.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 78C56AD87FF61C001308655B6FC8066A /* bufferpool.hpp */; };
+		8F1A711E6ACD4197DF44CB202DE7963A /* utility.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4DC0ACA5B73A60B05B14932C2A1811FF /* utility.hpp */; };
+		90BD7BEC1F8FA86F4F93EF8240D380A2 /* videostab.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B3622D58B37D55A1F713F4D8307920B1 /* videostab.hpp */; };
+		91C015992610D9619816A96A242D4324 /* imgproc.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 987BE2677EDA7EE112F1A0338A9400EB /* imgproc.hpp */; };
+		92F03B38AB6A06657C9E8E92B03A607B /* index_testing.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 6753A1F7B8E67C857002699B1CAEDFF5 /* index_testing.h */; };
+		946073560A65E54C72BB64DA980F45D5 /* private.cuda.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = F10F12AA738657F4733F34A7B82BBC08 /* private.cuda.hpp */; };
+		953716E5F5F0BDD81A5E2ECABC83CA5C /* lsh_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = A3C5564BCBFE6C345517D64AF13A8628 /* lsh_index.h */; };
+		96A73BD48284B0632593C520E9EDBE57 /* fast_marching.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F613C089638D95A6DBACBC9E1F97EAAF /* fast_marching.hpp */; };
+		96ACB455D9B83452FEF795415BC37669 /* hist_cost.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CDEFA9C26035AB06F2C8D73816E1BAB5 /* hist_cost.hpp */; };
+		96B3D45DC031A05E23813D2853DF2692 /* tracking.hpp in Copy video Public Headers */ = {isa = PBXBuildFile; fileRef = 4603ED877E8472AC55CB905104B00D26 /* tracking.hpp */; };
+		9888236715A78190077F2CD7E0B8FA85 /* cuda.inl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 01EA167C1CB3BBC981662D569F01F124 /* cuda.inl.hpp */; };
+		98A94687E052EFDBBB70470C4D3F4377 /* directx.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8AC97BD4571E13D76E5FCBDC340E6388 /* directx.hpp */; };
+		990B257723FC406889DD5109DE161D52 /* private.cuda.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F10F12AA738657F4733F34A7B82BBC08 /* private.cuda.hpp */; };
+		993BD7564716B46C785723D19ECD0165 /* photo_c.h in Headers */ = {isa = PBXBuildFile; fileRef = FD3FF51190BEF2F0FE34E6C2ADF4CA53 /* photo_c.h */; };
+		9A4B77C6118CBB93D34649113BE040F8 /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 6533CF613803EA79C3AA2FBC3E9F2187 /* random.h */; };
+		9C771108819C335402B2B80431602590 /* autotuned_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 34A4537B08B8B3419BA5242AC00E56EB /* autotuned_index.h */; };
+		9E25AAA01D2D03231FE277E461ED00C2 /* CamScanner-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A2DAEFDC5A01926F3E8153E6982850 /* CamScanner-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9ED0EF30F20CE07D7783A173F0963074 /* shape_transformer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1B070D27C9AAD51B60B73B95D1FF92A1 /* shape_transformer.hpp */; };
+		9F6ECAFB992E70DF1F6CF6EE97546937 /* affine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F7ECBCCBE941405AA463EC7C7C5A330E /* affine.hpp */; };
+		A06AE717E970D79532199A3419C74338 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D00E826381B2ECD9C1202E4A168090 /* CoreMedia.framework */; };
+		A15B7D76677B83954BF0CAC972BBB06F /* frame_source.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = F30B0BDB17AFBD3F1B16615B0702330A /* frame_source.hpp */; };
+		A19C118240D9DB49D29780ACE80E290E /* kmeans_index.h in Headers */ = {isa = PBXBuildFile; fileRef = E31E21D899A02EEB32BBB981F8FBC9EF /* kmeans_index.h */; };
 		A1B4B98439BC0C1359A6F68E3FDC91DD /* Pods-SwiftCamScanner_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 29AFD86B14289054DE757B52FDCACACD /* Pods-SwiftCamScanner_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AC3CCDD961114EA1AB7490C5348387FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		E00EFBDEA20F60A109A1824A07E27E56 /* Pods-SwiftCamScanner_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DD99EC9DD9A871AABE2C447A74A47E /* Pods-SwiftCamScanner_Example-dummy.m */; };
+		A1CF672FFC198501049E31D9852C28D1 /* OpenCV-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A0396750E4C91E21679D944EE06544 /* OpenCV-dummy.m */; };
+		A408BBD3E4DC9175B5AB3E1FF5938EB3 /* flann.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D2473BCFA0FC5CC4B38B00EA30BE267B /* flann.hpp */; };
+		A471F03BC022E7E3818E90960DDEBF35 /* Pods-SwiftCamScanner_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E8CAFE763E1D7CB6F4135A464EFE33DA /* Pods-SwiftCamScanner_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4C7D0CADF9BE4BA74274CAA9ABB4759 /* ios.h in Copy imgcodecs Public Headers */ = {isa = PBXBuildFile; fileRef = 1AFDB9C31551B350473317FA9BFEECB3 /* ios.h */; };
+		A4F60AA1C05E9E9F424320F1FE4BC561 /* utility.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 4DC0ACA5B73A60B05B14932C2A1811FF /* utility.hpp */; };
+		A52A82103F93EE6D27245DFBDF885C80 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9900B93A03CE4F0D79DC43166668EC82 /* config.h */; };
+		A62DC65DBD5AF5971B9C551243028C5B /* global_motion.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = B819433E1091FC18E4D3A487C53CC101 /* global_motion.hpp */; };
+		A6A81610BE3697F031C1AB2F25167525 /* motion_stabilizing.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = F41A721254EE01E99F5057086198525E /* motion_stabilizing.hpp */; };
+		A6CBAC2DABF6DD28A9321C0FED3B9A6A /* kdtree_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 420A5C9B66426A50292FFA23B3DE7A40 /* kdtree_index.h */; };
+		A81CAFF5EF64FEA8DE97E822493F5755 /* Pods-SwiftCamScanner_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DD99EC9DD9A871AABE2C447A74A47E /* Pods-SwiftCamScanner_Example-dummy.m */; };
+		A839A5158DF5A010F9E52A44AA94822E /* imgcodecs.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 788B64E6EC6B238FBD79D53D08D0C74C /* imgcodecs.hpp */; };
+		A97F8746A20E99D070EF0396C6450615 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84BDB8918C5B4DAEDDE4238A807422D /* AVFoundation.framework */; };
+		A9B7DF5B128E893E94E5C393488BBA6E /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE7623FEF2B116C4A531E9439BD7F197 /* opencv2.framework */; };
+		A9CF6C9230926350D218460368883882 /* flann.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7D05DE90E891C0B0B41EFF578A13AC4D /* flann.hpp */; };
+		AB2DDE0AE09856C3640CEA968017A430 /* shape.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = C4AA2372430A377ACA42D9C01C0A9C3C /* shape.hpp */; };
+		AC3CCDD961114EA1AB7490C5348387FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CF9B5B4818DBFFE4EAD5B30A9CB99 /* Foundation.framework */; };
+		ACD67591ACF4FB392B03292F48B0F2A9 /* flann.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = D2473BCFA0FC5CC4B38B00EA30BE267B /* flann.hpp */; };
+		ADD6E57A5B5844797946262207941A43 /* general.h in Headers */ = {isa = PBXBuildFile; fileRef = EB5F9F0AC7C4F163594C627E3167FE5E /* general.h */; };
+		AE32104C5C9D5AF94D5437364ED66830 /* persistence.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9BD2DB7B87960CE13F27F5D021DB1D78 /* persistence.hpp */; };
+		AE38BA4F8441F03B515E697868B7AC78 /* timelapsers.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 87506F6D0EB5ABF272566DA04BE37D10 /* timelapsers.hpp */; };
+		AF19438EC8FC2C20F938736115CE0775 /* va_intel.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 63AB71577607B284C6353317DB7ABC76 /* va_intel.hpp */; };
+		AFB0AC9B2535B637358BDD72CD56B8DB /* Empty.m in Sources */ = {isa = PBXBuildFile; fileRef = 161961233C614726EF642FB43AFE83C7 /* Empty.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AFB8E55C16A6D2EC92CEAC645F4AD8D0 /* object_factory.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = A8D09FA1328B669A7DAB4D011C40D9B9 /* object_factory.h */; };
+		B13110ABDC83E28719A05F3DA8939832 /* opencv.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 642FB7A9C04687C66468FC0DA0EE0CEF /* opencv.hpp */; };
+		B1755DDCE57BB0BEA337B1E1F4CD11F7 /* objdetect.hpp in Copy objdetect Public Headers */ = {isa = PBXBuildFile; fileRef = 0A5BBF6396571B3DC46AA6C8475FFD03 /* objdetect.hpp */; };
+		B17ABB871462BAE5533062BE661A8074 /* any.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = CADA325BE3AA3FB3F7BA093D12737120 /* any.h */; };
+		B2869D260AA268587AD0AF291453A219 /* world.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C4AD58521564C92081C43E751FF18CF6 /* world.hpp */; };
+		B32211340F674B8006672A7B62E951C8 /* matrix.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 59359652E6B8D09C4A72096759201C6F /* matrix.h */; };
+		B358C2D28CBD3FDE2F927156D1DB3959 /* logger.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = DB1177C7217335C745D722DCB6F32688 /* logger.h */; };
+		B645A52C384B2F2CC6FE66198BDF1B1C /* directx.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 8AC97BD4571E13D76E5FCBDC340E6388 /* directx.hpp */; };
+		B6753B5037A1F1FE2EFF0C23B0117AFB /* base.hpp in Headers */ = {isa = PBXBuildFile; fileRef = CE8CA64A12C6D93598D81A3A04DF1C83 /* base.hpp */; };
+		B79E39EE96782127614F630A8B1FC5F1 /* exposure_compensate.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 16F9EBFCA5397D5B51E58FFE6EE76EE1 /* exposure_compensate.hpp */; };
+		BB11327772A3A1BB36115551490FCC22 /* detection_based_tracker.hpp in Copy objdetect Public Headers */ = {isa = PBXBuildFile; fileRef = E28818192F58C1B7CC64BD4F2F224E19 /* detection_based_tracker.hpp */; };
+		BD9C8C35305A4AD578EB1F924DE2BFE3 /* OpenCV-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E4ED75F45554D48AFAEDB661980E3F /* OpenCV-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE7A0E97964F9AF3F0720712B1DBFDF9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB610739AFADFC5D8CCC63C62177D4D /* CoreGraphics.framework */; };
+		BEA6325C9BAAB4199813BF04FA28FF97 /* objdetect.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 8E965F47CF5DD95C415211EE2FD642DE /* objdetect.hpp */; };
+		BF32D8C69AD1BF8092647DBB97D54A5B /* outlier_rejection.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8C89DBBD5685E352C56AC89B3B8E8F62 /* outlier_rejection.hpp */; };
+		BF7C894FC1ABF06A70E70D7378C23EEB /* types_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CD90FC3199307403DDD70DABFD7DC0E /* types_c.h */; };
+		C00BC1E0A499788A224E1C0B97D3C793 /* ocl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D2B8C79EF07BD99C3081CC07FBE72A03 /* ocl.hpp */; };
+		C0A467F8EBA68A78D55EC29FD12D49DD /* saturate.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6D8FB51A2C8B288F613E5FB27CA60C06 /* saturate.hpp */; };
+		C0EF4E000E4A06B05F57CC2DFE151CF6 /* timer.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 99498D627CBD516B97DFE38FB685517B /* timer.h */; };
+		C17C516BCBDE187A1BA0360EA8FE8BE1 /* frame_source.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F30B0BDB17AFBD3F1B16615B0702330A /* frame_source.hpp */; };
+		C2A6AB50D7EE2F4E582C76B8915E4C41 /* interface.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E305834DA9B591618FE15AEDD327396 /* interface.h */; };
+		C38349A0E5E2B48B907A6AE2F845B53A /* linear_index.h in Headers */ = {isa = PBXBuildFile; fileRef = EC12CAC67970B9219B288AC3A8AACA3F /* linear_index.h */; };
+		C4C2D5EAFC6C0705E3ABB886214AF0B7 /* opencv_modules.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = BB4460DFFA0DE89ED61548831F155653 /* opencv_modules.hpp */; };
+		C588E3B0F495022F43FF8A5EF3C27404 /* cuda_types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0C86174CA5B64E54AF6C7E08280355BC /* cuda_types.hpp */; };
+		C5BACE1C62366E2665A136AF2C0EFEE9 /* inpainting.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 1876997960BCD607B472D5BAE2541B9D /* inpainting.hpp */; };
+		C6371CE7AD2F709D81735F2A44223CDE /* global_motion.hpp in Headers */ = {isa = PBXBuildFile; fileRef = B819433E1091FC18E4D3A487C53CC101 /* global_motion.hpp */; };
+		C68E4B58E284C4A69EA5AF69443677AB /* fast_marching_inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 363F54F340920BCC97D9634B5AD22CCC /* fast_marching_inl.hpp */; };
+		C6D74993A6F6F2DF17A4919E69E4CB6C /* dist.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 1740E20CBEC3C18086896E51EC864533 /* dist.h */; };
+		C7BEB28B017E27BB3B742315CBB6DBC4 /* cvstd.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = E2E4611409405BBFE9001F315E8F1FE5 /* cvstd.hpp */; };
+		C7D07F056214C7F4AD30A3594E3E552B /* features2d.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 46574ED9E2700865B4EAAE0A5FE0EBF9 /* features2d.hpp */; };
+		C8F1AE34006F067EF82BE5E3329CE2A2 /* lsh_index.h in Headers */ = {isa = PBXBuildFile; fileRef = A3C5564BCBFE6C345517D64AF13A8628 /* lsh_index.h */; };
+		C93A1C44E6E0D14DDD27674F1B077C34 /* affine.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = F7ECBCCBE941405AA463EC7C7C5A330E /* affine.hpp */; };
+		C9D52FF119BB111F09414D00D968CEFA /* features2d.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 1F8EB2EF6E751ED9EFE1120706274615 /* features2d.hpp */; };
+		CA21DF21063006BDB0381EFE472C6491 /* warpers.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 27DA8516CE0B02FCC5EC062A77FEEC8D /* warpers.hpp */; };
+		CB475B7C5DEF45842D7144DA0F3B8560 /* imgcodecs_c.h in Copy imgcodecs Public Headers */ = {isa = PBXBuildFile; fileRef = DDA4AFDDD3B6B89C0EAA8F1960DDA071 /* imgcodecs_c.h */; };
+		CB48A78344A09F80961E2DC6C07A54B3 /* fast_math.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 9B82F679825409B6BF0A508CD5F644B8 /* fast_math.hpp */; };
+		CCDFFFBE395D18949D9173A59C123C81 /* mat.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9322EB3F4216DDD74E1171F62375C7F2 /* mat.hpp */; };
+		CEC43218FE2CCEC9107753DAFF038892 /* simplex_downhill.h in Headers */ = {isa = PBXBuildFile; fileRef = 26B734E2229B0F0369C10FD4D49062C5 /* simplex_downhill.h */; };
+		D0D72952A0CB0FFCF3E0EA214D016D3F /* tracking.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4603ED877E8472AC55CB905104B00D26 /* tracking.hpp */; };
+		D27BFA6452313977BC57A0AFAC2F55B4 /* tracking_c.h in Headers */ = {isa = PBXBuildFile; fileRef = C3935447AA80ABABE2E1C7C643DC172F /* tracking_c.h */; };
+		D364F6F7C0FE81D462D0A9B12D5ABF40 /* flann_base.hpp in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 609200F87AD6D2AE8273CEC4B1A96D4F /* flann_base.hpp */; };
+		D53BEE9042298BF5CA984F2CFF99D842 /* logger.h in Headers */ = {isa = PBXBuildFile; fileRef = DB1177C7217335C745D722DCB6F32688 /* logger.h */; };
+		D58004A817B9D8B847BE5AD6B512D49A /* eigen.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 246BEC39A36E748E2A65BCC7EEFDBDD1 /* eigen.hpp */; };
+		D58B73D97DDA2BE01BBEF309C17510BB /* hal.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 437BA8A2D2F4023A92FE8C23956C5A9B /* hal.hpp */; };
+		D9174EF2F01ACB67289720B1DE79FE99 /* types_c.h in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 5CD90FC3199307403DDD70DABFD7DC0E /* types_c.h */; };
+		D99292747126D372E2A8A3CEF36F6FEC /* photo.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D191E8B55E55743BDBEE5F23B6237EE2 /* photo.hpp */; };
+		DA5EABDB867AFB5E0CF35BA51C4D0664 /* nn_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 76E68B27B55E8FE0F33E4810364246DD /* nn_index.h */; };
+		DABD6F163F2F87BF56EFD854BC8393D5 /* deblurring.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DC52CE8F422C54020DBF44916C0E1B3C /* deblurring.hpp */; };
+		DAC7E5CD91B9BF27F4AA8AF88143AFD5 /* core.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = B7F2A798BD5E1D9645733BCC6ED88454 /* core.hpp */; };
+		DAD8E5874DA94E7794D218D6874B6F51 /* neon_utils.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 8382B42C1B54671ABADFADC9833FD6A1 /* neon_utils.hpp */; };
+		DAFB457C94E4AEA9DD994A38824D38A2 /* hist_cost.hpp in Copy shape Public Headers */ = {isa = PBXBuildFile; fileRef = CDEFA9C26035AB06F2C8D73816E1BAB5 /* hist_cost.hpp */; };
+		DB8AFAD8EEE7FE3A36C7ABEB74C8BCBC /* emdL1.hpp in Copy shape Public Headers */ = {isa = PBXBuildFile; fileRef = 63FF1574DE70EADEC6BF1EE4782B848E /* emdL1.hpp */; };
+		DBD5B4C509C2D48D42CBFD333DCEB7CA /* highgui_c.h in Copy highgui Public Headers */ = {isa = PBXBuildFile; fileRef = 528ECC79A8A4400CFB2A2026F144D636 /* highgui_c.h */; };
+		DD534C535E50F2B6752BC235E81953A4 /* wimage.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 0B2E8EC605180BAF532E2944CC8AD3F5 /* wimage.hpp */; };
+		DEB5A24B91EC11E0EE1423D0B8E6E627 /* ocl_genbase.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F4A07976DD5E9E398773F0EBF866ABDA /* ocl_genbase.hpp */; };
+		DEF004F1E922D195AE29FAD57D87581E /* types_c.h in Headers */ = {isa = PBXBuildFile; fileRef = 543329F56B699C9D8772A1CE0FD6D79E /* types_c.h */; };
+		E04D9A2250C55E6535395E2F1D9F0665 /* objdetect.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0A5BBF6396571B3DC46AA6C8475FFD03 /* objdetect.hpp */; };
+		E266B134D3C2B4DC732AE2B3E43497FD /* traits.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 8DEB9F8616B73A5B50DE1F175CC4C44A /* traits.hpp */; };
+		E29286BF1355BE7EBFEE2A6FD1FDE925 /* blenders.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = DFB6210BEA998E447A977AF3831361BE /* blenders.hpp */; };
+		E363B78A1E281B36108E43ADA7214E6E /* cvstd.inl.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 40313FD0C4B645D31737B535AA107460 /* cvstd.inl.hpp */; };
+		E4DE283BB347C615060D72C6013DF071 /* ring_buffer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = A5EB908AFAA68F56D437D2C6EAEA4470 /* ring_buffer.hpp */; };
+		E662CD81A115C06360B72CCC67644AE9 /* calib3d.hpp in Copy calib3d Public Headers */ = {isa = PBXBuildFile; fileRef = 6E5CF2461083EA545866301713258C06 /* calib3d.hpp */; };
+		E7E8BA5EFF7CB2153F96F59B4837FA4A /* ml.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 7DD979BF0F8951CA3B97BC6D90E4B78C /* ml.hpp */; };
+		E8F99D96D80AAD5EFF81382B8BDD4396 /* videoio.hpp in Copy videoio Public Headers */ = {isa = PBXBuildFile; fileRef = 929ADEAF53DA0D8411A1ADE0BC1B669F /* videoio.hpp */; };
+		E977D05D8C8ECFF6270BBA1334C95EC9 /* imgproc.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 7B66DE29755DD92F8A1AB62AE5F4E682 /* imgproc.hpp */; };
+		E9AECAE456201F54EF2E8AEF9FA9C6EE /* types.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F50B5FF9744ADFE26DFA168ED39DCBB4 /* types.hpp */; };
+		EB214AF1F52BCE16724FD569F92BE93E /* mat.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 191365234F92D09C046148EA8B270402 /* mat.inl.hpp */; };
+		EB4D3C4B8A31CDAF033EAB347C248850 /* log.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = BC75AE930BAF659B877E88BCB5FF9195 /* log.hpp */; };
+		EB664B067A167AA0D3ED48ADB75D8E54 /* highgui.hpp in Headers */ = {isa = PBXBuildFile; fileRef = EF00A6F175C41CBE7FE0EDF6914D59CB /* highgui.hpp */; };
+		EBA852B94BDE267483554580BBFD77A1 /* ippasync.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 9195BDFABFE21860D75D441E17F2F5D2 /* ippasync.hpp */; };
+		EBC87B03166B71D3A4A2580BB2BB361A /* timer.h in Headers */ = {isa = PBXBuildFile; fileRef = 99498D627CBD516B97DFE38FB685517B /* timer.h */; };
+		ECCECB3C0427FFAEDE54415F65688B29 /* ocl_genbase.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = F4A07976DD5E9E398773F0EBF866ABDA /* ocl_genbase.hpp */; };
+		ED391D14351743B3DD8B09E719194978 /* intrin.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D011C6ECCD54ADDAD09F57569D25211F /* intrin.hpp */; };
+		ED3AC3EBF064E3153B9E0FAF59E3E0D6 /* inpainting.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1876997960BCD607B472D5BAE2541B9D /* inpainting.hpp */; };
+		ED3C180338AF5AD996C3CDF1D019D91A /* SwiftCamScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C91DF5C4F1D3150D5751A07B2C43B8 /* SwiftCamScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEC7773139E14EF2BBBD6740B2D78457 /* hal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 437BA8A2D2F4023A92FE8C23956C5A9B /* hal.hpp */; };
+		EF4738FBFAED1EE62B6CA5CDB3193558 /* lsh_table.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 70D49C12F4E3896CEB944F8C6AC2E2CB /* lsh_table.h */; };
+		F06C975B2F0F07A94E1DCBF53AEC7613 /* ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFDB9C31551B350473317FA9BFEECB3 /* ios.h */; };
+		F0AA32608189CD749849DABA7086B5E3 /* nn_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 76E68B27B55E8FE0F33E4810364246DD /* nn_index.h */; };
+		F0C1FEEABB399E94E4D2763BDC166C13 /* intrin.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = D011C6ECCD54ADDAD09F57569D25211F /* intrin.hpp */; };
+		F14A60ED2124AFB1E59EEE727A2E7A9D /* features2d.hpp in Copy features2d Public Headers */ = {isa = PBXBuildFile; fileRef = 46574ED9E2700865B4EAAE0A5FE0EBF9 /* features2d.hpp */; };
+		F2FCF8B6669E22EB563AE485287B0372 /* version.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 85126FC684E57A69EC14C255A6BFE69C /* version.hpp */; };
+		F359DB901D6FCC1325215146F276C358 /* timelapsers.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 87506F6D0EB5ABF272566DA04BE37D10 /* timelapsers.hpp */; };
+		F367CC054280B88CA65FC19F32FC8179 /* kdtree_single_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 45917D2B24907D787AB9EB65F7A10DA1 /* kdtree_single_index.h */; };
+		F38DBF2160E4E3904E62BDF0303548AF /* autotuned_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A4537B08B8B3419BA5242AC00E56EB /* autotuned_index.h */; };
+		F3B05F27309562F7782D2D15FFB4244C /* all_indices.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 17D3F80EA3414C2AEA2FA9F338B1F63D /* all_indices.h */; };
+		F52D848AD34552EB922D0CA213841FCF /* optical_flow.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = BAFBA19384CE096356B90E8F8952E7F7 /* optical_flow.hpp */; };
+		F5F730F03E4CCE6752596AA7F9A02012 /* warpers_inl.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 12324E134B9762A8F10F49BDE12AB0D3 /* warpers_inl.hpp */; };
+		F5FB9760A06BC33947596E6E119C1539 /* interface.h in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 7E305834DA9B591618FE15AEDD327396 /* interface.h */; };
+		F675DEFBC2C70A26F31FA768C16F0E46 /* intrin_cpp.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = D0B4534D1228006D3A36BF3024D69768 /* intrin_cpp.hpp */; };
+		F6A327EA57304A8D75452F3C421937C7 /* video.hpp in Headers */ = {isa = PBXBuildFile; fileRef = AB8D964CEBFD5262A7D24B1A83CBFC68 /* video.hpp */; };
+		F7A4768FD29B4F69723265196C1AB6A8 /* calib3d_c.h in Copy calib3d Public Headers */ = {isa = PBXBuildFile; fileRef = 147F9807A48CCF5B130E431A0315DD28 /* calib3d_c.h */; };
+		F9A37460FA43C0BDCCA88ABA9C9AEA17 /* traits.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 8DEB9F8616B73A5B50DE1F175CC4C44A /* traits.hpp */; };
+		FA2C7EF7DED55936803DB9B2AD9CA486 /* warpers.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 27DA8516CE0B02FCC5EC062A77FEEC8D /* warpers.hpp */; };
+		FB1730E011DB3233D49C976EE1718AE4 /* ring_buffer.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = A5EB908AFAA68F56D437D2C6EAEA4470 /* ring_buffer.hpp */; };
+		FBC27664D05E836E5AFAE1F71492252F /* saving.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = AB61132F42166473E5F7E0006232C5C9 /* saving.h */; };
+		FC7E7FBD54CC4CA9960034F0ED4755C3 /* tracking_c.h in Copy video Public Headers */ = {isa = PBXBuildFile; fileRef = C3935447AA80ABABE2E1C7C643DC172F /* tracking_c.h */; };
+		FE5B361190BDC775F290EE7D51E11649 /* videoio.hpp in Headers */ = {isa = PBXBuildFile; fileRef = C1A018140725338001DABC1ECA8458AF /* videoio.hpp */; };
+		FE77A686A8CA574DAED63185FD6B8447 /* photo.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = D191E8B55E55743BDBEE5F23B6237EE2 /* photo.hpp */; };
+		FFD58771CD6C934B91268C8B0105C82B /* seam_finders.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 853A28A69C2A8B01F39CBF9DFEC81810 /* seam_finders.hpp */; };
+		FFD847BD0B1B6C1A9EBA0B5D1C5E480A /* shape_transformer.hpp in Copy shape Public Headers */ = {isa = PBXBuildFile; fileRef = 1B070D27C9AAD51B60B73B95D1FF92A1 /* shape_transformer.hpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F1F2BB120C3DE93EF2BDF2CEC75B1086 /* PBXContainerItemProxy */ = {
+		4905CAFC58708D0DE5E6783DF8F197E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 546D1AA34B2EF97CB12F943A3FC3EF00;
+			remoteGlobalIDString = 605D9B654FBA4084DB832389CB3EEB51;
+			remoteInfo = OpenCV;
+		};
+		5E69E1A03E46723D3C6097153B1D5FC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1852F68918D12D72D597804B092C29E;
 			remoteInfo = SwiftCamScanner;
+		};
+		ED56AFBEF50773491EC32E0F0589170A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 605D9B654FBA4084DB832389CB3EEB51;
+			remoteInfo = OpenCV;
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		019A4C63D7477783E46DA92A2EDA557F /* Copy stitching Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/stitching";
+			dstSubfolderSpec = 16;
+			files = (
+				21191754327E430C3F72D2D6CE81ED5F /* warpers.hpp in Copy stitching Public Headers */,
+			);
+			name = "Copy stitching Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		023A39788044D56AA23FFF11372B57D3 /* Copy core/hal Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/core/hal";
+			dstSubfolderSpec = 16;
+			files = (
+				D58B73D97DDA2BE01BBEF309C17510BB /* hal.hpp in Copy core/hal Public Headers */,
+				F5FB9760A06BC33947596E6E119C1539 /* interface.h in Copy core/hal Public Headers */,
+				F0C1FEEABB399E94E4D2763BDC166C13 /* intrin.hpp in Copy core/hal Public Headers */,
+				F675DEFBC2C70A26F31FA768C16F0E46 /* intrin_cpp.hpp in Copy core/hal Public Headers */,
+				0B4AD7A56363EB9822100745364C2DCF /* intrin_neon.hpp in Copy core/hal Public Headers */,
+				6C510D648964A3A0849CDF6123474E22 /* intrin_sse.hpp in Copy core/hal Public Headers */,
+			);
+			name = "Copy core/hal Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D0D9DFECC456520BC21D3A2BABAC38E /* Copy videoio Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/videoio";
+			dstSubfolderSpec = 16;
+			files = (
+				2827FBEFE1AC662878D7E66E92D03E5A /* cap_ios.h in Copy videoio Public Headers */,
+				E8F99D96D80AAD5EFF81382B8BDD4396 /* videoio.hpp in Copy videoio Public Headers */,
+				0F2B291674EC3722A4FB902CF597F1C0 /* videoio_c.h in Copy videoio Public Headers */,
+			);
+			name = "Copy videoio Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B91DF0FBD864C72DF3419FC109A41B9 /* Copy calib3d Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/calib3d";
+			dstSubfolderSpec = 16;
+			files = (
+				E662CD81A115C06360B72CCC67644AE9 /* calib3d.hpp in Copy calib3d Public Headers */,
+				F7A4768FD29B4F69723265196C1AB6A8 /* calib3d_c.h in Copy calib3d Public Headers */,
+			);
+			name = "Copy calib3d Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C507D1AECA60860C0ED3A0E42CC6048 /* Copy flann Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/flann";
+			dstSubfolderSpec = 16;
+			files = (
+				F3B05F27309562F7782D2D15FFB4244C /* all_indices.h in Copy flann Public Headers */,
+				3B5A6EC878E0C918D45D07D3F22FA3EF /* allocator.h in Copy flann Public Headers */,
+				B17ABB871462BAE5533062BE661A8074 /* any.h in Copy flann Public Headers */,
+				9C771108819C335402B2B80431602590 /* autotuned_index.h in Copy flann Public Headers */,
+				18BAA009912735E3D7F617BC230BB84D /* composite_index.h in Copy flann Public Headers */,
+				3215128AB0D500A76EF807BBC0AA0856 /* config.h in Copy flann Public Headers */,
+				5A0323685B5CAEF2CC867836D28F592F /* defines.h in Copy flann Public Headers */,
+				C6D74993A6F6F2DF17A4919E69E4CB6C /* dist.h in Copy flann Public Headers */,
+				34CB3BBC383C08AFBFFAC5C756BA7476 /* dummy.h in Copy flann Public Headers */,
+				2D1E15BF79F720EADA265E11F0DD1CC5 /* dynamic_bitset.h in Copy flann Public Headers */,
+				85EC93D20403DC7C9A1ECB8E31F6C6F2 /* flann.hpp in Copy flann Public Headers */,
+				D364F6F7C0FE81D462D0A9B12D5ABF40 /* flann_base.hpp in Copy flann Public Headers */,
+				0EEDC5AC34A35E6B5DF9977CD189E944 /* general.h in Copy flann Public Headers */,
+				708E501A13ED064BD1ED6FCFE67E21E1 /* ground_truth.h in Copy flann Public Headers */,
+				301EA2CEDD7B91E9F560EFFBBB599EB5 /* hdf5.h in Copy flann Public Headers */,
+				2790903EB9E3F65744FDF1A45331DF36 /* heap.h in Copy flann Public Headers */,
+				4C046BE40BCDE68F3D20CDB4B5154BD7 /* hierarchical_clustering_index.h in Copy flann Public Headers */,
+				92F03B38AB6A06657C9E8E92B03A607B /* index_testing.h in Copy flann Public Headers */,
+				7331B96A7FA64329C63F2C4359FBFCF0 /* kdtree_index.h in Copy flann Public Headers */,
+				857DDA27852C5C59C27C2EA49310919D /* kdtree_single_index.h in Copy flann Public Headers */,
+				3488772D59638295ECBE4B36E251D238 /* kmeans_index.h in Copy flann Public Headers */,
+				8C7D1F5575B3033D79C16291D01EDE8A /* linear_index.h in Copy flann Public Headers */,
+				B358C2D28CBD3FDE2F927156D1DB3959 /* logger.h in Copy flann Public Headers */,
+				953716E5F5F0BDD81A5E2ECABC83CA5C /* lsh_index.h in Copy flann Public Headers */,
+				EF4738FBFAED1EE62B6CA5CDB3193558 /* lsh_table.h in Copy flann Public Headers */,
+				B32211340F674B8006672A7B62E951C8 /* matrix.h in Copy flann Public Headers */,
+				14716759A08D9C82A27715E44CEA8AB4 /* miniflann.hpp in Copy flann Public Headers */,
+				DA5EABDB867AFB5E0CF35BA51C4D0664 /* nn_index.h in Copy flann Public Headers */,
+				AFB8E55C16A6D2EC92CEAC645F4AD8D0 /* object_factory.h in Copy flann Public Headers */,
+				3196ACF27975C2ECF461C739D6BABE05 /* params.h in Copy flann Public Headers */,
+				70F228504023F8EF2B086F37948E58E6 /* random.h in Copy flann Public Headers */,
+				6AE0C7CBC4339F2BE3D5DE9BB7F6512D /* result_set.h in Copy flann Public Headers */,
+				487F9290C2BEDF2255C6DFD1A4CB8384 /* sampling.h in Copy flann Public Headers */,
+				FBC27664D05E836E5AFAE1F71492252F /* saving.h in Copy flann Public Headers */,
+				3732138AC95634A03986629BD6CE8D19 /* simplex_downhill.h in Copy flann Public Headers */,
+				C0EF4E000E4A06B05F57CC2DFE151CF6 /* timer.h in Copy flann Public Headers */,
+			);
+			name = "Copy flann Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		41975F27191B58D5C529FC2352BA1C48 /* Copy video Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/video";
+			dstSubfolderSpec = 16;
+			files = (
+				7DADE88D3040663303BC482DD0988ED5 /* background_segm.hpp in Copy video Public Headers */,
+				96B3D45DC031A05E23813D2853DF2692 /* tracking.hpp in Copy video Public Headers */,
+				FC7E7FBD54CC4CA9960034F0ED4755C3 /* tracking_c.h in Copy video Public Headers */,
+				0316812568EF843312A06879D3FB894B /* video.hpp in Copy video Public Headers */,
+			);
+			name = "Copy video Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F422BDE9841561F324F2F4D699D83A1 /* Copy core Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/core";
+			dstSubfolderSpec = 16;
+			files = (
+				C93A1C44E6E0D14DDD27674F1B077C34 /* affine.hpp in Copy core Public Headers */,
+				225654279E32E5CDC103BAB43AD0888F /* base.hpp in Copy core Public Headers */,
+				56821D56F96DBBD10AEF4210D91F6706 /* bufferpool.hpp in Copy core Public Headers */,
+				0D58F7B66C8886AD7F5B789473A94F15 /* core.hpp in Copy core Public Headers */,
+				866DD90DA031DE111577442146BC5E3D /* core_c.h in Copy core Public Headers */,
+				79763B23A7555ACB507C1A5E30C5B199 /* cuda.hpp in Copy core Public Headers */,
+				9888236715A78190077F2CD7E0B8FA85 /* cuda.inl.hpp in Copy core Public Headers */,
+				25CB4881DAC4CB58753A7C001C4F7FD7 /* cuda_stream_accessor.hpp in Copy core Public Headers */,
+				662582583AFE1B2A9E5DA3A92528CEF8 /* cuda_types.hpp in Copy core Public Headers */,
+				7DE902D7D96D631E36BC04B29904924F /* cvdef.h in Copy core Public Headers */,
+				C7BEB28B017E27BB3B742315CBB6DBC4 /* cvstd.hpp in Copy core Public Headers */,
+				E363B78A1E281B36108E43ADA7214E6E /* cvstd.inl.hpp in Copy core Public Headers */,
+				B645A52C384B2F2CC6FE66198BDF1B1C /* directx.hpp in Copy core Public Headers */,
+				D58004A817B9D8B847BE5AD6B512D49A /* eigen.hpp in Copy core Public Headers */,
+				CB48A78344A09F80961E2DC6C07A54B3 /* fast_math.hpp in Copy core Public Headers */,
+				EBA852B94BDE267483554580BBFD77A1 /* ippasync.hpp in Copy core Public Headers */,
+				1665BF10E8F8CA859B8EC0FA49458D5A /* mat.hpp in Copy core Public Headers */,
+				5D6477C2428AB8CB696871601EDC335B /* mat.inl.hpp in Copy core Public Headers */,
+				056FCBF560B9C4A360AF106DD726D831 /* matx.hpp in Copy core Public Headers */,
+				DAD8E5874DA94E7794D218D6874B6F51 /* neon_utils.hpp in Copy core Public Headers */,
+				824CB31F04A9AD643109CF6276DB2A79 /* ocl.hpp in Copy core Public Headers */,
+				ECCECB3C0427FFAEDE54415F65688B29 /* ocl_genbase.hpp in Copy core Public Headers */,
+				14A0FCEA8A0D011F6E92FBCB2976000E /* opengl.hpp in Copy core Public Headers */,
+				0E3763D256BBA868AA2DF4C23769A938 /* operations.hpp in Copy core Public Headers */,
+				4E87C11573F2EB9BE91590747CA57794 /* optim.hpp in Copy core Public Headers */,
+				14F5A3FD98D53480A6BE97F78125093B /* ovx.hpp in Copy core Public Headers */,
+				0AD7B0213531BD211C644A2667F8D014 /* persistence.hpp in Copy core Public Headers */,
+				946073560A65E54C72BB64DA980F45D5 /* private.cuda.hpp in Copy core Public Headers */,
+				521C1BFD355EB5248405BE11863DD73D /* private.hpp in Copy core Public Headers */,
+				0275044B396FA0A9E86F0C61CE314A7A /* ptr.inl.hpp in Copy core Public Headers */,
+				38E6FA1AE4228B4A02BA299D23B41349 /* saturate.hpp in Copy core Public Headers */,
+				67204FBC48077EE0F24FE24937921C63 /* sse_utils.hpp in Copy core Public Headers */,
+				E266B134D3C2B4DC732AE2B3E43497FD /* traits.hpp in Copy core Public Headers */,
+				3BE03A0F76FDAB4889A7261B2FEBD42C /* types.hpp in Copy core Public Headers */,
+				D9174EF2F01ACB67289720B1DE79FE99 /* types_c.h in Copy core Public Headers */,
+				A4F60AA1C05E9E9F424320F1FE4BC561 /* utility.hpp in Copy core Public Headers */,
+				AF19438EC8FC2C20F938736115CE0775 /* va_intel.hpp in Copy core Public Headers */,
+				71AB2C5B7FD5CDCE1A1540F6C4123A5D /* version.hpp in Copy core Public Headers */,
+				DD534C535E50F2B6752BC235E81953A4 /* wimage.hpp in Copy core Public Headers */,
+			);
+			name = "Copy core Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D39CEB795E618B91773EA26B86BE174 /* Copy photo Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/photo";
+			dstSubfolderSpec = 16;
+			files = (
+				41858543A28BC9E66ACFCB7B5CF5B3B8 /* cuda.hpp in Copy photo Public Headers */,
+				049E39D33959F62E86FA88DCFD72BBBC /* photo.hpp in Copy photo Public Headers */,
+				21170AC947266E5381A4B2A8409B7AED /* photo_c.h in Copy photo Public Headers */,
+			);
+			name = "Copy photo Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683FA8F8205362AC39EA38AE9D340579 /* Copy objdetect Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/objdetect";
+			dstSubfolderSpec = 16;
+			files = (
+				BB11327772A3A1BB36115551490FCC22 /* detection_based_tracker.hpp in Copy objdetect Public Headers */,
+				B1755DDCE57BB0BEA337B1E1F4CD11F7 /* objdetect.hpp in Copy objdetect Public Headers */,
+				0C37939CA1DBE132B8A0FF34B762101B /* objdetect_c.h in Copy objdetect Public Headers */,
+			);
+			name = "Copy objdetect Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C73E904CB570FEFC305B70D616BC714 /* Copy highgui Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/highgui";
+			dstSubfolderSpec = 16;
+			files = (
+				1A432F76DD09D4A07F96B11CBAB7A20C /* highgui.hpp in Copy highgui Public Headers */,
+				DBD5B4C509C2D48D42CBFD333DCEB7CA /* highgui_c.h in Copy highgui Public Headers */,
+			);
+			name = "Copy highgui Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E474777A9E0DB9DFEE438FAA34B17EC /* Copy features2d Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/features2d";
+			dstSubfolderSpec = 16;
+			files = (
+				F14A60ED2124AFB1E59EEE727A2E7A9D /* features2d.hpp in Copy features2d Public Headers */,
+			);
+			name = "Copy features2d Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95AA2EDA01505A4634582D7361ED3909 /* Copy imgproc/hal Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/imgproc/hal";
+			dstSubfolderSpec = 16;
+			files = (
+				87FA6951AEACE3D33F37B955C38E4033 /* hal.hpp in Copy imgproc/hal Public Headers */,
+				2BA14D205A8950EEDD63A5425AE6DC52 /* interface.h in Copy imgproc/hal Public Headers */,
+			);
+			name = "Copy imgproc/hal Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A30EB074F33504FD35DA98EE74C2F89B /* Copy imgproc Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/imgproc";
+			dstSubfolderSpec = 16;
+			files = (
+				7C3E7A699EB743EAFA4366CEBDC0BFEC /* imgproc.hpp in Copy imgproc Public Headers */,
+				3BD2D6DEB420B304B461F3CF6187CA67 /* imgproc_c.h in Copy imgproc Public Headers */,
+				8EE598C6203AC7F75F0F798398592545 /* types_c.h in Copy imgproc Public Headers */,
+			);
+			name = "Copy imgproc Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B791022AF4FBE3A94F8EDA20029D6DC3 /* Copy stitching/detail Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/stitching/detail";
+			dstSubfolderSpec = 16;
+			files = (
+				8E67DA7BD811F1B4C99250D84AEFCA4F /* autocalib.hpp in Copy stitching/detail Public Headers */,
+				E29286BF1355BE7EBFEE2A6FD1FDE925 /* blenders.hpp in Copy stitching/detail Public Headers */,
+				257BF09726FB06973285D957F1746586 /* camera.hpp in Copy stitching/detail Public Headers */,
+				B79E39EE96782127614F630A8B1FC5F1 /* exposure_compensate.hpp in Copy stitching/detail Public Headers */,
+				87BBDE94DCE825C95FC1F29EE0CDD34D /* matchers.hpp in Copy stitching/detail Public Headers */,
+				84A13E57089FD30DFF9AC6DC00B7D9A2 /* motion_estimators.hpp in Copy stitching/detail Public Headers */,
+				FFD58771CD6C934B91268C8B0105C82B /* seam_finders.hpp in Copy stitching/detail Public Headers */,
+				F359DB901D6FCC1325215146F276C358 /* timelapsers.hpp in Copy stitching/detail Public Headers */,
+				5241EE5A408B6406722C3D2B3CC8AD72 /* util.hpp in Copy stitching/detail Public Headers */,
+				7283523595D75630A2094CED8E4EE371 /* util_inl.hpp in Copy stitching/detail Public Headers */,
+				CA21DF21063006BDB0381EFE472C6491 /* warpers.hpp in Copy stitching/detail Public Headers */,
+				F5F730F03E4CCE6752596AA7F9A02012 /* warpers_inl.hpp in Copy stitching/detail Public Headers */,
+			);
+			name = "Copy stitching/detail Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BBA0F79A6DE3C0FDB17BFE96302DABC7 /* Copy ml Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/ml";
+			dstSubfolderSpec = 16;
+			files = (
+				7A224E0F776E41E8A0466B2F3D66F744 /* ml.hpp in Copy ml Public Headers */,
+			);
+			name = "Copy ml Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA63155575A9603A951C8D7AE4A9E85C /* Copy videostab Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/videostab";
+			dstSubfolderSpec = 16;
+			files = (
+				19BB8600B47EEF3D009B866DAD1317E4 /* deblurring.hpp in Copy videostab Public Headers */,
+				89AAA7458F9125D49FC15810697A75F1 /* fast_marching.hpp in Copy videostab Public Headers */,
+				5CF0ED56136CA211826DC70B4AC973C0 /* fast_marching_inl.hpp in Copy videostab Public Headers */,
+				A15B7D76677B83954BF0CAC972BBB06F /* frame_source.hpp in Copy videostab Public Headers */,
+				A62DC65DBD5AF5971B9C551243028C5B /* global_motion.hpp in Copy videostab Public Headers */,
+				C5BACE1C62366E2665A136AF2C0EFEE9 /* inpainting.hpp in Copy videostab Public Headers */,
+				EB4D3C4B8A31CDAF033EAB347C248850 /* log.hpp in Copy videostab Public Headers */,
+				390156139333EE59188521F775E6EC96 /* motion_core.hpp in Copy videostab Public Headers */,
+				A6A81610BE3697F031C1AB2F25167525 /* motion_stabilizing.hpp in Copy videostab Public Headers */,
+				F52D848AD34552EB922D0CA213841FCF /* optical_flow.hpp in Copy videostab Public Headers */,
+				67265627FCF4C09C27EA8D05C251B3A9 /* outlier_rejection.hpp in Copy videostab Public Headers */,
+				FB1730E011DB3233D49C976EE1718AE4 /* ring_buffer.hpp in Copy videostab Public Headers */,
+				4B41D3A6F124DCCCA5FD10D5C4893D7A /* stabilizer.hpp in Copy videostab Public Headers */,
+				7F3F3842A6ACEB995C69BF2DEB1282EA /* wobble_suppression.hpp in Copy videostab Public Headers */,
+			);
+			name = "Copy videostab Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D8C90FD0D3388B6332FA3143DB1F9067 /* Copy . Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/.";
+			dstSubfolderSpec = 16;
+			files = (
+				10B70353A7CBEA16F490993161B5FD74 /* calib3d.hpp in Copy . Public Headers */,
+				DAC7E5CD91B9BF27F4AA8AF88143AFD5 /* core.hpp in Copy . Public Headers */,
+				254719A172822621CDB1CC8B7A203572 /* cvconfig.h in Copy . Public Headers */,
+				C9D52FF119BB111F09414D00D968CEFA /* features2d.hpp in Copy . Public Headers */,
+				ACD67591ACF4FB392B03292F48B0F2A9 /* flann.hpp in Copy . Public Headers */,
+				155EA039CB939618316585280D2A421C /* highgui.hpp in Copy . Public Headers */,
+				4F6DE2BB42FC44FEF7E67DE681164B08 /* imgcodecs.hpp in Copy . Public Headers */,
+				91C015992610D9619816A96A242D4324 /* imgproc.hpp in Copy . Public Headers */,
+				E7E8BA5EFF7CB2153F96F59B4837FA4A /* ml.hpp in Copy . Public Headers */,
+				BEA6325C9BAAB4199813BF04FA28FF97 /* objdetect.hpp in Copy . Public Headers */,
+				B13110ABDC83E28719A05F3DA8939832 /* opencv.hpp in Copy . Public Headers */,
+				C4C2D5EAFC6C0705E3ABB886214AF0B7 /* opencv_modules.hpp in Copy . Public Headers */,
+				FE77A686A8CA574DAED63185FD6B8447 /* photo.hpp in Copy . Public Headers */,
+				AB2DDE0AE09856C3640CEA968017A430 /* shape.hpp in Copy . Public Headers */,
+				56CEBBB7527B682A0FFCF2725435742B /* stitching.hpp in Copy . Public Headers */,
+				12C11D7507ACDEA506CBC52056F53D35 /* video.hpp in Copy . Public Headers */,
+				870971843D05240C807BF3DE190B637E /* videoio.hpp in Copy . Public Headers */,
+				1217DB8537C29A6098A48DCA122A8180 /* videostab.hpp in Copy . Public Headers */,
+				5DBC3603E1D02B94285A2F820C47A7B1 /* world.hpp in Copy . Public Headers */,
+			);
+			name = "Copy . Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E6C63990E6FA5FBC0BB45A382E5D0556 /* Copy imgproc/detail Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/imgproc/detail";
+			dstSubfolderSpec = 16;
+			files = (
+				5E003C1F52120B08F3FABA7F0429323E /* distortion_model.hpp in Copy imgproc/detail Public Headers */,
+			);
+			name = "Copy imgproc/detail Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE3486BEC324F21C4078E31E1F246FD6 /* Copy shape Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/shape";
+			dstSubfolderSpec = 16;
+			files = (
+				DB8AFAD8EEE7FE3A36C7ABEB74C8BCBC /* emdL1.hpp in Copy shape Public Headers */,
+				DAFB457C94E4AEA9DD994A38824D38A2 /* hist_cost.hpp in Copy shape Public Headers */,
+				3397003EF3E3F2D503A8789508563BBD /* shape.hpp in Copy shape Public Headers */,
+				36BD25D350B68AEB0459EE758CDFF45E /* shape_distance.hpp in Copy shape Public Headers */,
+				FFD847BD0B1B6C1A9EBA0B5D1C5E480A /* shape_transformer.hpp in Copy shape Public Headers */,
+			);
+			name = "Copy shape Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9C6F246A14443EA9A74E3B5ED5C2AB1 /* Copy imgcodecs Public Headers */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(PUBLIC_HEADERS_FOLDER_PATH)/imgcodecs";
+			dstSubfolderSpec = 16;
+			files = (
+				0DD9FE755114DF129A4065A2DF8EEA4F /* imgcodecs.hpp in Copy imgcodecs Public Headers */,
+				CB475B7C5DEF45842D7144DA0F3B8560 /* imgcodecs_c.h in Copy imgcodecs Public Headers */,
+				A4C7D0CADF9BE4BA74274CAA9ABB4759 /* ios.h in Copy imgcodecs Public Headers */,
+			);
+			name = "Copy imgcodecs Public Headers";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		000B19105216E0A6E68D0A8D381A032C /* SwiftCamScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftCamScanner-dummy.m"; sourceTree = "<group>"; };
+		0187874A775F733D1BA9C6A358ABEC1C /* OpenCV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OpenCV.modulemap; sourceTree = "<group>"; };
+		01EA167C1CB3BBC981662D569F01F124 /* cuda.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda.inl.hpp; path = ios/include/core/cuda.inl.hpp; sourceTree = "<group>"; };
+		02E34C244717C03F64D16846823C78C9 /* core_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = core_c.h; path = ios/include/core/core_c.h; sourceTree = "<group>"; };
+		030B801DEEDD749B90EF5BA4A34B0E76 /* hdf5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hdf5.h; path = ios/include/flann/hdf5.h; sourceTree = "<group>"; };
 		06735822E293FB73FA6F69C00D30CC04 /* Pods-SwiftCamScanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		078F437A72770D2C3BAE9CB6013B0384 /* ovx.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ovx.hpp; path = ios/include/core/ovx.hpp; sourceTree = "<group>"; };
+		0A5BBF6396571B3DC46AA6C8475FFD03 /* objdetect.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = objdetect.hpp; path = ios/include/objdetect/objdetect.hpp; sourceTree = "<group>"; };
+		0B2E8EC605180BAF532E2944CC8AD3F5 /* wimage.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = wimage.hpp; path = ios/include/core/wimage.hpp; sourceTree = "<group>"; };
+		0C86174CA5B64E54AF6C7E08280355BC /* cuda_types.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda_types.hpp; path = ios/include/core/cuda_types.hpp; sourceTree = "<group>"; };
+		0D5CF9B5B4818DBFFE4EAD5B30A9CB99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		0DFCC4DC233C4071128867F6E6A34A77 /* motion_core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = motion_core.hpp; path = ios/include/videostab/motion_core.hpp; sourceTree = "<group>"; };
+		0E02E9390B86365BD13BB30302EC964A /* stabilizer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = stabilizer.hpp; path = ios/include/videostab/stabilizer.hpp; sourceTree = "<group>"; };
+		0EEE3080D709F8972DC219CE87B5DA58 /* cuda.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda.hpp; path = ios/include/core/cuda.hpp; sourceTree = "<group>"; };
+		0FBD717D60A5240A53BA416A1DC6D123 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		12324E134B9762A8F10F49BDE12AB0D3 /* warpers_inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = warpers_inl.hpp; path = ios/include/stitching/detail/warpers_inl.hpp; sourceTree = "<group>"; };
+		147F9807A48CCF5B130E431A0315DD28 /* calib3d_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = calib3d_c.h; path = ios/include/calib3d/calib3d_c.h; sourceTree = "<group>"; };
 		15C4DA712C82AA7FB41135AC96901719 /* Pods-SwiftCamScanner_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCamScanner_Example-resources.sh"; sourceTree = "<group>"; };
+		161961233C614726EF642FB43AFE83C7 /* Empty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = Empty.m; sourceTree = "<group>"; };
+		16F9EBFCA5397D5B51E58FFE6EE76EE1 /* exposure_compensate.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = exposure_compensate.hpp; path = ios/include/stitching/detail/exposure_compensate.hpp; sourceTree = "<group>"; };
+		1740E20CBEC3C18086896E51EC864533 /* dist.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dist.h; path = ios/include/flann/dist.h; sourceTree = "<group>"; };
+		17694F63B49D60F0E9B7238191D9C54D /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AssetsLibrary.framework; sourceTree = DEVELOPER_DIR; };
+		17D3F80EA3414C2AEA2FA9F338B1F63D /* all_indices.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = all_indices.h; path = ios/include/flann/all_indices.h; sourceTree = "<group>"; };
+		1876997960BCD607B472D5BAE2541B9D /* inpainting.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = inpainting.hpp; path = ios/include/videostab/inpainting.hpp; sourceTree = "<group>"; };
+		191365234F92D09C046148EA8B270402 /* mat.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = mat.inl.hpp; path = ios/include/core/mat.inl.hpp; sourceTree = "<group>"; };
+		192E039373BD598F3BF7EAD1249F5078 /* warpers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = warpers.hpp; path = ios/include/stitching/warpers.hpp; sourceTree = "<group>"; };
 		1AEED836633919E79A3B43C46AF6D3E1 /* Pods-SwiftCamScanner_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCamScanner_Tests-resources.sh"; sourceTree = "<group>"; };
+		1AFDB9C31551B350473317FA9BFEECB3 /* ios.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ios.h; path = ios/include/imgcodecs/ios.h; sourceTree = "<group>"; };
+		1B070D27C9AAD51B60B73B95D1FF92A1 /* shape_transformer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape_transformer.hpp; path = ios/include/shape/shape_transformer.hpp; sourceTree = "<group>"; };
+		1F8EB2EF6E751ED9EFE1120706274615 /* features2d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = features2d.hpp; path = ios/include/features2d.hpp; sourceTree = "<group>"; };
+		204E586B16015AB9972AA8669F2CCAAD /* cap_ios.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cap_ios.h; path = ios/include/videoio/cap_ios.h; sourceTree = "<group>"; };
+		21270E36FE75103CAA57B22FF21729C8 /* distortion_model.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = distortion_model.hpp; path = ios/include/imgproc/detail/distortion_model.hpp; sourceTree = "<group>"; };
+		246BEC39A36E748E2A65BCC7EEFDBDD1 /* eigen.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = eigen.hpp; path = ios/include/core/eigen.hpp; sourceTree = "<group>"; };
 		24DEC4A4CB48CC66471274EE46B775A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26B734E2229B0F0369C10FD4D49062C5 /* simplex_downhill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = simplex_downhill.h; path = ios/include/flann/simplex_downhill.h; sourceTree = "<group>"; };
 		26E08693C1876570D39F3D534D9BA867 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		27CAC648AA24F2F323F1E9E6C8BF2536 /* Pods_SwiftCamScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftCamScanner_Example.framework; path = "Pods-SwiftCamScanner_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DA8516CE0B02FCC5EC062A77FEEC8D /* warpers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = warpers.hpp; path = ios/include/stitching/detail/warpers.hpp; sourceTree = "<group>"; };
 		2808DC56D7240E13B4DA439D3FB8587D /* Pods-SwiftCamScanner_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCamScanner_Example-frameworks.sh"; sourceTree = "<group>"; };
 		29AFD86B14289054DE757B52FDCACACD /* Pods-SwiftCamScanner_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftCamScanner_Tests-umbrella.h"; sourceTree = "<group>"; };
+		2AEBB7D952AF108245A49019B669DBC1 /* matx.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = matx.hpp; path = ios/include/core/matx.hpp; sourceTree = "<group>"; };
+		2C00CEBBD3959A8E758F7C44EB097CCF /* videoio_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = videoio_c.h; path = ios/include/videoio/videoio_c.h; sourceTree = "<group>"; };
+		2EA143F18BE7BFF01EABC1EC86D27FFD /* cuda.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda.hpp; path = ios/include/photo/cuda.hpp; sourceTree = "<group>"; };
+		31E4ED75F45554D48AFAEDB661980E3F /* OpenCV-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenCV-umbrella.h"; sourceTree = "<group>"; };
+		34A4537B08B8B3419BA5242AC00E56EB /* autotuned_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = autotuned_index.h; path = ios/include/flann/autotuned_index.h; sourceTree = "<group>"; };
+		363F54F340920BCC97D9634B5AD22CCC /* fast_marching_inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = fast_marching_inl.hpp; path = ios/include/videostab/fast_marching_inl.hpp; sourceTree = "<group>"; };
+		3A0D27A148EAF1BFEC03B79C5F57B5D9 /* matchers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = matchers.hpp; path = ios/include/stitching/detail/matchers.hpp; sourceTree = "<group>"; };
 		3DAAC99F0ED9B91CE5FDCD6C3182486C /* Pods-SwiftCamScanner_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Example.release.xcconfig"; sourceTree = "<group>"; };
+		40313FD0C4B645D31737B535AA107460 /* cvstd.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cvstd.inl.hpp; path = ios/include/core/cvstd.inl.hpp; sourceTree = "<group>"; };
 		410FFF5447D5E6EC8138B0ED166ADF81 /* Pods-SwiftCamScanner_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftCamScanner_Example.modulemap"; sourceTree = "<group>"; };
+		41376CA89C4595E87023806A8151B894 /* ground_truth.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ground_truth.h; path = ios/include/flann/ground_truth.h; sourceTree = "<group>"; };
+		420A5C9B66426A50292FFA23B3DE7A40 /* kdtree_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kdtree_index.h; path = ios/include/flann/kdtree_index.h; sourceTree = "<group>"; };
+		437BA8A2D2F4023A92FE8C23956C5A9B /* hal.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = hal.hpp; path = ios/include/core/hal/hal.hpp; sourceTree = "<group>"; };
+		44144AD531DF5B5C1211F85FF5A2574D /* cuda_stream_accessor.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda_stream_accessor.hpp; path = ios/include/core/cuda_stream_accessor.hpp; sourceTree = "<group>"; };
+		45917D2B24907D787AB9EB65F7A10DA1 /* kdtree_single_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kdtree_single_index.h; path = ios/include/flann/kdtree_single_index.h; sourceTree = "<group>"; };
+		45DCD024056F0809C027E37B455402F2 /* optim.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = optim.hpp; path = ios/include/core/optim.hpp; sourceTree = "<group>"; };
+		4603ED877E8472AC55CB905104B00D26 /* tracking.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = tracking.hpp; path = ios/include/video/tracking.hpp; sourceTree = "<group>"; };
+		46574ED9E2700865B4EAAE0A5FE0EBF9 /* features2d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = features2d.hpp; path = ios/include/features2d/features2d.hpp; sourceTree = "<group>"; };
+		47F984C4A63C4E6B0912B23BCD1D7DF3 /* params.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = params.h; path = ios/include/flann/params.h; sourceTree = "<group>"; };
 		48D1A7D17FC340F95EBF741215855683 /* Pods-SwiftCamScanner_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftCamScanner_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4A60431FA2D56827A70A13D7A63E8CFA /* sse_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sse_utils.hpp; path = ios/include/core/sse_utils.hpp; sourceTree = "<group>"; };
 		4C0D43C9281C6B2BEDE0643DF0F2F7BC /* Pods-SwiftCamScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4C4998A1976B3D8266EE5A830D0CE7C0 /* Pods-SwiftCamScanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DC0ACA5B73A60B05B14932C2A1811FF /* utility.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = utility.hpp; path = ios/include/core/utility.hpp; sourceTree = "<group>"; };
+		50228EF9461C9A64364371C8550D28F3 /* intrin_neon.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin_neon.hpp; path = ios/include/core/hal/intrin_neon.hpp; sourceTree = "<group>"; };
 		5028856D83AD1656085CAED34BCFD9C9 /* Pods-SwiftCamScanner_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCamScanner_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		666D3C316AB431E0D5FDF3CF9FD3B5D1 /* ReplaceMe.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ReplaceMe.swift; sourceTree = "<group>"; };
+		528ECC79A8A4400CFB2A2026F144D636 /* highgui_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = highgui_c.h; path = ios/include/highgui/highgui_c.h; sourceTree = "<group>"; };
+		53BFF195A2007D2AFC59F3972A54171A /* autocalib.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = autocalib.hpp; path = ios/include/stitching/detail/autocalib.hpp; sourceTree = "<group>"; };
+		543329F56B699C9D8772A1CE0FD6D79E /* types_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types_c.h; path = ios/include/imgproc/types_c.h; sourceTree = "<group>"; };
+		56D009921D2517772E12993FC1844D22 /* hierarchical_clustering_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hierarchical_clustering_index.h; path = ios/include/flann/hierarchical_clustering_index.h; sourceTree = "<group>"; };
+		5894806B8B8415ED90B1A9DB506DAD6F /* hal.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = hal.hpp; path = ios/include/imgproc/hal/hal.hpp; sourceTree = "<group>"; };
+		59359652E6B8D09C4A72096759201C6F /* matrix.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = matrix.h; path = ios/include/flann/matrix.h; sourceTree = "<group>"; };
+		597F74731B49F90C3FC03D8CDD9543FC /* result_set.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = result_set.h; path = ios/include/flann/result_set.h; sourceTree = "<group>"; };
+		5B2A9BF6FCD5D095D4DCE9EA99DF9440 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		5CD90FC3199307403DDD70DABFD7DC0E /* types_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types_c.h; path = ios/include/core/types_c.h; sourceTree = "<group>"; };
+		609200F87AD6D2AE8273CEC4B1A96D4F /* flann_base.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = flann_base.hpp; path = ios/include/flann/flann_base.hpp; sourceTree = "<group>"; };
+		6292CD8997D1132E3E047FBE7A9623B8 /* util_inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = util_inl.hpp; path = ios/include/stitching/detail/util_inl.hpp; sourceTree = "<group>"; };
+		62A2DAEFDC5A01926F3E8153E6982850 /* CamScanner-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CamScanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		63345712959359C44EFFA8B1B94BB482 /* OpenCVWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
+		63AB71577607B284C6353317DB7ABC76 /* va_intel.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = va_intel.hpp; path = ios/include/core/va_intel.hpp; sourceTree = "<group>"; };
+		63FF1574DE70EADEC6BF1EE4782B848E /* emdL1.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = emdL1.hpp; path = ios/include/shape/emdL1.hpp; sourceTree = "<group>"; };
+		642E5C2CB901FEE236EAFB194CA0205A /* shape.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape.hpp; path = ios/include/shape/shape.hpp; sourceTree = "<group>"; };
+		642FB7A9C04687C66468FC0DA0EE0CEF /* opencv.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = opencv.hpp; path = ios/include/opencv.hpp; sourceTree = "<group>"; };
+		6533CF613803EA79C3AA2FBC3E9F2187 /* random.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = random.h; path = ios/include/flann/random.h; sourceTree = "<group>"; };
+		6590A3187FC42DCE0579FFE77B38A725 /* core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = core.hpp; path = ios/include/core/core.hpp; sourceTree = "<group>"; };
+		6753A1F7B8E67C857002699B1CAEDFF5 /* index_testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = index_testing.h; path = ios/include/flann/index_testing.h; sourceTree = "<group>"; };
 		6A6732C7AB4A236EF0DF8D5A41C49498 /* Pods-SwiftCamScanner_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftCamScanner_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		6D8FB51A2C8B288F613E5FB27CA60C06 /* saturate.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = saturate.hpp; path = ios/include/core/saturate.hpp; sourceTree = "<group>"; };
+		6E5CF2461083EA545866301713258C06 /* calib3d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = calib3d.hpp; path = ios/include/calib3d/calib3d.hpp; sourceTree = "<group>"; };
+		6EC7A9520CC1FFA8E061CE6D80C21882 /* cvdef.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cvdef.h; path = ios/include/core/cvdef.h; sourceTree = "<group>"; };
+		6EDC15A8F8E389CA776E3CD1D9357067 /* Pods_SwiftCamScanner_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftCamScanner_Example.framework; path = "Pods-SwiftCamScanner_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		70D49C12F4E3896CEB944F8C6AC2E2CB /* lsh_table.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lsh_table.h; path = ios/include/flann/lsh_table.h; sourceTree = "<group>"; };
+		70E236CF81944AB8F11662EF50AA830D /* objdetect_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objdetect_c.h; path = ios/include/objdetect/objdetect_c.h; sourceTree = "<group>"; };
+		756DE303098A22D30F8117DB1035D61E /* intrin_sse.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin_sse.hpp; path = ios/include/core/hal/intrin_sse.hpp; sourceTree = "<group>"; };
+		76E68B27B55E8FE0F33E4810364246DD /* nn_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = nn_index.h; path = ios/include/flann/nn_index.h; sourceTree = "<group>"; };
+		788B64E6EC6B238FBD79D53D08D0C74C /* imgcodecs.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = imgcodecs.hpp; path = ios/include/imgcodecs/imgcodecs.hpp; sourceTree = "<group>"; };
+		78C56AD87FF61C001308655B6FC8066A /* bufferpool.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = bufferpool.hpp; path = ios/include/core/bufferpool.hpp; sourceTree = "<group>"; };
+		7B5C9E2AADEEC3CB771783B0E8E9CC10 /* opencv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = opencv2.framework; path = OpenCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B66DE29755DD92F8A1AB62AE5F4E682 /* imgproc.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = imgproc.hpp; path = ios/include/imgproc/imgproc.hpp; sourceTree = "<group>"; };
+		7D05DE90E891C0B0B41EFF578A13AC4D /* flann.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = flann.hpp; path = ios/include/flann/flann.hpp; sourceTree = "<group>"; };
+		7D33EB35E49DA825C3B93F3B32723FE2 /* libopencv2Static.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libopencv2Static.a; path = ios/libopencv2Static.a; sourceTree = "<group>"; };
+		7D5934BA2FC0D74CC148994706C277FD /* Pods_SwiftCamScanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftCamScanner_Tests.framework; path = "Pods-SwiftCamScanner_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D91F19239E255A548C5496B09FE0ADF /* Pods-SwiftCamScanner_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftCamScanner_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		80F764D7322FF7E2FDDC91549F960F37 /* Pods_SwiftCamScanner_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SwiftCamScanner_Tests.framework; path = "Pods-SwiftCamScanner_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DD2C4575959881B4304B445E376BF39 /* defines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = defines.h; path = ios/include/flann/defines.h; sourceTree = "<group>"; };
+		7DD979BF0F8951CA3B97BC6D90E4B78C /* ml.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ml.hpp; path = ios/include/ml.hpp; sourceTree = "<group>"; };
+		7E305834DA9B591618FE15AEDD327396 /* interface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = interface.h; path = ios/include/core/hal/interface.h; sourceTree = "<group>"; };
+		8382B42C1B54671ABADFADC9833FD6A1 /* neon_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = neon_utils.hpp; path = ios/include/core/neon_utils.hpp; sourceTree = "<group>"; };
+		85126FC684E57A69EC14C255A6BFE69C /* version.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = version.hpp; path = ios/include/core/version.hpp; sourceTree = "<group>"; };
+		853A28A69C2A8B01F39CBF9DFEC81810 /* seam_finders.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = seam_finders.hpp; path = ios/include/stitching/detail/seam_finders.hpp; sourceTree = "<group>"; };
+		87506F6D0EB5ABF272566DA04BE37D10 /* timelapsers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = timelapsers.hpp; path = ios/include/stitching/detail/timelapsers.hpp; sourceTree = "<group>"; };
+		876F9A8A82433CA8ED61E56991251D06 /* background_segm.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = background_segm.hpp; path = ios/include/video/background_segm.hpp; sourceTree = "<group>"; };
+		87A0396750E4C91E21679D944EE06544 /* OpenCV-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "OpenCV-dummy.m"; sourceTree = "<group>"; };
+		87D707CEB01405CB8B4C55B5E187D47D /* SwiftCamScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftCamScanner.framework; path = SwiftCamScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC97BD4571E13D76E5FCBDC340E6388 /* directx.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = directx.hpp; path = ios/include/core/directx.hpp; sourceTree = "<group>"; };
+		8BB80BF7A37DD4055D986C21917F41DB /* opengl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = opengl.hpp; path = ios/include/core/opengl.hpp; sourceTree = "<group>"; };
+		8C7352A5EC18CCEF90196B68671BA111 /* camera.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = camera.hpp; path = ios/include/stitching/detail/camera.hpp; sourceTree = "<group>"; };
+		8C89DBBD5685E352C56AC89B3B8E8F62 /* outlier_rejection.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = outlier_rejection.hpp; path = ios/include/videostab/outlier_rejection.hpp; sourceTree = "<group>"; };
+		8DEB9F8616B73A5B50DE1F175CC4C44A /* traits.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = traits.hpp; path = ios/include/core/traits.hpp; sourceTree = "<group>"; };
+		8DFB4B1DB800CE4FFE19C5032FB8E86C /* cvconfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cvconfig.h; path = ios/include/cvconfig.h; sourceTree = "<group>"; };
+		8E965F47CF5DD95C415211EE2FD642DE /* objdetect.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = objdetect.hpp; path = ios/include/objdetect.hpp; sourceTree = "<group>"; };
+		905AFB5AEE182C4A94F80D7D62673D00 /* highgui.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = highgui.hpp; path = ios/include/highgui.hpp; sourceTree = "<group>"; };
+		9195BDFABFE21860D75D441E17F2F5D2 /* ippasync.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ippasync.hpp; path = ios/include/core/ippasync.hpp; sourceTree = "<group>"; };
+		929ADEAF53DA0D8411A1ADE0BC1B669F /* videoio.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = videoio.hpp; path = ios/include/videoio/videoio.hpp; sourceTree = "<group>"; };
+		9322EB3F4216DDD74E1171F62375C7F2 /* mat.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = mat.hpp; path = ios/include/core/mat.hpp; sourceTree = "<group>"; };
+		9358FC0ECDF3C39938A63E7DA71C73DE /* operations.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = operations.hpp; path = ios/include/core/operations.hpp; sourceTree = "<group>"; };
 		9393053B985A9445E7ED1C70FE10659E /* SwiftCamScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCamScanner-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9A9BAFCD53ADB4CAA1768C11480E3990 /* SwiftCamScanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftCamScanner.framework; path = SwiftCamScanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		955D507BA4059D22843379AAA7E31A52 /* allocator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = allocator.h; path = ios/include/flann/allocator.h; sourceTree = "<group>"; };
+		95998BDED262FCE5EA9D09B7639DB76B /* dynamic_bitset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dynamic_bitset.h; path = ios/include/flann/dynamic_bitset.h; sourceTree = "<group>"; };
+		95B7DC5BD004C74D0E7967CBAAA93FA3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		987BE2677EDA7EE112F1A0338A9400EB /* imgproc.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = imgproc.hpp; path = ios/include/imgproc.hpp; sourceTree = "<group>"; };
+		9900B93A03CE4F0D79DC43166668EC82 /* config.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = config.h; path = ios/include/flann/config.h; sourceTree = "<group>"; };
+		99498D627CBD516B97DFE38FB685517B /* timer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = timer.h; path = ios/include/flann/timer.h; sourceTree = "<group>"; };
+		9B82F679825409B6BF0A508CD5F644B8 /* fast_math.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = fast_math.hpp; path = ios/include/core/fast_math.hpp; sourceTree = "<group>"; };
+		9BD2DB7B87960CE13F27F5D021DB1D78 /* persistence.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = persistence.hpp; path = ios/include/core/persistence.hpp; sourceTree = "<group>"; };
+		9C2EC2AFEBDDBCA78C3B5C39D396A5C3 /* photo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = photo.hpp; path = ios/include/photo/photo.hpp; sourceTree = "<group>"; };
+		9D43C4C6093C92A39964DD31E27EA34E /* ptr.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ptr.inl.hpp; path = ios/include/core/ptr.inl.hpp; sourceTree = "<group>"; };
+		9DCE9622207C160B8B01D9C94E7ACDAF /* dummy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dummy.h; path = ios/include/flann/dummy.h; sourceTree = "<group>"; };
+		9EFE243B2D2CBC7F3925BD489CC629A4 /* interface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = interface.h; path = ios/include/imgproc/hal/interface.h; sourceTree = "<group>"; };
+		9F4B2D7D548F53CF36216F66E5303479 /* util.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = util.hpp; path = ios/include/stitching/detail/util.hpp; sourceTree = "<group>"; };
+		9F9B38DD9DA2DB2FB2AAFB3AB9CF33F2 /* stitching.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = stitching.hpp; path = ios/include/stitching.hpp; sourceTree = "<group>"; };
+		A3C5564BCBFE6C345517D64AF13A8628 /* lsh_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lsh_index.h; path = ios/include/flann/lsh_index.h; sourceTree = "<group>"; };
+		A5EB908AFAA68F56D437D2C6EAEA4470 /* ring_buffer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ring_buffer.hpp; path = ios/include/videostab/ring_buffer.hpp; sourceTree = "<group>"; };
+		A6D00E826381B2ECD9C1202E4A168090 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
 		A8C91DF5C4F1D3150D5751A07B2C43B8 /* SwiftCamScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCamScanner-umbrella.h"; sourceTree = "<group>"; };
+		A8D09FA1328B669A7DAB4D011C40D9B9 /* object_factory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = object_factory.h; path = ios/include/flann/object_factory.h; sourceTree = "<group>"; };
+		AB61132F42166473E5F7E0006232C5C9 /* saving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = saving.h; path = ios/include/flann/saving.h; sourceTree = "<group>"; };
+		AB8D964CEBFD5262A7D24B1A83CBFC68 /* video.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = video.hpp; path = ios/include/video.hpp; sourceTree = "<group>"; };
+		ACF82D4F6BACFA3EFCD6A4683D83D187 /* video.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = video.hpp; path = ios/include/video/video.hpp; sourceTree = "<group>"; };
+		AE2735970401B55FBA8625C9472B5D61 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		B3622D58B37D55A1F713F4D8307920B1 /* videostab.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = videostab.hpp; path = ios/include/videostab.hpp; sourceTree = "<group>"; };
+		B4B69B1F85EF3AABDAD18D62DE386964 /* ml.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ml.hpp; path = ios/include/ml/ml.hpp; sourceTree = "<group>"; };
+		B7F2A798BD5E1D9645733BCC6ED88454 /* core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = core.hpp; path = ios/include/core.hpp; sourceTree = "<group>"; };
+		B819433E1091FC18E4D3A487C53CC101 /* global_motion.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = global_motion.hpp; path = ios/include/videostab/global_motion.hpp; sourceTree = "<group>"; };
+		BAFBA19384CE096356B90E8F8952E7F7 /* optical_flow.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = optical_flow.hpp; path = ios/include/videostab/optical_flow.hpp; sourceTree = "<group>"; };
+		BB4460DFFA0DE89ED61548831F155653 /* opencv_modules.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = opencv_modules.hpp; path = ios/include/opencv_modules.hpp; sourceTree = "<group>"; };
+		BC4DCF75050D3F3B70849A789943C038 /* wobble_suppression.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = wobble_suppression.hpp; path = ios/include/videostab/wobble_suppression.hpp; sourceTree = "<group>"; };
+		BC75AE930BAF659B877E88BCB5FF9195 /* log.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = log.hpp; path = ios/include/videostab/log.hpp; sourceTree = "<group>"; };
+		C1A018140725338001DABC1ECA8458AF /* videoio.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = videoio.hpp; path = ios/include/videoio.hpp; sourceTree = "<group>"; };
+		C338F01433D09BD46D73636CBC2117CC /* miniflann.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = miniflann.hpp; path = ios/include/flann/miniflann.hpp; sourceTree = "<group>"; };
+		C3935447AA80ABABE2E1C7C643DC172F /* tracking_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tracking_c.h; path = ios/include/video/tracking_c.h; sourceTree = "<group>"; };
 		C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCamScanner.xcconfig; sourceTree = "<group>"; };
+		C4AA2372430A377ACA42D9C01C0A9C3C /* shape.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape.hpp; path = ios/include/shape.hpp; sourceTree = "<group>"; };
+		C4AD58521564C92081C43E751FF18CF6 /* world.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = world.hpp; path = ios/include/world.hpp; sourceTree = "<group>"; };
+		C84BDB8918C5B4DAEDDE4238A807422D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		C8728069A17B92A90652905E04EC191E /* heap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = heap.h; path = ios/include/flann/heap.h; sourceTree = "<group>"; };
 		CA71619306FEF99A2249EDB486740FD2 /* Pods-SwiftCamScanner_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftCamScanner_Tests.modulemap"; sourceTree = "<group>"; };
+		CADA325BE3AA3FB3F7BA093D12737120 /* any.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = any.h; path = ios/include/flann/any.h; sourceTree = "<group>"; };
+		CBA753C1EF970729C21BB0480CFA05B0 /* OpenCV.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = OpenCV.xcconfig; sourceTree = "<group>"; };
+		CDEFA9C26035AB06F2C8D73816E1BAB5 /* hist_cost.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = hist_cost.hpp; path = ios/include/shape/hist_cost.hpp; sourceTree = "<group>"; };
+		CE8CA64A12C6D93598D81A3A04DF1C83 /* base.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = base.hpp; path = ios/include/core/base.hpp; sourceTree = "<group>"; };
+		D011C6ECCD54ADDAD09F57569D25211F /* intrin.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin.hpp; path = ios/include/core/hal/intrin.hpp; sourceTree = "<group>"; };
+		D074DE687225228BE9CAD62F7CA7D52B /* imgproc_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = imgproc_c.h; path = ios/include/imgproc/imgproc_c.h; sourceTree = "<group>"; };
+		D0B4534D1228006D3A36BF3024D69768 /* intrin_cpp.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin_cpp.hpp; path = ios/include/core/hal/intrin_cpp.hpp; sourceTree = "<group>"; };
+		D191E8B55E55743BDBEE5F23B6237EE2 /* photo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = photo.hpp; path = ios/include/photo.hpp; sourceTree = "<group>"; };
+		D2473BCFA0FC5CC4B38B00EA30BE267B /* flann.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = flann.hpp; path = ios/include/flann.hpp; sourceTree = "<group>"; };
+		D2B8C79EF07BD99C3081CC07FBE72A03 /* ocl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ocl.hpp; path = ios/include/core/ocl.hpp; sourceTree = "<group>"; };
+		D5F2317724CB0C62D61E27603BCF388B /* imgcodecs.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = imgcodecs.hpp; path = ios/include/imgcodecs.hpp; sourceTree = "<group>"; };
+		D8EA4BD00AD1CAA589C90EC2A595452A /* OpenCV-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "OpenCV-prefix.pch"; sourceTree = "<group>"; };
 		D9DD99EC9DD9A871AABE2C447A74A47E /* Pods-SwiftCamScanner_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftCamScanner_Example-dummy.m"; sourceTree = "<group>"; };
+		D9E148B53244FB60C541FEB0121C48E9 /* motion_estimators.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = motion_estimators.hpp; path = ios/include/stitching/detail/motion_estimators.hpp; sourceTree = "<group>"; };
+		DB1177C7217335C745D722DCB6F32688 /* logger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = logger.h; path = ios/include/flann/logger.h; sourceTree = "<group>"; };
+		DC52CE8F422C54020DBF44916C0E1B3C /* deblurring.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = deblurring.hpp; path = ios/include/videostab/deblurring.hpp; sourceTree = "<group>"; };
+		DC67DD8FE6288D87FB2F6325B75EAEC2 /* private.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = private.hpp; path = ios/include/core/private.hpp; sourceTree = "<group>"; };
+		DDA4AFDDD3B6B89C0EAA8F1960DDA071 /* imgcodecs_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = imgcodecs_c.h; path = ios/include/imgcodecs/imgcodecs_c.h; sourceTree = "<group>"; };
+		DFB6210BEA998E447A977AF3831361BE /* blenders.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = blenders.hpp; path = ios/include/stitching/detail/blenders.hpp; sourceTree = "<group>"; };
+		E28818192F58C1B7CC64BD4F2F224E19 /* detection_based_tracker.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = detection_based_tracker.hpp; path = ios/include/objdetect/detection_based_tracker.hpp; sourceTree = "<group>"; };
+		E2E4611409405BBFE9001F315E8F1FE5 /* cvstd.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cvstd.hpp; path = ios/include/core/cvstd.hpp; sourceTree = "<group>"; };
+		E31E21D899A02EEB32BBB981F8FBC9EF /* kmeans_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = kmeans_index.h; path = ios/include/flann/kmeans_index.h; sourceTree = "<group>"; };
 		E8CAFE763E1D7CB6F4135A464EFE33DA /* Pods-SwiftCamScanner_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SwiftCamScanner_Example-umbrella.h"; sourceTree = "<group>"; };
+		EA943A965D26C60BAF44DD3DA8304C04 /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreVideo.framework; sourceTree = DEVELOPER_DIR; };
+		EAB610739AFADFC5D8CCC63C62177D4D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		EB2AE1815939C181B7290A08DA02764F /* composite_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = composite_index.h; path = ios/include/flann/composite_index.h; sourceTree = "<group>"; };
+		EB5F9F0AC7C4F163594C627E3167FE5E /* general.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = general.h; path = ios/include/flann/general.h; sourceTree = "<group>"; };
+		EC12CAC67970B9219B288AC3A8AACA3F /* linear_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = linear_index.h; path = ios/include/flann/linear_index.h; sourceTree = "<group>"; };
+		EF00A6F175C41CBE7FE0EDF6914D59CB /* highgui.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = highgui.hpp; path = ios/include/highgui/highgui.hpp; sourceTree = "<group>"; };
 		EFB64C145E8754571BE4ADBF61A9E655 /* Pods-SwiftCamScanner_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftCamScanner_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		EFD497294DB6D238D69206417B56A8E6 /* sampling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sampling.h; path = ios/include/flann/sampling.h; sourceTree = "<group>"; };
+		F10F12AA738657F4733F34A7B82BBC08 /* private.cuda.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = private.cuda.hpp; path = ios/include/core/private.cuda.hpp; sourceTree = "<group>"; };
 		F14B7617ACDB15FF8A07DEF33B7DA8F7 /* SwiftCamScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftCamScanner.modulemap; sourceTree = "<group>"; };
 		F28781C563E302CA5E08B56156DF1702 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F30B0BDB17AFBD3F1B16615B0702330A /* frame_source.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = frame_source.hpp; path = ios/include/videostab/frame_source.hpp; sourceTree = "<group>"; };
+		F3D0D6E9237C8D3A9864865219DE075F /* calib3d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = calib3d.hpp; path = ios/include/calib3d.hpp; sourceTree = "<group>"; };
+		F41A721254EE01E99F5057086198525E /* motion_stabilizing.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = motion_stabilizing.hpp; path = ios/include/videostab/motion_stabilizing.hpp; sourceTree = "<group>"; };
+		F4A07976DD5E9E398773F0EBF866ABDA /* ocl_genbase.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ocl_genbase.hpp; path = ios/include/core/ocl_genbase.hpp; sourceTree = "<group>"; };
+		F50B5FF9744ADFE26DFA168ED39DCBB4 /* types.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = types.hpp; path = ios/include/core/types.hpp; sourceTree = "<group>"; };
 		F5F617B126297CB67D642632B4E0AF9F /* Pods-SwiftCamScanner_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SwiftCamScanner_Tests-dummy.m"; sourceTree = "<group>"; };
+		F613C089638D95A6DBACBC9E1F97EAAF /* fast_marching.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = fast_marching.hpp; path = ios/include/videostab/fast_marching.hpp; sourceTree = "<group>"; };
+		F7ECBCCBE941405AA463EC7C7C5A330E /* affine.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = affine.hpp; path = ios/include/core/affine.hpp; sourceTree = "<group>"; };
+		FD3FF51190BEF2F0FE34E6C2ADF4CA53 /* photo_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = photo_c.h; path = ios/include/photo/photo_c.h; sourceTree = "<group>"; };
+		FE6671792EB688F5ED02350A7C415DBA /* CropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
+		FE7623FEF2B116C4A531E9439BD7F197 /* opencv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = opencv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEE4FB9124640BBC21A574FC5E275ACD /* shape_distance.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape_distance.hpp; path = ios/include/shape/shape_distance.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0CD40813EED706D15171CD7C29D469A6 /* Frameworks */ = {
+		2050CC37F721A2386656A0094FBA7600 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50C13179C6FB5FAA2E31003E5A079ED2 /* Foundation.framework in Frameworks */,
+				1851D69309F838273798F06FDAAB8DC1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,11 +974,28 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4B50A25D21A5F9896BCA22BE1478C907 /* Frameworks */ = {
+		6DF28F37443A34C0290F1AB5EAE91014 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95EACE14BE984A5B3B1965AC683D9C14 /* Foundation.framework in Frameworks */,
+				4953A8ADAF9F5D28FFB000898CB8CF32 /* AssetsLibrary.framework in Frameworks */,
+				A97F8746A20E99D070EF0396C6450615 /* AVFoundation.framework in Frameworks */,
+				BE7A0E97964F9AF3F0720712B1DBFDF9 /* CoreGraphics.framework in Frameworks */,
+				A06AE717E970D79532199A3419C74338 /* CoreMedia.framework in Frameworks */,
+				02E6E68810FA1CD2573593A2AA6B43AF /* CoreVideo.framework in Frameworks */,
+				02B4356E3C4AC500962528C7FC998970 /* Foundation.framework in Frameworks */,
+				396D5A47FB95EF5F40004D86CEFF97A3 /* QuartzCore.framework in Frameworks */,
+				31E91D0CD84FE1DBC68669D6CAE04669 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB3A8F705F1F2C7327B4CCECBA807B3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20A04C9DD61984E59EEC71CDC39C9392 /* Foundation.framework in Frameworks */,
+				A9B7DF5B128E893E94E5C393488BBA6E /* opencv2.framework in Frameworks */,
+				0E3CDAE956204D0F0806DA632BFAAEC1 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,12 +1038,209 @@
 			path = "Target Support Files/Pods-SwiftCamScanner_Example";
 			sourceTree = "<group>";
 		};
+		3A148FE55C3FE902504CEE5D31440BBF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D33EB35E49DA825C3B93F3B32723FE2 /* libopencv2Static.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4BA3458E332569D82C272F301FD2C9FC /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
 				85B830F138572E4A0E0BA8388505594D /* SwiftCamScanner */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		5F17ED9D51A57158D578CE24C4D38FB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B5C9E2AADEEC3CB771783B0E8E9CC10 /* opencv2.framework */,
+				6EDC15A8F8E389CA776E3CD1D9357067 /* Pods_SwiftCamScanner_Example.framework */,
+				7D5934BA2FC0D74CC148994706C277FD /* Pods_SwiftCamScanner_Tests.framework */,
+				87D707CEB01405CB8B4C55B5E187D47D /* SwiftCamScanner.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6819A4B714376773BDB283D37DE04EE3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE7623FEF2B116C4A531E9439BD7F197 /* opencv2.framework */,
+				D3403B8B0DAA95B6AD0CD762D4D9349D /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6E9FD49530CD034E7460B71CB83A5EC1 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				F7ECBCCBE941405AA463EC7C7C5A330E /* affine.hpp */,
+				17D3F80EA3414C2AEA2FA9F338B1F63D /* all_indices.h */,
+				955D507BA4059D22843379AAA7E31A52 /* allocator.h */,
+				CADA325BE3AA3FB3F7BA093D12737120 /* any.h */,
+				53BFF195A2007D2AFC59F3972A54171A /* autocalib.hpp */,
+				34A4537B08B8B3419BA5242AC00E56EB /* autotuned_index.h */,
+				876F9A8A82433CA8ED61E56991251D06 /* background_segm.hpp */,
+				CE8CA64A12C6D93598D81A3A04DF1C83 /* base.hpp */,
+				DFB6210BEA998E447A977AF3831361BE /* blenders.hpp */,
+				78C56AD87FF61C001308655B6FC8066A /* bufferpool.hpp */,
+				6E5CF2461083EA545866301713258C06 /* calib3d.hpp */,
+				F3D0D6E9237C8D3A9864865219DE075F /* calib3d.hpp */,
+				147F9807A48CCF5B130E431A0315DD28 /* calib3d_c.h */,
+				8C7352A5EC18CCEF90196B68671BA111 /* camera.hpp */,
+				204E586B16015AB9972AA8669F2CCAAD /* cap_ios.h */,
+				EB2AE1815939C181B7290A08DA02764F /* composite_index.h */,
+				9900B93A03CE4F0D79DC43166668EC82 /* config.h */,
+				6590A3187FC42DCE0579FFE77B38A725 /* core.hpp */,
+				B7F2A798BD5E1D9645733BCC6ED88454 /* core.hpp */,
+				02E34C244717C03F64D16846823C78C9 /* core_c.h */,
+				0EEE3080D709F8972DC219CE87B5DA58 /* cuda.hpp */,
+				2EA143F18BE7BFF01EABC1EC86D27FFD /* cuda.hpp */,
+				01EA167C1CB3BBC981662D569F01F124 /* cuda.inl.hpp */,
+				44144AD531DF5B5C1211F85FF5A2574D /* cuda_stream_accessor.hpp */,
+				0C86174CA5B64E54AF6C7E08280355BC /* cuda_types.hpp */,
+				8DFB4B1DB800CE4FFE19C5032FB8E86C /* cvconfig.h */,
+				6EC7A9520CC1FFA8E061CE6D80C21882 /* cvdef.h */,
+				E2E4611409405BBFE9001F315E8F1FE5 /* cvstd.hpp */,
+				40313FD0C4B645D31737B535AA107460 /* cvstd.inl.hpp */,
+				DC52CE8F422C54020DBF44916C0E1B3C /* deblurring.hpp */,
+				7DD2C4575959881B4304B445E376BF39 /* defines.h */,
+				E28818192F58C1B7CC64BD4F2F224E19 /* detection_based_tracker.hpp */,
+				8AC97BD4571E13D76E5FCBDC340E6388 /* directx.hpp */,
+				1740E20CBEC3C18086896E51EC864533 /* dist.h */,
+				21270E36FE75103CAA57B22FF21729C8 /* distortion_model.hpp */,
+				9DCE9622207C160B8B01D9C94E7ACDAF /* dummy.h */,
+				95998BDED262FCE5EA9D09B7639DB76B /* dynamic_bitset.h */,
+				246BEC39A36E748E2A65BCC7EEFDBDD1 /* eigen.hpp */,
+				63FF1574DE70EADEC6BF1EE4782B848E /* emdL1.hpp */,
+				161961233C614726EF642FB43AFE83C7 /* Empty.m */,
+				16F9EBFCA5397D5B51E58FFE6EE76EE1 /* exposure_compensate.hpp */,
+				F613C089638D95A6DBACBC9E1F97EAAF /* fast_marching.hpp */,
+				363F54F340920BCC97D9634B5AD22CCC /* fast_marching_inl.hpp */,
+				9B82F679825409B6BF0A508CD5F644B8 /* fast_math.hpp */,
+				1F8EB2EF6E751ED9EFE1120706274615 /* features2d.hpp */,
+				46574ED9E2700865B4EAAE0A5FE0EBF9 /* features2d.hpp */,
+				D2473BCFA0FC5CC4B38B00EA30BE267B /* flann.hpp */,
+				7D05DE90E891C0B0B41EFF578A13AC4D /* flann.hpp */,
+				609200F87AD6D2AE8273CEC4B1A96D4F /* flann_base.hpp */,
+				F30B0BDB17AFBD3F1B16615B0702330A /* frame_source.hpp */,
+				EB5F9F0AC7C4F163594C627E3167FE5E /* general.h */,
+				B819433E1091FC18E4D3A487C53CC101 /* global_motion.hpp */,
+				41376CA89C4595E87023806A8151B894 /* ground_truth.h */,
+				437BA8A2D2F4023A92FE8C23956C5A9B /* hal.hpp */,
+				5894806B8B8415ED90B1A9DB506DAD6F /* hal.hpp */,
+				030B801DEEDD749B90EF5BA4A34B0E76 /* hdf5.h */,
+				C8728069A17B92A90652905E04EC191E /* heap.h */,
+				56D009921D2517772E12993FC1844D22 /* hierarchical_clustering_index.h */,
+				905AFB5AEE182C4A94F80D7D62673D00 /* highgui.hpp */,
+				EF00A6F175C41CBE7FE0EDF6914D59CB /* highgui.hpp */,
+				528ECC79A8A4400CFB2A2026F144D636 /* highgui_c.h */,
+				CDEFA9C26035AB06F2C8D73816E1BAB5 /* hist_cost.hpp */,
+				D5F2317724CB0C62D61E27603BCF388B /* imgcodecs.hpp */,
+				788B64E6EC6B238FBD79D53D08D0C74C /* imgcodecs.hpp */,
+				DDA4AFDDD3B6B89C0EAA8F1960DDA071 /* imgcodecs_c.h */,
+				7B66DE29755DD92F8A1AB62AE5F4E682 /* imgproc.hpp */,
+				987BE2677EDA7EE112F1A0338A9400EB /* imgproc.hpp */,
+				D074DE687225228BE9CAD62F7CA7D52B /* imgproc_c.h */,
+				6753A1F7B8E67C857002699B1CAEDFF5 /* index_testing.h */,
+				1876997960BCD607B472D5BAE2541B9D /* inpainting.hpp */,
+				7E305834DA9B591618FE15AEDD327396 /* interface.h */,
+				9EFE243B2D2CBC7F3925BD489CC629A4 /* interface.h */,
+				D011C6ECCD54ADDAD09F57569D25211F /* intrin.hpp */,
+				D0B4534D1228006D3A36BF3024D69768 /* intrin_cpp.hpp */,
+				50228EF9461C9A64364371C8550D28F3 /* intrin_neon.hpp */,
+				756DE303098A22D30F8117DB1035D61E /* intrin_sse.hpp */,
+				1AFDB9C31551B350473317FA9BFEECB3 /* ios.h */,
+				9195BDFABFE21860D75D441E17F2F5D2 /* ippasync.hpp */,
+				420A5C9B66426A50292FFA23B3DE7A40 /* kdtree_index.h */,
+				45917D2B24907D787AB9EB65F7A10DA1 /* kdtree_single_index.h */,
+				E31E21D899A02EEB32BBB981F8FBC9EF /* kmeans_index.h */,
+				EC12CAC67970B9219B288AC3A8AACA3F /* linear_index.h */,
+				BC75AE930BAF659B877E88BCB5FF9195 /* log.hpp */,
+				DB1177C7217335C745D722DCB6F32688 /* logger.h */,
+				A3C5564BCBFE6C345517D64AF13A8628 /* lsh_index.h */,
+				70D49C12F4E3896CEB944F8C6AC2E2CB /* lsh_table.h */,
+				9322EB3F4216DDD74E1171F62375C7F2 /* mat.hpp */,
+				191365234F92D09C046148EA8B270402 /* mat.inl.hpp */,
+				3A0D27A148EAF1BFEC03B79C5F57B5D9 /* matchers.hpp */,
+				59359652E6B8D09C4A72096759201C6F /* matrix.h */,
+				2AEBB7D952AF108245A49019B669DBC1 /* matx.hpp */,
+				C338F01433D09BD46D73636CBC2117CC /* miniflann.hpp */,
+				B4B69B1F85EF3AABDAD18D62DE386964 /* ml.hpp */,
+				7DD979BF0F8951CA3B97BC6D90E4B78C /* ml.hpp */,
+				0DFCC4DC233C4071128867F6E6A34A77 /* motion_core.hpp */,
+				D9E148B53244FB60C541FEB0121C48E9 /* motion_estimators.hpp */,
+				F41A721254EE01E99F5057086198525E /* motion_stabilizing.hpp */,
+				8382B42C1B54671ABADFADC9833FD6A1 /* neon_utils.hpp */,
+				76E68B27B55E8FE0F33E4810364246DD /* nn_index.h */,
+				0A5BBF6396571B3DC46AA6C8475FFD03 /* objdetect.hpp */,
+				8E965F47CF5DD95C415211EE2FD642DE /* objdetect.hpp */,
+				70E236CF81944AB8F11662EF50AA830D /* objdetect_c.h */,
+				A8D09FA1328B669A7DAB4D011C40D9B9 /* object_factory.h */,
+				D2B8C79EF07BD99C3081CC07FBE72A03 /* ocl.hpp */,
+				F4A07976DD5E9E398773F0EBF866ABDA /* ocl_genbase.hpp */,
+				642FB7A9C04687C66468FC0DA0EE0CEF /* opencv.hpp */,
+				BB4460DFFA0DE89ED61548831F155653 /* opencv_modules.hpp */,
+				8BB80BF7A37DD4055D986C21917F41DB /* opengl.hpp */,
+				9358FC0ECDF3C39938A63E7DA71C73DE /* operations.hpp */,
+				BAFBA19384CE096356B90E8F8952E7F7 /* optical_flow.hpp */,
+				45DCD024056F0809C027E37B455402F2 /* optim.hpp */,
+				8C89DBBD5685E352C56AC89B3B8E8F62 /* outlier_rejection.hpp */,
+				078F437A72770D2C3BAE9CB6013B0384 /* ovx.hpp */,
+				47F984C4A63C4E6B0912B23BCD1D7DF3 /* params.h */,
+				9BD2DB7B87960CE13F27F5D021DB1D78 /* persistence.hpp */,
+				D191E8B55E55743BDBEE5F23B6237EE2 /* photo.hpp */,
+				9C2EC2AFEBDDBCA78C3B5C39D396A5C3 /* photo.hpp */,
+				FD3FF51190BEF2F0FE34E6C2ADF4CA53 /* photo_c.h */,
+				DC67DD8FE6288D87FB2F6325B75EAEC2 /* private.hpp */,
+				F10F12AA738657F4733F34A7B82BBC08 /* private.cuda.hpp */,
+				9D43C4C6093C92A39964DD31E27EA34E /* ptr.inl.hpp */,
+				6533CF613803EA79C3AA2FBC3E9F2187 /* random.h */,
+				597F74731B49F90C3FC03D8CDD9543FC /* result_set.h */,
+				A5EB908AFAA68F56D437D2C6EAEA4470 /* ring_buffer.hpp */,
+				EFD497294DB6D238D69206417B56A8E6 /* sampling.h */,
+				6D8FB51A2C8B288F613E5FB27CA60C06 /* saturate.hpp */,
+				AB61132F42166473E5F7E0006232C5C9 /* saving.h */,
+				853A28A69C2A8B01F39CBF9DFEC81810 /* seam_finders.hpp */,
+				C4AA2372430A377ACA42D9C01C0A9C3C /* shape.hpp */,
+				642E5C2CB901FEE236EAFB194CA0205A /* shape.hpp */,
+				FEE4FB9124640BBC21A574FC5E275ACD /* shape_distance.hpp */,
+				1B070D27C9AAD51B60B73B95D1FF92A1 /* shape_transformer.hpp */,
+				26B734E2229B0F0369C10FD4D49062C5 /* simplex_downhill.h */,
+				4A60431FA2D56827A70A13D7A63E8CFA /* sse_utils.hpp */,
+				0E02E9390B86365BD13BB30302EC964A /* stabilizer.hpp */,
+				9F9B38DD9DA2DB2FB2AAFB3AB9CF33F2 /* stitching.hpp */,
+				87506F6D0EB5ABF272566DA04BE37D10 /* timelapsers.hpp */,
+				99498D627CBD516B97DFE38FB685517B /* timer.h */,
+				4603ED877E8472AC55CB905104B00D26 /* tracking.hpp */,
+				C3935447AA80ABABE2E1C7C643DC172F /* tracking_c.h */,
+				8DEB9F8616B73A5B50DE1F175CC4C44A /* traits.hpp */,
+				F50B5FF9744ADFE26DFA168ED39DCBB4 /* types.hpp */,
+				5CD90FC3199307403DDD70DABFD7DC0E /* types_c.h */,
+				543329F56B699C9D8772A1CE0FD6D79E /* types_c.h */,
+				9F4B2D7D548F53CF36216F66E5303479 /* util.hpp */,
+				6292CD8997D1132E3E047FBE7A9623B8 /* util_inl.hpp */,
+				4DC0ACA5B73A60B05B14932C2A1811FF /* utility.hpp */,
+				63AB71577607B284C6353317DB7ABC76 /* va_intel.hpp */,
+				85126FC684E57A69EC14C255A6BFE69C /* version.hpp */,
+				ACF82D4F6BACFA3EFCD6A4683D83D187 /* video.hpp */,
+				AB8D964CEBFD5262A7D24B1A83CBFC68 /* video.hpp */,
+				929ADEAF53DA0D8411A1ADE0BC1B669F /* videoio.hpp */,
+				C1A018140725338001DABC1ECA8458AF /* videoio.hpp */,
+				2C00CEBBD3959A8E758F7C44EB097CCF /* videoio_c.h */,
+				B3622D58B37D55A1F713F4D8307920B1 /* videostab.hpp */,
+				192E039373BD598F3BF7EAD1249F5078 /* warpers.hpp */,
+				27DA8516CE0B02FCC5EC062A77FEEC8D /* warpers.hpp */,
+				12324E134B9762A8F10F49BDE12AB0D3 /* warpers_inl.hpp */,
+				0B2E8EC605180BAF532E2944CC8AD3F5 /* wimage.hpp */,
+				BC4DCF75050D3F3B70849A789943C038 /* wobble_suppression.hpp */,
+				C4AD58521564C92081C43E751FF18CF6 /* world.hpp */,
+				3A148FE55C3FE902504CEE5D31440BBF /* Frameworks */,
+			);
+			name = Dynamic;
 			sourceTree = "<group>";
 		};
 		72BFBFD2E98596ABCFC3183D4415D2C7 /* Targets Support Files */ = {
@@ -150,8 +1257,9 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				4BA3458E332569D82C272F301FD2C9FC /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CD7496F8F03F03DC86AF378DF6EB32FC /* Products */,
+				6819A4B714376773BDB283D37DE04EE3 /* Frameworks */,
+				BB66D6D7CD3A9E2A9FDCAEA62E302608 /* Pods */,
+				5F17ED9D51A57158D578CE24C4D38FB8 /* Products */,
 				72BFBFD2E98596ABCFC3183D4415D2C7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
@@ -160,28 +1268,24 @@
 			isa = PBXGroup;
 			children = (
 				9E7B46F418115D8A7CF090C8AF9E923C /* Support Files */,
-				9CD3088BA0A1AE2F5944AC63C6AD5A5A /* SwiftCamScanner */,
+				FD9718C5C3577D04E22E9830DD8AFEA8 /* SwiftCamScanner */,
 			);
 			name = SwiftCamScanner;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		8E9A70C811D27BDE89C5F32CB508397D /* Classes */ = {
+		85CA81463EB55B1F121666E6833820A2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				666D3C316AB431E0D5FDF3CF9FD3B5D1 /* ReplaceMe.swift */,
+				95B7DC5BD004C74D0E7967CBAAA93FA3 /* Info.plist */,
+				0187874A775F733D1BA9C6A358ABEC1C /* OpenCV.modulemap */,
+				CBA753C1EF970729C21BB0480CFA05B0 /* OpenCV.xcconfig */,
+				87A0396750E4C91E21679D944EE06544 /* OpenCV-dummy.m */,
+				D8EA4BD00AD1CAA589C90EC2A595452A /* OpenCV-prefix.pch */,
+				31E4ED75F45554D48AFAEDB661980E3F /* OpenCV-umbrella.h */,
 			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		9CD3088BA0A1AE2F5944AC63C6AD5A5A /* SwiftCamScanner */ = {
-			isa = PBXGroup;
-			children = (
-				8E9A70C811D27BDE89C5F32CB508397D /* Classes */,
-			);
-			name = SwiftCamScanner;
-			path = SwiftCamScanner;
+			name = "Support Files";
+			path = "../Target Support Files/OpenCV";
 			sourceTree = "<group>";
 		};
 		9E7B46F418115D8A7CF090C8AF9E923C /* Support Files */ = {
@@ -198,40 +1302,236 @@
 			path = "Example/Pods/Target Support Files/SwiftCamScanner";
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		AA03576B0542D2CE50ACB790D9D7ECC1 /* OpenCV */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				6E9FD49530CD034E7460B71CB83A5EC1 /* Dynamic */,
+				85CA81463EB55B1F121666E6833820A2 /* Support Files */,
 			);
-			name = Frameworks;
+			name = OpenCV;
+			path = OpenCV;
 			sourceTree = "<group>";
 		};
-		CD7496F8F03F03DC86AF378DF6EB32FC /* Products */ = {
+		BB66D6D7CD3A9E2A9FDCAEA62E302608 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				27CAC648AA24F2F323F1E9E6C8BF2536 /* Pods_SwiftCamScanner_Example.framework */,
-				80F764D7322FF7E2FDDC91549F960F37 /* Pods_SwiftCamScanner_Tests.framework */,
-				9A9BAFCD53ADB4CAA1768C11480E3990 /* SwiftCamScanner.framework */,
+				AA03576B0542D2CE50ACB790D9D7ECC1 /* OpenCV */,
 			);
-			name = Products;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+		D3403B8B0DAA95B6AD0CD762D4D9349D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+				17694F63B49D60F0E9B7238191D9C54D /* AssetsLibrary.framework */,
+				C84BDB8918C5B4DAEDDE4238A807422D /* AVFoundation.framework */,
+				EAB610739AFADFC5D8CCC63C62177D4D /* CoreGraphics.framework */,
+				A6D00E826381B2ECD9C1202E4A168090 /* CoreMedia.framework */,
+				EA943A965D26C60BAF44DD3DA8304C04 /* CoreVideo.framework */,
+				0D5CF9B5B4818DBFFE4EAD5B30A9CB99 /* Foundation.framework */,
+				AE2735970401B55FBA8625C9472B5D61 /* QuartzCore.framework */,
+				5B2A9BF6FCD5D095D4DCE9EA99DF9440 /* UIKit.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		F9628D114C1A5CB8BE8415D83F7984F0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				62A2DAEFDC5A01926F3E8153E6982850 /* CamScanner-Bridging-Header.h */,
+				FE6671792EB688F5ED02350A7C415DBA /* CropView.swift */,
+				63345712959359C44EFFA8B1B94BB482 /* OpenCVWrapper.h */,
+				0FBD717D60A5240A53BA416A1DC6D123 /* OpenCVWrapper.mm */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		FD9718C5C3577D04E22E9830DD8AFEA8 /* SwiftCamScanner */ = {
+			isa = PBXGroup;
+			children = (
+				F9628D114C1A5CB8BE8415D83F7984F0 /* Classes */,
+			);
+			name = SwiftCamScanner;
+			path = SwiftCamScanner;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		33A0416CEA33E97B1C9F0F963A220370 /* Headers */ = {
+		38306CE653A39D640AB45E0C55D8502F /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27B4FA7A30D3AB145C1D54B4513FC7A2 /* SwiftCamScanner-umbrella.h in Headers */,
+				A471F03BC022E7E3818E90960DDEBF35 /* Pods-SwiftCamScanner_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B674C5FFC12762769FC08B99B451676 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F6ECAFB992E70DF1F6CF6EE97546937 /* affine.hpp in Headers */,
+				03DDDAE713B3C4DAF8AA40EEE7F99363 /* all_indices.h in Headers */,
+				47DD3CDE1D1DF0A0C1AAF9D969EC9878 /* allocator.h in Headers */,
+				6C80413CB661C02245AF42E91A648FC3 /* any.h in Headers */,
+				55887D351063B1F6FA7C6348767A7BE3 /* autocalib.hpp in Headers */,
+				F38DBF2160E4E3904E62BDF0303548AF /* autotuned_index.h in Headers */,
+				4F8A799F4008093BD1CDB4A93EC9CA6F /* background_segm.hpp in Headers */,
+				B6753B5037A1F1FE2EFF0C23B0117AFB /* base.hpp in Headers */,
+				6B2FAAEC9A98615068A2EC8FED80151B /* blenders.hpp in Headers */,
+				8EF90FEB565929678BFC53875C6D4713 /* bufferpool.hpp in Headers */,
+				3A310A3D1C49350EAA218E047BA62897 /* calib3d.hpp in Headers */,
+				84B3F91287F6FD6608662954EDF42A1C /* calib3d.hpp in Headers */,
+				8647E499B00863E59FCF8FD8D275C870 /* calib3d_c.h in Headers */,
+				109F66A2564B585DF6C4BA746478AFD0 /* camera.hpp in Headers */,
+				1B399F16AE916CD6B16B05AA73F53E78 /* cap_ios.h in Headers */,
+				2FF69FF8733F4BA801E043FD82F6AD79 /* composite_index.h in Headers */,
+				A52A82103F93EE6D27245DFBDF885C80 /* config.h in Headers */,
+				47B8E8BD865CBE6AF608E4261E2D39BC /* core.hpp in Headers */,
+				6BB617B63B764FB7598FBD169F5EDF0C /* core.hpp in Headers */,
+				8D5760AB309E31BFE13221D944FC9B89 /* core_c.h in Headers */,
+				00DD113636A04224AC927C2445B0A6E6 /* cuda.hpp in Headers */,
+				3A7AAFB527930F8D78A48F7974F6A5DA /* cuda.hpp in Headers */,
+				696A618B9232C18E645187561B308F7D /* cuda.inl.hpp in Headers */,
+				23825AA8F07EBE84F0526BC506D1DEA1 /* cuda_stream_accessor.hpp in Headers */,
+				C588E3B0F495022F43FF8A5EF3C27404 /* cuda_types.hpp in Headers */,
+				465152A82E79094263736258D26BD820 /* cvconfig.h in Headers */,
+				4FBDC14F7A95B39A92F3532A69F8FA51 /* cvdef.h in Headers */,
+				3C3105078DDDE164B41C36FC1814BC89 /* cvstd.hpp in Headers */,
+				5B1AD1B547BAC6920D62FD0BDACC4E4A /* cvstd.inl.hpp in Headers */,
+				DABD6F163F2F87BF56EFD854BC8393D5 /* deblurring.hpp in Headers */,
+				7922C71CBBFEB9556D9A471772D43B4F /* defines.h in Headers */,
+				78B32DF7AF01B1FFBED4D8625AC11B7C /* detection_based_tracker.hpp in Headers */,
+				98A94687E052EFDBBB70470C4D3F4377 /* directx.hpp in Headers */,
+				3F4E45F00D821FC59C71ED2F77CDB766 /* dist.h in Headers */,
+				55C4E222FEA2E4580AF0388A9ADC0DF6 /* distortion_model.hpp in Headers */,
+				2B1064581E05B3567B02244B59EDD93B /* dummy.h in Headers */,
+				7932DB08336FF4A58553A11F9A0449AA /* dynamic_bitset.h in Headers */,
+				358DA508DA886051725943B8A7B0F97D /* eigen.hpp in Headers */,
+				0093C0B53A70500D9D6ACE187C918A29 /* emdL1.hpp in Headers */,
+				889B77A84C4BB3277796DC8175E1048D /* exposure_compensate.hpp in Headers */,
+				96A73BD48284B0632593C520E9EDBE57 /* fast_marching.hpp in Headers */,
+				C68E4B58E284C4A69EA5AF69443677AB /* fast_marching_inl.hpp in Headers */,
+				49081EFB67E6B08C3B6B4A4AAE166D0E /* fast_math.hpp in Headers */,
+				C7D07F056214C7F4AD30A3594E3E552B /* features2d.hpp in Headers */,
+				7DAD4F745B054C4A34FC8ED695C65C1C /* features2d.hpp in Headers */,
+				A408BBD3E4DC9175B5AB3E1FF5938EB3 /* flann.hpp in Headers */,
+				A9CF6C9230926350D218460368883882 /* flann.hpp in Headers */,
+				74AF3304D5844FC61F2B37A7FF391FAE /* flann_base.hpp in Headers */,
+				C17C516BCBDE187A1BA0360EA8FE8BE1 /* frame_source.hpp in Headers */,
+				ADD6E57A5B5844797946262207941A43 /* general.h in Headers */,
+				C6371CE7AD2F709D81735F2A44223CDE /* global_motion.hpp in Headers */,
+				3BD981508E8A43E7DD857F4F1EB64412 /* ground_truth.h in Headers */,
+				121D98C7BE9229D41E988F23D511AE27 /* hal.hpp in Headers */,
+				EEC7773139E14EF2BBBD6740B2D78457 /* hal.hpp in Headers */,
+				31141D414F31A45F16A4785F7B6B476C /* hdf5.h in Headers */,
+				4D802254B3A8F432F12CFD893BCA04D0 /* heap.h in Headers */,
+				6D262AC80B7F9AB45E4D5807F04E9395 /* hierarchical_clustering_index.h in Headers */,
+				8A400084371ACB3B30DF4C50155F70C8 /* highgui.hpp in Headers */,
+				EB664B067A167AA0D3ED48ADB75D8E54 /* highgui.hpp in Headers */,
+				4EEAB3AB5649B389667170C1135489CB /* highgui_c.h in Headers */,
+				96ACB455D9B83452FEF795415BC37669 /* hist_cost.hpp in Headers */,
+				A839A5158DF5A010F9E52A44AA94822E /* imgcodecs.hpp in Headers */,
+				3D04D9FBEF8C963EF693B454805BA6B4 /* imgcodecs.hpp in Headers */,
+				3B5E59DC8FEC3457CEB476A3ECD4D554 /* imgcodecs_c.h in Headers */,
+				E977D05D8C8ECFF6270BBA1334C95EC9 /* imgproc.hpp in Headers */,
+				3D673CABE0200EC86D6FDA86BA10773A /* imgproc.hpp in Headers */,
+				52858E278222CD785EDBE46E8BACBA39 /* imgproc_c.h in Headers */,
+				14B62205442DD535AC2EEF5B692B1F3D /* index_testing.h in Headers */,
+				ED3AC3EBF064E3153B9E0FAF59E3E0D6 /* inpainting.hpp in Headers */,
+				C2A6AB50D7EE2F4E582C76B8915E4C41 /* interface.h in Headers */,
+				2A7C210C7F39DD07863A8E76E5D53EDD /* interface.h in Headers */,
+				ED391D14351743B3DD8B09E719194978 /* intrin.hpp in Headers */,
+				01C87CF4BC93339CCB3A35C42011178F /* intrin_cpp.hpp in Headers */,
+				8A0D42974DEE5A46CFF71E8DFC9C174B /* intrin_neon.hpp in Headers */,
+				153E948DCE50723E10709E16F66EC518 /* intrin_sse.hpp in Headers */,
+				F06C975B2F0F07A94E1DCBF53AEC7613 /* ios.h in Headers */,
+				3DDFEE8D6CA5A0E756C1A3B9119EFF53 /* ippasync.hpp in Headers */,
+				A6CBAC2DABF6DD28A9321C0FED3B9A6A /* kdtree_index.h in Headers */,
+				F367CC054280B88CA65FC19F32FC8179 /* kdtree_single_index.h in Headers */,
+				A19C118240D9DB49D29780ACE80E290E /* kmeans_index.h in Headers */,
+				C38349A0E5E2B48B907A6AE2F845B53A /* linear_index.h in Headers */,
+				0532D5273148BEEDC785D7D913C95290 /* log.hpp in Headers */,
+				D53BEE9042298BF5CA984F2CFF99D842 /* logger.h in Headers */,
+				C8F1AE34006F067EF82BE5E3329CE2A2 /* lsh_index.h in Headers */,
+				04015DD3D8B7797C30D477D0AD2A10BB /* lsh_table.h in Headers */,
+				CCDFFFBE395D18949D9173A59C123C81 /* mat.hpp in Headers */,
+				EB214AF1F52BCE16724FD569F92BE93E /* mat.inl.hpp in Headers */,
+				8721A5437D7573A40821A133F1A8ED47 /* matchers.hpp in Headers */,
+				2CBFA4DB494399EA61507CB6065C11E2 /* matrix.h in Headers */,
+				5074CA7C12B9D9D337CBF985A5971A53 /* matx.hpp in Headers */,
+				30B7CE11C4DD8E722EFB63BB2A207ADD /* miniflann.hpp in Headers */,
+				0313F4FB1D0EE62125885E49DAFCDF6B /* ml.hpp in Headers */,
+				237C19D1E43CE64755E4A9BB531BB4D5 /* ml.hpp in Headers */,
+				486721DACCBD6167144F071C58FE0FF6 /* motion_core.hpp in Headers */,
+				3E9CD6A692168C5D67F76E693C4E8DFC /* motion_estimators.hpp in Headers */,
+				2DDE40C991B1A2AC94A26EC888CFB319 /* motion_stabilizing.hpp in Headers */,
+				3DDBA9BE2908F33AC9D59258C185CB1C /* neon_utils.hpp in Headers */,
+				F0AA32608189CD749849DABA7086B5E3 /* nn_index.h in Headers */,
+				23209A55C051B8AD76EB60FA8CBF4AC3 /* objdetect.hpp in Headers */,
+				E04D9A2250C55E6535395E2F1D9F0665 /* objdetect.hpp in Headers */,
+				2E204506D8AE576F0DC5FF38F839EFBF /* objdetect_c.h in Headers */,
+				848956B20CAFA6FFF52F3DE01EE97195 /* object_factory.h in Headers */,
+				C00BC1E0A499788A224E1C0B97D3C793 /* ocl.hpp in Headers */,
+				DEB5A24B91EC11E0EE1423D0B8E6E627 /* ocl_genbase.hpp in Headers */,
+				BD9C8C35305A4AD578EB1F924DE2BFE3 /* OpenCV-umbrella.h in Headers */,
+				5909E5787737C44BEA3A6D059084D3DE /* opencv.hpp in Headers */,
+				0666F206974A4EAB6BC9F0516BB93725 /* opencv_modules.hpp in Headers */,
+				34CF9CDE2AFEC534A1784AD2D1E1BD3B /* opengl.hpp in Headers */,
+				75A9F87AF3040B48F48F26ABA5E3CC84 /* operations.hpp in Headers */,
+				4A5C7323DDF921EEA10432AEC79C91A7 /* optical_flow.hpp in Headers */,
+				2A2BDCF6184088E2AC8A7FC826010CCB /* optim.hpp in Headers */,
+				BF32D8C69AD1BF8092647DBB97D54A5B /* outlier_rejection.hpp in Headers */,
+				75CB34BE6621CF131C601BAFB9009992 /* ovx.hpp in Headers */,
+				32F659496DF54EB06831CCE60E164F10 /* params.h in Headers */,
+				AE32104C5C9D5AF94D5437364ED66830 /* persistence.hpp in Headers */,
+				78EA0EA92593B87F3C70A64A52DD7BDB /* photo.hpp in Headers */,
+				D99292747126D372E2A8A3CEF36F6FEC /* photo.hpp in Headers */,
+				993BD7564716B46C785723D19ECD0165 /* photo_c.h in Headers */,
+				990B257723FC406889DD5109DE161D52 /* private.cuda.hpp in Headers */,
+				438DCBEACDA122A412CF1B334E7BE7F2 /* private.hpp in Headers */,
+				685A1F06A3B8127FF8864BC743F658A0 /* ptr.inl.hpp in Headers */,
+				9A4B77C6118CBB93D34649113BE040F8 /* random.h in Headers */,
+				532EAA5C2AA1B13C1B51175C7994FC96 /* result_set.h in Headers */,
+				E4DE283BB347C615060D72C6013DF071 /* ring_buffer.hpp in Headers */,
+				1E8920A34A1644E8AC22A888EADEC440 /* sampling.h in Headers */,
+				C0A467F8EBA68A78D55EC29FD12D49DD /* saturate.hpp in Headers */,
+				1306C518FA2E2B0E726C834948838D5F /* saving.h in Headers */,
+				2B3FD9B88B92F425D1A66228D23BC396 /* seam_finders.hpp in Headers */,
+				562429055826F548C8A738D9ACE7AD34 /* shape.hpp in Headers */,
+				263D1C7DE1EF28C3CC620379915FA84D /* shape.hpp in Headers */,
+				7260D8CF3A77F6DC426FBF87540109AF /* shape_distance.hpp in Headers */,
+				9ED0EF30F20CE07D7783A173F0963074 /* shape_transformer.hpp in Headers */,
+				CEC43218FE2CCEC9107753DAFF038892 /* simplex_downhill.h in Headers */,
+				6AE59138F4345478448E82D4BF0C0F09 /* sse_utils.hpp in Headers */,
+				3FAD28687893F79A15FDB3805C684E72 /* stabilizer.hpp in Headers */,
+				186DD91227725735CBC33289D4932618 /* stitching.hpp in Headers */,
+				AE38BA4F8441F03B515E697868B7AC78 /* timelapsers.hpp in Headers */,
+				EBC87B03166B71D3A4A2580BB2BB361A /* timer.h in Headers */,
+				D0D72952A0CB0FFCF3E0EA214D016D3F /* tracking.hpp in Headers */,
+				D27BFA6452313977BC57A0AFAC2F55B4 /* tracking_c.h in Headers */,
+				F9A37460FA43C0BDCCA88ABA9C9AEA17 /* traits.hpp in Headers */,
+				E9AECAE456201F54EF2E8AEF9FA9C6EE /* types.hpp in Headers */,
+				BF7C894FC1ABF06A70E70D7378C23EEB /* types_c.h in Headers */,
+				DEF004F1E922D195AE29FAD57D87581E /* types_c.h in Headers */,
+				829E5EA3455F2CDF9CB7CCB32740A188 /* util.hpp in Headers */,
+				75A1A0EC217118888CCBD2D42FFC8D43 /* util_inl.hpp in Headers */,
+				8F1A711E6ACD4197DF44CB202DE7963A /* utility.hpp in Headers */,
+				72A487AD00B46DED673963FF9C31487D /* va_intel.hpp in Headers */,
+				F2FCF8B6669E22EB563AE485287B0372 /* version.hpp in Headers */,
+				7CD026DA01CD75FEAB0B70AD574F2C83 /* video.hpp in Headers */,
+				F6A327EA57304A8D75452F3C421937C7 /* video.hpp in Headers */,
+				37808D1D44F7E6DBEF20D7B3C0A5CA20 /* videoio.hpp in Headers */,
+				FE5B361190BDC775F290EE7D51E11649 /* videoio.hpp in Headers */,
+				53D8D5C64B55632D91984D193286A49E /* videoio_c.h in Headers */,
+				90BD7BEC1F8FA86F4F93EF8240D380A2 /* videostab.hpp in Headers */,
+				FA2C7EF7DED55936803DB9B2AD9CA486 /* warpers.hpp in Headers */,
+				533F9EA3DAE45336ECE1329F393ADF03 /* warpers.hpp in Headers */,
+				86A913CD5597ADD51C6D32575F6790E3 /* warpers_inl.hpp in Headers */,
+				78C18355E3454FDD767B82F4A0DDE03B /* wimage.hpp in Headers */,
+				47DA36ADA4B1D4FAF7935EE1C02696C2 /* wobble_suppression.hpp in Headers */,
+				B2869D260AA268587AD0AF291453A219 /* world.hpp in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,32 +1543,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F3FAC1C842623F997FC7E12435F91096 /* Headers */ = {
+		9F10FBB94DBDB2FD8D59E19E0B1DE356 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				59109A0F9205560027B117301B084FBE /* Pods-SwiftCamScanner_Example-umbrella.h in Headers */,
+				9E25AAA01D2D03231FE277E461ED00C2 /* CamScanner-Bridging-Header.h in Headers */,
+				0A8B4B8D5EDBE056AEC3786FF828AD5C /* OpenCVWrapper.h in Headers */,
+				ED3C180338AF5AD996C3CDF1D019D91A /* SwiftCamScanner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		546D1AA34B2EF97CB12F943A3FC3EF00 /* SwiftCamScanner */ = {
+		605D9B654FBA4084DB832389CB3EEB51 /* OpenCV */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4B355F776F2CFAD6EE291AAEDE155AB2 /* Build configuration list for PBXNativeTarget "SwiftCamScanner" */;
+			buildConfigurationList = A95A33185D4591946D6311AFD74C0B9F /* Build configuration list for PBXNativeTarget "OpenCV" */;
 			buildPhases = (
-				6B7912E8EDC6920CBB5238A9F731F421 /* Sources */,
-				4B50A25D21A5F9896BCA22BE1478C907 /* Frameworks */,
-				33A0416CEA33E97B1C9F0F963A220370 /* Headers */,
+				0EF51BDDEA17BEC295F94B94B19FF27A /* Sources */,
+				6DF28F37443A34C0290F1AB5EAE91014 /* Frameworks */,
+				3B674C5FFC12762769FC08B99B451676 /* Headers */,
+				D8C90FD0D3388B6332FA3143DB1F9067 /* Copy . Public Headers */,
+				3B91DF0FBD864C72DF3419FC109A41B9 /* Copy calib3d Public Headers */,
+				4F422BDE9841561F324F2F4D699D83A1 /* Copy core Public Headers */,
+				023A39788044D56AA23FFF11372B57D3 /* Copy core/hal Public Headers */,
+				7E474777A9E0DB9DFEE438FAA34B17EC /* Copy features2d Public Headers */,
+				3C507D1AECA60860C0ED3A0E42CC6048 /* Copy flann Public Headers */,
+				7C73E904CB570FEFC305B70D616BC714 /* Copy highgui Public Headers */,
+				F9C6F246A14443EA9A74E3B5ED5C2AB1 /* Copy imgcodecs Public Headers */,
+				E6C63990E6FA5FBC0BB45A382E5D0556 /* Copy imgproc/detail Public Headers */,
+				95AA2EDA01505A4634582D7361ED3909 /* Copy imgproc/hal Public Headers */,
+				A30EB074F33504FD35DA98EE74C2F89B /* Copy imgproc Public Headers */,
+				BBA0F79A6DE3C0FDB17BFE96302DABC7 /* Copy ml Public Headers */,
+				683FA8F8205362AC39EA38AE9D340579 /* Copy objdetect Public Headers */,
+				5D39CEB795E618B91773EA26B86BE174 /* Copy photo Public Headers */,
+				EE3486BEC324F21C4078E31E1F246FD6 /* Copy shape Public Headers */,
+				B791022AF4FBE3A94F8EDA20029D6DC3 /* Copy stitching/detail Public Headers */,
+				019A4C63D7477783E46DA92A2EDA557F /* Copy stitching Public Headers */,
+				41975F27191B58D5C529FC2352BA1C48 /* Copy video Public Headers */,
+				2D0D9DFECC456520BC21D3A2BABAC38E /* Copy videoio Public Headers */,
+				CA63155575A9603A951C8D7AE4A9E85C /* Copy videostab Public Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SwiftCamScanner;
-			productName = SwiftCamScanner;
-			productReference = 9A9BAFCD53ADB4CAA1768C11480E3990 /* SwiftCamScanner.framework */;
+			name = OpenCV;
+			productName = OpenCV;
+			productReference = 7B5C9E2AADEEC3CB771783B0E8E9CC10 /* opencv2.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6FCCC323C01036F90DB74F33C194994F /* Pods-SwiftCamScanner_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05E53466DC61CE70521C1F8F8377CA56 /* Build configuration list for PBXNativeTarget "Pods-SwiftCamScanner_Example" */;
+			buildPhases = (
+				2E284AA0843F1EAB8F0A9D44C962ECC4 /* Sources */,
+				2050CC37F721A2386656A0094FBA7600 /* Frameworks */,
+				38306CE653A39D640AB45E0C55D8502F /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3FAEE60C1D3BDD9BF8FE61BBA1FBAD2 /* PBXTargetDependency */,
+				41E8D24D6A7734FD6BF4E493C64795EB /* PBXTargetDependency */,
+			);
+			name = "Pods-SwiftCamScanner_Example";
+			productName = "Pods-SwiftCamScanner_Example";
+			productReference = 6EDC15A8F8E389CA776E3CD1D9357067 /* Pods_SwiftCamScanner_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		B38D3953B1E393DA33194ACF91313FC0 /* Pods-SwiftCamScanner_Tests */ = {
@@ -285,25 +1626,25 @@
 			);
 			name = "Pods-SwiftCamScanner_Tests";
 			productName = "Pods-SwiftCamScanner_Tests";
-			productReference = 80F764D7322FF7E2FDDC91549F960F37 /* Pods_SwiftCamScanner_Tests.framework */;
+			productReference = 7D5934BA2FC0D74CC148994706C277FD /* Pods_SwiftCamScanner_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		EF04AE81F5E0B77D03C56DCB48A25437 /* Pods-SwiftCamScanner_Example */ = {
+		F1852F68918D12D72D597804B092C29E /* SwiftCamScanner */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A417A730C82E34766AD198A393D62844 /* Build configuration list for PBXNativeTarget "Pods-SwiftCamScanner_Example" */;
+			buildConfigurationList = F5ED9DFE38F7E6E2B8EADDB0238AF6C0 /* Build configuration list for PBXNativeTarget "SwiftCamScanner" */;
 			buildPhases = (
-				C55B528059884E630A651383D6451AAC /* Sources */,
-				0CD40813EED706D15171CD7C29D469A6 /* Frameworks */,
-				F3FAC1C842623F997FC7E12435F91096 /* Headers */,
+				830661CBF5D323B8C515A23F5F311C70 /* Sources */,
+				DB3A8F705F1F2C7327B4CCECBA807B3D /* Frameworks */,
+				9F10FBB94DBDB2FD8D59E19E0B1DE356 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E0BBF6F0C0DF17FB42E32F1996204747 /* PBXTargetDependency */,
+				DB0BBA0AE690807656C4E844CC29AB22 /* PBXTargetDependency */,
 			);
-			name = "Pods-SwiftCamScanner_Example";
-			productName = "Pods-SwiftCamScanner_Example";
-			productReference = 27CAC648AA24F2F323F1E9E6C8BF2536 /* Pods_SwiftCamScanner_Example.framework */;
+			name = SwiftCamScanner;
+			productName = SwiftCamScanner;
+			productReference = 87D707CEB01405CB8B4C55B5E187D47D /* SwiftCamScanner.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -323,24 +1664,43 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CD7496F8F03F03DC86AF378DF6EB32FC /* Products */;
+			productRefGroup = 5F17ED9D51A57158D578CE24C4D38FB8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF04AE81F5E0B77D03C56DCB48A25437 /* Pods-SwiftCamScanner_Example */,
+				605D9B654FBA4084DB832389CB3EEB51 /* OpenCV */,
+				6FCCC323C01036F90DB74F33C194994F /* Pods-SwiftCamScanner_Example */,
 				B38D3953B1E393DA33194ACF91313FC0 /* Pods-SwiftCamScanner_Tests */,
-				546D1AA34B2EF97CB12F943A3FC3EF00 /* SwiftCamScanner */,
+				F1852F68918D12D72D597804B092C29E /* SwiftCamScanner */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6B7912E8EDC6920CBB5238A9F731F421 /* Sources */ = {
+		0EF51BDDEA17BEC295F94B94B19FF27A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8940A26749116646EBD2FD7A9066A748 /* ReplaceMe.swift in Sources */,
-				111A5ADEEF89C443B228A45988F2A634 /* SwiftCamScanner-dummy.m in Sources */,
+				AFB0AC9B2535B637358BDD72CD56B8DB /* Empty.m in Sources */,
+				A1CF672FFC198501049E31D9852C28D1 /* OpenCV-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E284AA0843F1EAB8F0A9D44C962ECC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A81CAFF5EF64FEA8DE97E822493F5755 /* Pods-SwiftCamScanner_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		830661CBF5D323B8C515A23F5F311C70 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E664DA45064719B50C90FE9726D2A1F /* CropView.swift in Sources */,
+				407D14FDCD81647B875C4C7CEB1E49B5 /* OpenCVWrapper.mm in Sources */,
+				71494120D3160BC0A1CE0A0AB1DF6329 /* SwiftCamScanner-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,27 +1712,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C55B528059884E630A651383D6451AAC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E00EFBDEA20F60A109A1824A07E27E56 /* Pods-SwiftCamScanner_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E0BBF6F0C0DF17FB42E32F1996204747 /* PBXTargetDependency */ = {
+		41E8D24D6A7734FD6BF4E493C64795EB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftCamScanner;
-			target = 546D1AA34B2EF97CB12F943A3FC3EF00 /* SwiftCamScanner */;
-			targetProxy = F1F2BB120C3DE93EF2BDF2CEC75B1086 /* PBXContainerItemProxy */;
+			target = F1852F68918D12D72D597804B092C29E /* SwiftCamScanner */;
+			targetProxy = 5E69E1A03E46723D3C6097153B1D5FC1 /* PBXContainerItemProxy */;
+		};
+		C3FAEE60C1D3BDD9BF8FE61BBA1FBAD2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenCV;
+			target = 605D9B654FBA4084DB832389CB3EEB51 /* OpenCV */;
+			targetProxy = ED56AFBEF50773491EC32E0F0589170A /* PBXContainerItemProxy */;
+		};
+		DB0BBA0AE690807656C4E844CC29AB22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = OpenCV;
+			target = 605D9B654FBA4084DB832389CB3EEB51 /* OpenCV */;
+			targetProxy = 4905CAFC58708D0DE5E6783DF8F197E2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		03D3A2169C87E079AF1E8E5475D58553 /* Debug */ = {
+		0C870DE9980E7F49CF480BB935DBBE67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBA753C1EF970729C21BB0480CFA05B0 /* OpenCV.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OpenCV/OpenCV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenCV/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpenCV/OpenCV.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = opencv2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		13F1785D13399DDBB4520B7FB07A3B5E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */;
 			buildSettings = {
@@ -455,48 +1852,9 @@
 			};
 			name = Debug;
 		};
-		4419EB5DBCEA09BE025D1252CCB2053F /* Debug */ = {
+		5BFA1C166AF17ADF9AA1354ABE2B1BBF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4C0D43C9281C6B2BEDE0643DF0F2F7BC /* Pods-SwiftCamScanner_Example.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Pods-SwiftCamScanner_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SwiftCamScanner_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		558B8A426ADDA4B7D42B1BE2CC0F2CAE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */;
+			baseConfigurationReference = 3DAAC99F0ED9B91CE5FDCD6C3182486C /* Pods-SwiftCamScanner_Example.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -510,14 +1868,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftCamScanner/SwiftCamScanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftCamScanner/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftCamScanner/SwiftCamScanner.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Pods-SwiftCamScanner_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftCamScanner;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftCamScanner_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -527,6 +1889,39 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		624FBE401DA3A0CBBE2C7F4DBDFAF79A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBA753C1EF970729C21BB0480CFA05B0 /* OpenCV.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/OpenCV/OpenCV-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/OpenCV/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/OpenCV/OpenCV.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = opencv2;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		6A6BB32132E79AA5D8B2719D7FC507FE /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -608,9 +2003,9 @@
 			};
 			name = Release;
 		};
-		B5ABD0992D01BBBA12254017D170C307 /* Release */ = {
+		D022C1187AE191A6DCD0D7D993B34411 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DAAC99F0ED9B91CE5FDCD6C3182486C /* Pods-SwiftCamScanner_Example.release.xcconfig */;
+			baseConfigurationReference = C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -624,18 +2019,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftCamScanner/SwiftCamScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftCamScanner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Pods-SwiftCamScanner_Example.modulemap";
+				MODULEMAP_FILE = "Target Support Files/SwiftCamScanner/SwiftCamScanner.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_SwiftCamScanner_Example;
+				PRODUCT_NAME = SwiftCamScanner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -645,6 +2036,45 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		E978E714E4602496448B60D732DB2FF0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C0D43C9281C6B2BEDE0643DF0F2F7BC /* Pods-SwiftCamScanner_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SwiftCamScanner_Example/Pods-SwiftCamScanner_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_SwiftCamScanner_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		FD5B0359013D7639521BAD1257FD4EE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -685,20 +2115,20 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		05E53466DC61CE70521C1F8F8377CA56 /* Build configuration list for PBXNativeTarget "Pods-SwiftCamScanner_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E978E714E4602496448B60D732DB2FF0 /* Debug */,
+				5BFA1C166AF17ADF9AA1354ABE2B1BBF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
 				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		4B355F776F2CFAD6EE291AAEDE155AB2 /* Build configuration list for PBXNativeTarget "SwiftCamScanner" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				03D3A2169C87E079AF1E8E5475D58553 /* Debug */,
-				558B8A426ADDA4B7D42B1BE2CC0F2CAE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -712,11 +2142,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A417A730C82E34766AD198A393D62844 /* Build configuration list for PBXNativeTarget "Pods-SwiftCamScanner_Example" */ = {
+		A95A33185D4591946D6311AFD74C0B9F /* Build configuration list for PBXNativeTarget "OpenCV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				4419EB5DBCEA09BE025D1252CCB2053F /* Debug */,
-				B5ABD0992D01BBBA12254017D170C307 /* Release */,
+				624FBE401DA3A0CBBE2C7F4DBDFAF79A /* Debug */,
+				0C870DE9980E7F49CF480BB935DBBE67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5ED9DFE38F7E6E2B8EADDB0238AF6C0 /* Build configuration list for PBXNativeTarget "SwiftCamScanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13F1785D13399DDBB4520B7FB07A3B5E /* Debug */,
+				D022C1187AE191A6DCD0D7D993B34411 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

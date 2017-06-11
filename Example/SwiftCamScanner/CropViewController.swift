@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftCamScanner
 
 class CropViewController: UIViewController {
     @IBOutlet weak var cropView: CropView!
