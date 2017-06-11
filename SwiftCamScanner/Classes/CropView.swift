@@ -24,6 +24,7 @@ public class CropView: UIView {
     var m:Double = 0
     var newImageView = UIImageView()
     let border = CAShapeLayer()
+    var oldPoint = CGPoint(x: 0, y: 0)
     
     
     public func setUpImage(image : UIImage){
@@ -130,21 +131,25 @@ public class CropView: UIView {
         if(gesture.state == UIGestureRecognizerState.began){
             selectedIndex = nil
             //Setup the point
-            for i in (0...7) {
-                let newFrame = CGRect(x: cropCircles[i].frame.origin.x, y: cropCircles[i].frame.origin.y, width: cropCircles[i].frame.width + 60, height: cropCircles[i].frame.height + 60)
+            for i in stride(from: 1, to: 8, by: 2){
+                let newFrame = CGRect(x: cropCircles[i].center.x, y: cropCircles[i].center.y, width: cropCircles[i].frame.width, height: cropCircles[i].frame.height)
                 if(newFrame.contains(point)){
                     selectedIndex = i
+                    var pt1 = cropCircles[selectedIndex! - 1].center
+                    var pt2 = cropCircles[(selectedIndex! == 7 ? 0 : selectedIndex! + 1)].center
+                    m = ((Double)(pt1.y - pt2.y)/(Double)(pt2.x - pt1.x))
                     cropCircles[selectedIndex!].backgroundColor = UIColor.blue
-                    if((selectedIndex)! % 2 != 0){
-                        var pt1 = cropCircles[selectedIndex! - 1].center
-                        var pt2 = cropCircles[(selectedIndex! == 7 ? 0 : selectedIndex! + 1)].center
-                        m = ((Double)(pt1.y - pt2.y)/(Double)(pt2.x - pt1.x))
-                    }
-                    
-                    
                     break
                 }
             }
+            if(selectedIndex == nil){
+               selectedIndex = getClosestCorner(point: point)
+                oldPoint = point
+                cropCircles[selectedIndex!].backgroundColor = UIColor.blue
+            }
+                    
+            
+            
             
         }
         if let selectedIndex = selectedIndex {
@@ -162,10 +167,13 @@ public class CropView: UIView {
                     pt2.center = pt2New
                 }
             }else{
-                let boundedX = min(max(point.x, cropImageView.frame.origin.x),(cropImageView.frame.origin.x+cropImageView.frame.size.width))
-                let boundedY = min(max(point.y, cropImageView.frame.origin.y),(cropImageView.frame.origin.y+cropImageView.frame.size.height))
-                let newPoint = CGPoint(x: boundedX, y: boundedY)
-                cropCircles[selectedIndex].center = newPoint
+                let edge = cropCircles[selectedIndex].center
+                let newPoint = CGPoint(x: edge.x + (point.x - oldPoint.x) , y: edge.y + (point.y - oldPoint.y) )
+                oldPoint = point
+                let boundedX = min(max(newPoint.x, cropImageView.frame.origin.x),(cropImageView.frame.origin.x+cropImageView.frame.size.width))
+                let boundedY = min(max(newPoint.y, cropImageView.frame.origin.y),(cropImageView.frame.origin.y+cropImageView.frame.size.height))
+                let finalPoint = CGPoint(x: boundedX, y: boundedY)
+                cropCircles[selectedIndex].center = finalPoint
             }
             moveNonCornerPoints()
             redrawBorderRectangle()
@@ -182,6 +190,19 @@ public class CropView: UIView {
             checkQuadrilateral()
             
         }
+    }
+    
+    private func getClosestCorner(point: CGPoint) -> Int{
+        var index = 0
+        var minDistance = CGFloat.greatestFiniteMagnitude
+        for i in stride(from: 0, to: 7, by: 2){
+        let distance = distanceBetweenPoints(point1: point, point2: cropCircles[i].center)
+            if(distance < minDistance){
+                minDistance = distance
+                index = i
+            }
+        }
+        return index;
     }
     
     

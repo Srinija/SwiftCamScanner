@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -11,7 +12,7 @@
         <!--Camera View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="CameraViewController" customModule="CamScanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CameraViewController" customModule="SwiftCamScanner_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-3T-hcN" userLabel="cameraView" customClass="CameraView" customModule="CamScanner" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pem-3T-hcN" userLabel="cameraView" customClass="CameraView" customModule="SwiftCamScanner_Example" customModuleProvider="target">
                                 <rect key="frame" x="-16" y="20" width="391" height="647"/>
                             </view>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ydt-X9-iJW">
@@ -116,7 +117,7 @@
         <!--Crop View-->
         <scene sceneID="pKk-gY-zDR">
             <objects>
-                <viewController id="sDq-qS-ygI" customClass="CropViewController" customModule="CamScanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sDq-qS-ygI" customClass="CropViewController" customModule="SwiftCamScanner_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="wnH-RI-jQ7"/>
                         <viewControllerLayoutGuide type="bottom" id="UwL-CX-jLo"/>
@@ -125,17 +126,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYW-zC-oza" customClass="CropView" customModule="CamScanner" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KYW-zC-oza" customClass="CropView" customModule="SwiftCamScanner">
+                                <rect key="frame" x="20" y="84" width="335" height="563"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="KYW-zC-oza" firstAttribute="leading" secondItem="aUQ-m9-0IP" secondAttribute="leading" id="18b-ul-dLc"/>
-                            <constraint firstAttribute="trailing" secondItem="KYW-zC-oza" secondAttribute="trailing" id="D7i-aB-3LF"/>
-                            <constraint firstItem="UwL-CX-jLo" firstAttribute="top" secondItem="KYW-zC-oza" secondAttribute="bottom" id="VSr-FF-ZYM"/>
-                            <constraint firstItem="KYW-zC-oza" firstAttribute="top" secondItem="wnH-RI-jQ7" secondAttribute="bottom" id="zHf-iW-IjW"/>
+                            <constraint firstItem="KYW-zC-oza" firstAttribute="leading" secondItem="aUQ-m9-0IP" secondAttribute="leading" constant="20" id="18b-ul-dLc"/>
+                            <constraint firstAttribute="trailing" secondItem="KYW-zC-oza" secondAttribute="trailing" constant="20" id="D7i-aB-3LF"/>
+                            <constraint firstItem="UwL-CX-jLo" firstAttribute="top" secondItem="KYW-zC-oza" secondAttribute="bottom" constant="20" id="VSr-FF-ZYM"/>
+                            <constraint firstItem="KYW-zC-oza" firstAttribute="top" secondItem="wnH-RI-jQ7" secondAttribute="bottom" constant="20" id="zHf-iW-IjW"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Crop View" id="9v4-Wb-S9S">
@@ -159,7 +160,7 @@
         <!--Image View Controller-->
         <scene sceneID="a36-ZJ-Geo">
             <objects>
-                <viewController storyboardIdentifier="imageViewController" id="KyD-1p-A6c" customClass="ImageViewController" customModule="CamScanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="imageViewController" id="KyD-1p-A6c" customClass="ImageViewController" customModule="SwiftCamScanner_Example" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="240-i3-43A"/>
                         <viewControllerLayoutGuide type="bottom" id="ibZ-5s-esp"/>
