@@ -13,7 +13,7 @@ it, simply add the following line to your Podfile:
 ## CocoaPods
 ```ruby
 pod "SwiftCamScanner"
-``  
+```
 
 ##Author
 
