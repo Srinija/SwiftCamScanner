@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="120-zr-lMM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="120-zr-lMM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -169,14 +170,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LSJ-BR-ecM">
-                                <rect key="frame" x="42" y="168" width="291" height="239"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LSJ-BR-ecM">
+                                <rect key="frame" x="36" y="84" width="303" height="499"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="LSJ-BR-ecM" firstAttribute="centerX" secondItem="66e-uQ-J8m" secondAttribute="centerX" id="8zs-W2-Rid"/>
                             <constraint firstItem="LSJ-BR-ecM" firstAttribute="centerY" secondItem="66e-uQ-J8m" secondAttribute="centerY" id="RRC-uU-TBZ"/>
+                            <constraint firstItem="LSJ-BR-ecM" firstAttribute="leading" secondItem="66e-uQ-J8m" secondAttribute="leadingMargin" constant="20" id="WSd-Kp-HE8"/>
+                            <constraint firstItem="LSJ-BR-ecM" firstAttribute="top" secondItem="240-i3-43A" secondAttribute="bottom" constant="20" id="hp7-dl-37U"/>
                         </constraints>
                     </view>
                     <connections>

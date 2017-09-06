@@ -65,7 +65,7 @@ class CameraView: UIView {
     }
 
     func videoQueue() -> DispatchQueue {
-        return DispatchQueue.global(priority: DispatchQueue.GlobalQueuePriority.default)
+        return DispatchQueue.global(qos: DispatchQoS.QoSClass.default)
     }
     
     // MARK: Focus Methods
@@ -125,7 +125,7 @@ class CameraView: UIView {
                 let image = UIImage(data: imageData!)
                 completionHandler(image)
             } else {
-                print("Error capturing photo: \(error?.localizedDescription)")
+                print("Error capturing photo: \(String(describing: error?.localizedDescription))")
             }
         }
     }

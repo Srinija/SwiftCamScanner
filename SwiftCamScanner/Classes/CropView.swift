@@ -14,7 +14,6 @@ public class CropView: UIView {
     
     
     
-    
     var cropPoints = [CGPoint]()
     var cropCircles = [UIView]()
     var cropFrame: CGRect!
@@ -36,13 +35,10 @@ public class CropView: UIView {
             cropFrame = cropImageView.frame
             setUpCropRegion()
             setUpGestureRecognizer()
-            print("Dimensions: \(self.frame.width), \(self.frame.height)")
             
         }
         
     }
-    
-    
     
     private func setUpCropRegion(){
         addBorderRectangle()
@@ -52,8 +48,7 @@ public class CropView: UIView {
         let width = cropImageView.frame.width
         let height = cropImageView.frame.height
         
-        var points = OpenCVWrapper.getLargestSquarePoints(cropImageView.image, cropImageView.frame.size)
-        print(points)
+        let points = OpenCVWrapper.getLargestSquarePoints(cropImageView.image, cropImageView.frame.size)
         var endPoints = [CGPoint]()
         if let points = points{
             for i in (0...3) {
@@ -135,31 +130,24 @@ public class CropView: UIView {
                 let newFrame = CGRect(x: cropCircles[i].center.x, y: cropCircles[i].center.y, width: cropCircles[i].frame.width, height: cropCircles[i].frame.height)
                 if(newFrame.contains(point)){
                     selectedIndex = i
-                    var pt1 = cropCircles[selectedIndex! - 1].center
-                    var pt2 = cropCircles[(selectedIndex! == 7 ? 0 : selectedIndex! + 1)].center
+                    let pt1 = cropCircles[selectedIndex! - 1].center
+                    let pt2 = cropCircles[(selectedIndex! == 7 ? 0 : selectedIndex! + 1)].center
                     m = ((Double)(pt1.y - pt2.y)/(Double)(pt2.x - pt1.x))
                     cropCircles[selectedIndex!].backgroundColor = UIColor.blue
                     break
                 }
             }
             if(selectedIndex == nil){
-               selectedIndex = getClosestCorner(point: point)
+                selectedIndex = getClosestCorner(point: point)
                 oldPoint = point
                 cropCircles[selectedIndex!].backgroundColor = UIColor.blue
             }
-                    
-            
-            
-            
         }
         if let selectedIndex = selectedIndex {
-            
-            
             if((selectedIndex) % 2 != 0){
                 //Do complex stuff
-                print("New point: x: \(point.x), y: \(point.y)")
-                var pt1 = cropCircles[selectedIndex - 1]
-                var pt2 = cropCircles[(selectedIndex == 7 ? 0 : selectedIndex + 1)]
+                let pt1 = cropCircles[selectedIndex - 1]
+                let pt2 = cropCircles[(selectedIndex == 7 ? 0 : selectedIndex + 1)]
                 let pt1New = getNewPoint(pt1: pt1.center,pt2: pt2.center,point: point,m: m)
                 let pt2New = getNewPoint(pt1: pt2.center, pt2: pt1.center, point: point,m: m)
                 if(isInsideFrame(pt: pt1New) && isInsideFrame(pt: pt2New)){
@@ -196,7 +184,7 @@ public class CropView: UIView {
         var index = 0
         var minDistance = CGFloat.greatestFiniteMagnitude
         for i in stride(from: 0, to: 7, by: 2){
-        let distance = distanceBetweenPoints(point1: point, point2: cropCircles[i].center)
+            let distance = distanceBetweenPoints(point1: point, point2: cropCircles[i].center)
             if(distance < minDistance){
                 minDistance = distance
                 index = i
@@ -215,13 +203,10 @@ public class CropView: UIView {
         //Are B and D on either sides of AC
         if(checkIfOppositeSides(p1: B,p2: D,l1: A,l2: C) && checkIfOppositeSides(p1: A,p2: C,l1: B,l2: D)){
             border.strokeColor = borderColor
-            print("CONVEX QUAD")
         }else if(!checkIfOppositeSides(p1: B,p2: D,l1: A,l2: C) && !checkIfOppositeSides(p1: A,p2: C,l1: B,l2: D)){
-            print("Intersection HAPPENED")
             border.strokeColor = borderColor
             reorderEndPoints()
         } else{
-            print("CONCAVE")
             border.strokeColor = UIColor.red.cgColor
         }
     }
@@ -241,7 +226,7 @@ public class CropView: UIView {
         
         func angleFromPoint(point: CGPoint) -> Float{
             let theta = (Double)(atan2f((Float)(point.y - center.y), (Float)(point.x - center.x)))
-            return fmodf((Float)(M_PI - M_PI_4 + theta), (Float)(2.0 * M_PI))
+            return fmodf((Float)(Double.pi - Double.pi/4 + theta), (Float)(2.0 * Double.pi))
         }
         
         var sortedArray = endPoints.sorted(by: {  (p1, p2)  in
@@ -254,8 +239,6 @@ public class CropView: UIView {
         cropCircles[6].center = sortedArray[3]
         moveNonCornerPoints()
         redrawBorderRectangle()
-        
-        
     }
     
     
@@ -286,18 +269,10 @@ public class CropView: UIView {
         if(abs(pt2.x - pt1.x) < 0.1){
             return CGPoint(x: pt1.x, y: point.y)
         }
-        //        let m:Double = abs((Double)(pt2.y - pt1.y)/(Double)(pt2.x - pt1.x))
-        print(m)
         let c1:Double = (Double)(pt1.x) - (Double)(m*(Double)(pt1.y))
-        print(c1)
         let c2:Double =  (Double)(m*(Double)(point.x) + (Double)(point.y)) * (-1)
-        print(c2)
-        let denom = (m*m + 1)
-        print(denom)
         let x = (-1*m*c2 + c1)/(m*m + 1)
-        print(x)
         let y =  (-1*m*c1 - c2)/(m*m + 1)
-        print(y)
         return CGPoint(x: x, y: y)
     }
     
@@ -329,18 +304,11 @@ public class CropView: UIView {
     }
     
     public func cropAndTransform(completionHandler :@escaping(_ image : UIImage) -> Void){
-        //        let scale = cropImageView.image?.scale
-        //        var corners = [CGPoint]()
-        //        /*
-        //         0 -- 1
-        //         |      |
-        //         3 -- 2
-        //        */
-        //
-        //        for i in stride(from: 0, to:7 , by: 2) {
-        //        corners.append(CGPoint(x: (cropCircles[i].frame.origin.x)/scale!, y: (cropCircles[i].frame.origin.y)/scale!))
-        //        }
-        
+        /*
+         0 -- 1
+         |      |
+         3 -- 2
+         */
         reorderEndPoints()
         
         var corners = [CGPoint]()
@@ -354,19 +322,15 @@ public class CropView: UIView {
         let rightHeight = distanceBetweenPoints(point1: corners[1], point2: corners[2])
         let newWidth = max(topWidth, bottomWidth)
         let newHeight = max(leftHeight, rightHeight)
-        
-        print("\(newWidth),\(newHeight)")
+        let widthScale = cropImageView.image!.size.width/cropImageView.frame.size.width
+        let heightScale = cropImageView.image!.size.height/cropImageView.frame.size.height
         var corners2 = [CGPoint]()
         for i in stride(from: 0, to:7 , by: 2) {
-            corners2.append(cropCircles[i].center)
+            let point = CGPoint(x: cropCircles[i].center.x * widthScale, y: cropCircles[i].center.y*heightScale)
+            corners2.append(point)
         }
-        let newImage = OpenCVWrapper.getTransformedImage(newWidth, newHeight, cropImageView.image, &corners, (cropImageView.frame.size))
-        //        cropImageView.isHidden = true
-        //        newImageView = UIImageView(image: newImage)
-        //        newImageView.isHidden = false
-        //        newImageView.contentMode = .scaleAspectFit
-        //        newImageView.frame = CGRect(origin:  cropImageView.frame.origin, size: CGSize(width: newWidth, height: newHeight))
-        //        self.addSubview(newImageView)
+        let newImage = OpenCVWrapper.getTransformedImage(newWidth*widthScale, newHeight*heightScale, cropImageView.image, &corners2, (cropImageView.image!.size))
+        
         completionHandler(newImage!)
     }
     
@@ -378,6 +342,9 @@ public class CropView: UIView {
         
     }
     
+    /**
+     Updating the metaData of the image if its orientation is landscape
+     */
     private func normalizedImage(image: UIImage) -> UIImage {
         
         if (image.imageOrientation == UIImageOrientation.up) {
@@ -392,8 +359,4 @@ public class CropView: UIView {
         UIGraphicsEndImageContext();
         return normalizedImage;
     }
-    
-    
-    
-    
 }

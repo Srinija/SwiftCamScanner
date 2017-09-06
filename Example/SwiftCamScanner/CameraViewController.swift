@@ -36,7 +36,7 @@ class CameraViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if(segue.identifier == "showCropView"){
-            var vc = segue.destination as! CropViewController
+            let vc = segue.destination as! CropViewController
             vc.capturedImage = imageThumbnail.backgroundImage(for: UIControlState())
         }
     }
