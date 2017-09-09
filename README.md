@@ -1,7 +1,7 @@
 # SwiftCamScanner
 
 ## Overview
-[Demo GIF](../master/demo.gif)
+# ![Demo GIF](https://github.com/Srinija/SwiftCamScanner/blob/master/demo.gif)
 
 ## Requirements
 Minimum iOS Version: 8.0
@@ -19,9 +19,10 @@ pod 'SwiftCamScanner'
 For manual installation, drag and drop the files in SwiftCamScanner/Classes into your project.
 
 ## Usage
-Storyboard: To setup the cropping area, add a UIView to your storyboard and assign constraints. Set its class to 'CropView' and module to 'SwiftCamScanner'
+#### Storyboard: 
+To setup the cropping area, add a UIView to your storyboard and assign constraints. Set its class to 'CropView' and module to 'SwiftCamScanner'
 
-ViewController: 
+#### ViewController: 
 ```swift
 import SwiftCamScanner
 ```
