@@ -22,6 +22,9 @@ For manual installation, drag and drop the files in SwiftCamScanner/Classes into
 #### Storyboard: 
 To setup the cropping area, add a UIView to your storyboard and assign constraints. Set its class to 'CropView' and module to 'SwiftCamScanner'
 
+# ![](https://github.com/Srinija/SwiftCamScanner/blob/master/IbSnapshot.png)
+
+
 #### ViewController: 
 ```swift
 import SwiftCamScanner
