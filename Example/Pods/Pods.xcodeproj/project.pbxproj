@@ -18,10 +18,10 @@
 		03DDDAE713B3C4DAF8AA40EEE7F99363 /* all_indices.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D3F80EA3414C2AEA2FA9F338B1F63D /* all_indices.h */; };
 		04015DD3D8B7797C30D477D0AD2A10BB /* lsh_table.h in Headers */ = {isa = PBXBuildFile; fileRef = 70D49C12F4E3896CEB944F8C6AC2E2CB /* lsh_table.h */; };
 		049E39D33959F62E86FA88DCFD72BBBC /* photo.hpp in Copy photo Public Headers */ = {isa = PBXBuildFile; fileRef = 9C2EC2AFEBDDBCA78C3B5C39D396A5C3 /* photo.hpp */; };
+		04FC6EB73CB7C2B82BEA4F5CBA1B43A3 /* OpenCVWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A45D521DA024EADEF4798459F697A82 /* OpenCVWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0532D5273148BEEDC785D7D913C95290 /* log.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BC75AE930BAF659B877E88BCB5FF9195 /* log.hpp */; };
 		056FCBF560B9C4A360AF106DD726D831 /* matx.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 2AEBB7D952AF108245A49019B669DBC1 /* matx.hpp */; };
 		0666F206974A4EAB6BC9F0516BB93725 /* opencv_modules.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BB4460DFFA0DE89ED61548831F155653 /* opencv_modules.hpp */; };
-		0A8B4B8D5EDBE056AEC3786FF828AD5C /* OpenCVWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 63345712959359C44EFFA8B1B94BB482 /* OpenCVWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0AD7B0213531BD211C644A2667F8D014 /* persistence.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 9BD2DB7B87960CE13F27F5D021DB1D78 /* persistence.hpp */; };
 		0B4AD7A56363EB9822100745364C2DCF /* intrin_neon.hpp in Copy core/hal Public Headers */ = {isa = PBXBuildFile; fileRef = 50228EF9461C9A64364371C8550D28F3 /* intrin_neon.hpp */; };
 		0C37939CA1DBE132B8A0FF34B762101B /* objdetect_c.h in Copy objdetect Public Headers */ = {isa = PBXBuildFile; fileRef = 70E236CF81944AB8F11662EF50AA830D /* objdetect_c.h */; };
@@ -43,6 +43,7 @@
 		14F5A3FD98D53480A6BE97F78125093B /* ovx.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 078F437A72770D2C3BAE9CB6013B0384 /* ovx.hpp */; };
 		153E948DCE50723E10709E16F66EC518 /* intrin_sse.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 756DE303098A22D30F8117DB1035D61E /* intrin_sse.hpp */; };
 		155EA039CB939618316585280D2A421C /* highgui.hpp in Copy . Public Headers */ = {isa = PBXBuildFile; fileRef = 905AFB5AEE182C4A94F80D7D62673D00 /* highgui.hpp */; };
+		15D108A5207B4C9BF4A22A939B3209EF /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0A3FDB503262F15F6C605863BDE5EC1D /* OpenCVWrapper.mm */; };
 		1665BF10E8F8CA859B8EC0FA49458D5A /* mat.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 9322EB3F4216DDD74E1171F62375C7F2 /* mat.hpp */; };
 		1851D69309F838273798F06FDAAB8DC1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CF9B5B4818DBFFE4EAD5B30A9CB99 /* Foundation.framework */; };
 		186DD91227725735CBC33289D4932618 /* stitching.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9F9B38DD9DA2DB2FB2AAFB3AB9CF33F2 /* stitching.hpp */; };
@@ -50,7 +51,6 @@
 		19BB8600B47EEF3D009B866DAD1317E4 /* deblurring.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = DC52CE8F422C54020DBF44916C0E1B3C /* deblurring.hpp */; };
 		1A432F76DD09D4A07F96B11CBAB7A20C /* highgui.hpp in Copy highgui Public Headers */ = {isa = PBXBuildFile; fileRef = EF00A6F175C41CBE7FE0EDF6914D59CB /* highgui.hpp */; };
 		1B399F16AE916CD6B16B05AA73F53E78 /* cap_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 204E586B16015AB9972AA8669F2CCAAD /* cap_ios.h */; };
-		1E664DA45064719B50C90FE9726D2A1F /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6671792EB688F5ED02350A7C415DBA /* CropView.swift */; };
 		1E8920A34A1644E8AC22A888EADEC440 /* sampling.h in Headers */ = {isa = PBXBuildFile; fileRef = EFD497294DB6D238D69206417B56A8E6 /* sampling.h */; };
 		20A04C9DD61984E59EEC71CDC39C9392 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5CF9B5B4818DBFFE4EAD5B30A9CB99 /* Foundation.framework */; };
 		21170AC947266E5381A4B2A8409B7AED /* photo_c.h in Copy photo Public Headers */ = {isa = PBXBuildFile; fileRef = FD3FF51190BEF2F0FE34E6C2ADF4CA53 /* photo_c.h */; };
@@ -109,9 +109,10 @@
 		3E9CD6A692168C5D67F76E693C4E8DFC /* motion_estimators.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D9E148B53244FB60C541FEB0121C48E9 /* motion_estimators.hpp */; };
 		3F4E45F00D821FC59C71ED2F77CDB766 /* dist.h in Headers */ = {isa = PBXBuildFile; fileRef = 1740E20CBEC3C18086896E51EC864533 /* dist.h */; };
 		3FAD28687893F79A15FDB3805C684E72 /* stabilizer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 0E02E9390B86365BD13BB30302EC964A /* stabilizer.hpp */; };
-		407D14FDCD81647B875C4C7CEB1E49B5 /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 0FBD717D60A5240A53BA416A1DC6D123 /* OpenCVWrapper.mm */; };
 		41858543A28BC9E66ACFCB7B5CF5B3B8 /* cuda.hpp in Copy photo Public Headers */ = {isa = PBXBuildFile; fileRef = 2EA143F18BE7BFF01EABC1EC86D27FFD /* cuda.hpp */; };
+		41BD441C72CC2BE66A4F0423D2EDDDF7 /* SwiftCamScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B1590AD223653517B9659BC321CDCAF /* SwiftCamScanner-dummy.m */; };
 		438DCBEACDA122A412CF1B334E7BE7F2 /* private.hpp in Headers */ = {isa = PBXBuildFile; fileRef = DC67DD8FE6288D87FB2F6325B75EAEC2 /* private.hpp */; };
+		44712EAC9DEC607362D4EEBFCC5F5DCF /* CamScanner-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 22448D4100BA3F8B941C519E41A9AC3D /* CamScanner-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		465152A82E79094263736258D26BD820 /* cvconfig.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DFB4B1DB800CE4FFE19C5032FB8E86C /* cvconfig.h */; };
 		47B8E8BD865CBE6AF608E4261E2D39BC /* core.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 6590A3187FC42DCE0579FFE77B38A725 /* core.hpp */; };
 		47DA36ADA4B1D4FAF7935EE1C02696C2 /* wobble_suppression.hpp in Headers */ = {isa = PBXBuildFile; fileRef = BC4DCF75050D3F3B70849A789943C038 /* wobble_suppression.hpp */; };
@@ -152,6 +153,7 @@
 		67204FBC48077EE0F24FE24937921C63 /* sse_utils.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 4A60431FA2D56827A70A13D7A63E8CFA /* sse_utils.hpp */; };
 		67265627FCF4C09C27EA8D05C251B3A9 /* outlier_rejection.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = 8C89DBBD5685E352C56AC89B3B8E8F62 /* outlier_rejection.hpp */; };
 		685A1F06A3B8127FF8864BC743F658A0 /* ptr.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 9D43C4C6093C92A39964DD31E27EA34E /* ptr.inl.hpp */; };
+		68D33CBEAA5D08CF386C8AAAB1BD7110 /* CropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1ED220D4270587B73C51F2E944E48FD /* CropView.swift */; };
 		696A618B9232C18E645187561B308F7D /* cuda.inl.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 01EA167C1CB3BBC981662D569F01F124 /* cuda.inl.hpp */; };
 		6AE0C7CBC4339F2BE3D5DE9BB7F6512D /* result_set.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 597F74731B49F90C3FC03D8CDD9543FC /* result_set.h */; };
 		6AE59138F4345478448E82D4BF0C0F09 /* sse_utils.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 4A60431FA2D56827A70A13D7A63E8CFA /* sse_utils.hpp */; };
@@ -162,7 +164,6 @@
 		6D262AC80B7F9AB45E4D5807F04E9395 /* hierarchical_clustering_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 56D009921D2517772E12993FC1844D22 /* hierarchical_clustering_index.h */; };
 		708E501A13ED064BD1ED6FCFE67E21E1 /* ground_truth.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 41376CA89C4595E87023806A8151B894 /* ground_truth.h */; };
 		70F228504023F8EF2B086F37948E58E6 /* random.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 6533CF613803EA79C3AA2FBC3E9F2187 /* random.h */; };
-		71494120D3160BC0A1CE0A0AB1DF6329 /* SwiftCamScanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 000B19105216E0A6E68D0A8D381A032C /* SwiftCamScanner-dummy.m */; };
 		71AB2C5B7FD5CDCE1A1540F6C4123A5D /* version.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = 85126FC684E57A69EC14C255A6BFE69C /* version.hpp */; };
 		7260D8CF3A77F6DC426FBF87540109AF /* shape_distance.hpp in Headers */ = {isa = PBXBuildFile; fileRef = FEE4FB9124640BBC21A574FC5E275ACD /* shape_distance.hpp */; };
 		7283523595D75630A2094CED8E4EE371 /* util_inl.hpp in Copy stitching/detail Public Headers */ = {isa = PBXBuildFile; fileRef = 6292CD8997D1132E3E047FBE7A9623B8 /* util_inl.hpp */; };
@@ -223,7 +224,6 @@
 		993BD7564716B46C785723D19ECD0165 /* photo_c.h in Headers */ = {isa = PBXBuildFile; fileRef = FD3FF51190BEF2F0FE34E6C2ADF4CA53 /* photo_c.h */; };
 		9A4B77C6118CBB93D34649113BE040F8 /* random.h in Headers */ = {isa = PBXBuildFile; fileRef = 6533CF613803EA79C3AA2FBC3E9F2187 /* random.h */; };
 		9C771108819C335402B2B80431602590 /* autotuned_index.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 34A4537B08B8B3419BA5242AC00E56EB /* autotuned_index.h */; };
-		9E25AAA01D2D03231FE277E461ED00C2 /* CamScanner-Bridging-Header.h in Headers */ = {isa = PBXBuildFile; fileRef = 62A2DAEFDC5A01926F3E8153E6982850 /* CamScanner-Bridging-Header.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9ED0EF30F20CE07D7783A173F0963074 /* shape_transformer.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1B070D27C9AAD51B60B73B95D1FF92A1 /* shape_transformer.hpp */; };
 		9F6ECAFB992E70DF1F6CF6EE97546937 /* affine.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F7ECBCCBE941405AA463EC7C7C5A330E /* affine.hpp */; };
 		A06AE717E970D79532199A3419C74338 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6D00E826381B2ECD9C1202E4A168090 /* CoreMedia.framework */; };
@@ -239,6 +239,7 @@
 		A62DC65DBD5AF5971B9C551243028C5B /* global_motion.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = B819433E1091FC18E4D3A487C53CC101 /* global_motion.hpp */; };
 		A6A81610BE3697F031C1AB2F25167525 /* motion_stabilizing.hpp in Copy videostab Public Headers */ = {isa = PBXBuildFile; fileRef = F41A721254EE01E99F5057086198525E /* motion_stabilizing.hpp */; };
 		A6CBAC2DABF6DD28A9321C0FED3B9A6A /* kdtree_index.h in Headers */ = {isa = PBXBuildFile; fileRef = 420A5C9B66426A50292FFA23B3DE7A40 /* kdtree_index.h */; };
+		A713C763C8B7F76970477BA8951E620B /* SwiftCamScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 782D9F16F586C487820D0CF5A59D0D16 /* SwiftCamScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A81CAFF5EF64FEA8DE97E822493F5755 /* Pods-SwiftCamScanner_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9DD99EC9DD9A871AABE2C447A74A47E /* Pods-SwiftCamScanner_Example-dummy.m */; };
 		A839A5158DF5A010F9E52A44AA94822E /* imgcodecs.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 788B64E6EC6B238FBD79D53D08D0C74C /* imgcodecs.hpp */; };
 		A97F8746A20E99D070EF0396C6450615 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84BDB8918C5B4DAEDDE4238A807422D /* AVFoundation.framework */; };
@@ -326,7 +327,6 @@
 		ECCECB3C0427FFAEDE54415F65688B29 /* ocl_genbase.hpp in Copy core Public Headers */ = {isa = PBXBuildFile; fileRef = F4A07976DD5E9E398773F0EBF866ABDA /* ocl_genbase.hpp */; };
 		ED391D14351743B3DD8B09E719194978 /* intrin.hpp in Headers */ = {isa = PBXBuildFile; fileRef = D011C6ECCD54ADDAD09F57569D25211F /* intrin.hpp */; };
 		ED3AC3EBF064E3153B9E0FAF59E3E0D6 /* inpainting.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 1876997960BCD607B472D5BAE2541B9D /* inpainting.hpp */; };
-		ED3C180338AF5AD996C3CDF1D019D91A /* SwiftCamScanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8C91DF5C4F1D3150D5751A07B2C43B8 /* SwiftCamScanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EEC7773139E14EF2BBBD6740B2D78457 /* hal.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 437BA8A2D2F4023A92FE8C23956C5A9B /* hal.hpp */; };
 		EF4738FBFAED1EE62B6CA5CDB3193558 /* lsh_table.h in Copy flann Public Headers */ = {isa = PBXBuildFile; fileRef = 70D49C12F4E3896CEB944F8C6AC2E2CB /* lsh_table.h */; };
 		F06C975B2F0F07A94E1DCBF53AEC7613 /* ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 1AFDB9C31551B350473317FA9BFEECB3 /* ios.h */; };
@@ -743,13 +743,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		000B19105216E0A6E68D0A8D381A032C /* SwiftCamScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftCamScanner-dummy.m"; sourceTree = "<group>"; };
 		0187874A775F733D1BA9C6A358ABEC1C /* OpenCV.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = OpenCV.modulemap; sourceTree = "<group>"; };
 		01EA167C1CB3BBC981662D569F01F124 /* cuda.inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda.inl.hpp; path = ios/include/core/cuda.inl.hpp; sourceTree = "<group>"; };
 		02E34C244717C03F64D16846823C78C9 /* core_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = core_c.h; path = ios/include/core/core_c.h; sourceTree = "<group>"; };
 		030B801DEEDD749B90EF5BA4A34B0E76 /* hdf5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hdf5.h; path = ios/include/flann/hdf5.h; sourceTree = "<group>"; };
 		06735822E293FB73FA6F69C00D30CC04 /* Pods-SwiftCamScanner_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		078F437A72770D2C3BAE9CB6013B0384 /* ovx.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ovx.hpp; path = ios/include/core/ovx.hpp; sourceTree = "<group>"; };
+		0A3FDB503262F15F6C605863BDE5EC1D /* OpenCVWrapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = OpenCVWrapper.mm; path = SwiftCamScanner/Classes/OpenCVWrapper.mm; sourceTree = "<group>"; };
 		0A5BBF6396571B3DC46AA6C8475FFD03 /* objdetect.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = objdetect.hpp; path = ios/include/objdetect/objdetect.hpp; sourceTree = "<group>"; };
 		0B2E8EC605180BAF532E2944CC8AD3F5 /* wimage.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = wimage.hpp; path = ios/include/core/wimage.hpp; sourceTree = "<group>"; };
 		0C86174CA5B64E54AF6C7E08280355BC /* cuda_types.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda_types.hpp; path = ios/include/core/cuda_types.hpp; sourceTree = "<group>"; };
@@ -757,7 +757,7 @@
 		0DFCC4DC233C4071128867F6E6A34A77 /* motion_core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = motion_core.hpp; path = ios/include/videostab/motion_core.hpp; sourceTree = "<group>"; };
 		0E02E9390B86365BD13BB30302EC964A /* stabilizer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = stabilizer.hpp; path = ios/include/videostab/stabilizer.hpp; sourceTree = "<group>"; };
 		0EEE3080D709F8972DC219CE87B5DA58 /* cuda.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = cuda.hpp; path = ios/include/core/cuda.hpp; sourceTree = "<group>"; };
-		0FBD717D60A5240A53BA416A1DC6D123 /* OpenCVWrapper.mm */ = {isa = PBXFileReference; includeInIndex = 1; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
+		1059F26B33BA62955B67954EEA7E346B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12324E134B9762A8F10F49BDE12AB0D3 /* warpers_inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = warpers_inl.hpp; path = ios/include/stitching/detail/warpers_inl.hpp; sourceTree = "<group>"; };
 		147F9807A48CCF5B130E431A0315DD28 /* calib3d_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = calib3d_c.h; path = ios/include/calib3d/calib3d_c.h; sourceTree = "<group>"; };
 		15C4DA712C82AA7FB41135AC96901719 /* Pods-SwiftCamScanner_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftCamScanner_Example-resources.sh"; sourceTree = "<group>"; };
@@ -775,8 +775,8 @@
 		1F8EB2EF6E751ED9EFE1120706274615 /* features2d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = features2d.hpp; path = ios/include/features2d.hpp; sourceTree = "<group>"; };
 		204E586B16015AB9972AA8669F2CCAAD /* cap_ios.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = cap_ios.h; path = ios/include/videoio/cap_ios.h; sourceTree = "<group>"; };
 		21270E36FE75103CAA57B22FF21729C8 /* distortion_model.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = distortion_model.hpp; path = ios/include/imgproc/detail/distortion_model.hpp; sourceTree = "<group>"; };
+		22448D4100BA3F8B941C519E41A9AC3D /* CamScanner-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CamScanner-Bridging-Header.h"; path = "SwiftCamScanner/Classes/CamScanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		246BEC39A36E748E2A65BCC7EEFDBDD1 /* eigen.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = eigen.hpp; path = ios/include/core/eigen.hpp; sourceTree = "<group>"; };
-		24DEC4A4CB48CC66471274EE46B775A6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26B734E2229B0F0369C10FD4D49062C5 /* simplex_downhill.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = simplex_downhill.h; path = ios/include/flann/simplex_downhill.h; sourceTree = "<group>"; };
 		26E08693C1876570D39F3D534D9BA867 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27DA8516CE0B02FCC5EC062A77FEEC8D /* warpers.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = warpers.hpp; path = ios/include/stitching/detail/warpers.hpp; sourceTree = "<group>"; };
@@ -803,6 +803,7 @@
 		47F984C4A63C4E6B0912B23BCD1D7DF3 /* params.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = params.h; path = ios/include/flann/params.h; sourceTree = "<group>"; };
 		48D1A7D17FC340F95EBF741215855683 /* Pods-SwiftCamScanner_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftCamScanner_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		4A60431FA2D56827A70A13D7A63E8CFA /* sse_utils.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = sse_utils.hpp; path = ios/include/core/sse_utils.hpp; sourceTree = "<group>"; };
+		4B1590AD223653517B9659BC321CDCAF /* SwiftCamScanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftCamScanner-dummy.m"; sourceTree = "<group>"; };
 		4C0D43C9281C6B2BEDE0643DF0F2F7BC /* Pods-SwiftCamScanner_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4C4998A1976B3D8266EE5A830D0CE7C0 /* Pods-SwiftCamScanner_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SwiftCamScanner_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		4DC0ACA5B73A60B05B14932C2A1811FF /* utility.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = utility.hpp; path = ios/include/core/utility.hpp; sourceTree = "<group>"; };
@@ -819,8 +820,6 @@
 		5CD90FC3199307403DDD70DABFD7DC0E /* types_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = types_c.h; path = ios/include/core/types_c.h; sourceTree = "<group>"; };
 		609200F87AD6D2AE8273CEC4B1A96D4F /* flann_base.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = flann_base.hpp; path = ios/include/flann/flann_base.hpp; sourceTree = "<group>"; };
 		6292CD8997D1132E3E047FBE7A9623B8 /* util_inl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = util_inl.hpp; path = ios/include/stitching/detail/util_inl.hpp; sourceTree = "<group>"; };
-		62A2DAEFDC5A01926F3E8153E6982850 /* CamScanner-Bridging-Header.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CamScanner-Bridging-Header.h"; sourceTree = "<group>"; };
-		63345712959359C44EFFA8B1B94BB482 /* OpenCVWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		63AB71577607B284C6353317DB7ABC76 /* va_intel.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = va_intel.hpp; path = ios/include/core/va_intel.hpp; sourceTree = "<group>"; };
 		63FF1574DE70EADEC6BF1EE4782B848E /* emdL1.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = emdL1.hpp; path = ios/include/shape/emdL1.hpp; sourceTree = "<group>"; };
 		642E5C2CB901FEE236EAFB194CA0205A /* shape.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape.hpp; path = ios/include/shape/shape.hpp; sourceTree = "<group>"; };
@@ -828,6 +827,7 @@
 		6533CF613803EA79C3AA2FBC3E9F2187 /* random.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = random.h; path = ios/include/flann/random.h; sourceTree = "<group>"; };
 		6590A3187FC42DCE0579FFE77B38A725 /* core.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = core.hpp; path = ios/include/core/core.hpp; sourceTree = "<group>"; };
 		6753A1F7B8E67C857002699B1CAEDFF5 /* index_testing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = index_testing.h; path = ios/include/flann/index_testing.h; sourceTree = "<group>"; };
+		6A45D521DA024EADEF4798459F697A82 /* OpenCVWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = OpenCVWrapper.h; path = SwiftCamScanner/Classes/OpenCVWrapper.h; sourceTree = "<group>"; };
 		6A6732C7AB4A236EF0DF8D5A41C49498 /* Pods-SwiftCamScanner_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SwiftCamScanner_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6D8FB51A2C8B288F613E5FB27CA60C06 /* saturate.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = saturate.hpp; path = ios/include/core/saturate.hpp; sourceTree = "<group>"; };
 		6E5CF2461083EA545866301713258C06 /* calib3d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = calib3d.hpp; path = ios/include/calib3d/calib3d.hpp; sourceTree = "<group>"; };
@@ -837,6 +837,7 @@
 		70E236CF81944AB8F11662EF50AA830D /* objdetect_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = objdetect_c.h; path = ios/include/objdetect/objdetect_c.h; sourceTree = "<group>"; };
 		756DE303098A22D30F8117DB1035D61E /* intrin_sse.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin_sse.hpp; path = ios/include/core/hal/intrin_sse.hpp; sourceTree = "<group>"; };
 		76E68B27B55E8FE0F33E4810364246DD /* nn_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = nn_index.h; path = ios/include/flann/nn_index.h; sourceTree = "<group>"; };
+		782D9F16F586C487820D0CF5A59D0D16 /* SwiftCamScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCamScanner-umbrella.h"; sourceTree = "<group>"; };
 		788B64E6EC6B238FBD79D53D08D0C74C /* imgcodecs.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = imgcodecs.hpp; path = ios/include/imgcodecs/imgcodecs.hpp; sourceTree = "<group>"; };
 		78C56AD87FF61C001308655B6FC8066A /* bufferpool.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = bufferpool.hpp; path = ios/include/core/bufferpool.hpp; sourceTree = "<group>"; };
 		7B5C9E2AADEEC3CB771783B0E8E9CC10 /* opencv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = opencv2.framework; path = OpenCV.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -867,7 +868,6 @@
 		929ADEAF53DA0D8411A1ADE0BC1B669F /* videoio.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = videoio.hpp; path = ios/include/videoio/videoio.hpp; sourceTree = "<group>"; };
 		9322EB3F4216DDD74E1171F62375C7F2 /* mat.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = mat.hpp; path = ios/include/core/mat.hpp; sourceTree = "<group>"; };
 		9358FC0ECDF3C39938A63E7DA71C73DE /* operations.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = operations.hpp; path = ios/include/core/operations.hpp; sourceTree = "<group>"; };
-		9393053B985A9445E7ED1C70FE10659E /* SwiftCamScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCamScanner-prefix.pch"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		955D507BA4059D22843379AAA7E31A52 /* allocator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = allocator.h; path = ios/include/flann/allocator.h; sourceTree = "<group>"; };
 		95998BDED262FCE5EA9D09B7639DB76B /* dynamic_bitset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = dynamic_bitset.h; path = ios/include/flann/dynamic_bitset.h; sourceTree = "<group>"; };
@@ -884,9 +884,9 @@
 		9F4B2D7D548F53CF36216F66E5303479 /* util.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = util.hpp; path = ios/include/stitching/detail/util.hpp; sourceTree = "<group>"; };
 		9F9B38DD9DA2DB2FB2AAFB3AB9CF33F2 /* stitching.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = stitching.hpp; path = ios/include/stitching.hpp; sourceTree = "<group>"; };
 		A3C5564BCBFE6C345517D64AF13A8628 /* lsh_index.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = lsh_index.h; path = ios/include/flann/lsh_index.h; sourceTree = "<group>"; };
+		A4CC777A46E13ACDF5836A26DCD53339 /* SwiftCamScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCamScanner.xcconfig; sourceTree = "<group>"; };
 		A5EB908AFAA68F56D437D2C6EAEA4470 /* ring_buffer.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ring_buffer.hpp; path = ios/include/videostab/ring_buffer.hpp; sourceTree = "<group>"; };
 		A6D00E826381B2ECD9C1202E4A168090 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/CoreMedia.framework; sourceTree = DEVELOPER_DIR; };
-		A8C91DF5C4F1D3150D5751A07B2C43B8 /* SwiftCamScanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCamScanner-umbrella.h"; sourceTree = "<group>"; };
 		A8D09FA1328B669A7DAB4D011C40D9B9 /* object_factory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = object_factory.h; path = ios/include/flann/object_factory.h; sourceTree = "<group>"; };
 		AB61132F42166473E5F7E0006232C5C9 /* saving.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = saving.h; path = ios/include/flann/saving.h; sourceTree = "<group>"; };
 		AB8D964CEBFD5262A7D24B1A83CBFC68 /* video.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = video.hpp; path = ios/include/video.hpp; sourceTree = "<group>"; };
@@ -903,9 +903,9 @@
 		C1A018140725338001DABC1ECA8458AF /* videoio.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = videoio.hpp; path = ios/include/videoio.hpp; sourceTree = "<group>"; };
 		C338F01433D09BD46D73636CBC2117CC /* miniflann.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = miniflann.hpp; path = ios/include/flann/miniflann.hpp; sourceTree = "<group>"; };
 		C3935447AA80ABABE2E1C7C643DC172F /* tracking_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = tracking_c.h; path = ios/include/video/tracking_c.h; sourceTree = "<group>"; };
-		C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftCamScanner.xcconfig; sourceTree = "<group>"; };
 		C4AA2372430A377ACA42D9C01C0A9C3C /* shape.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape.hpp; path = ios/include/shape.hpp; sourceTree = "<group>"; };
 		C4AD58521564C92081C43E751FF18CF6 /* world.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = world.hpp; path = ios/include/world.hpp; sourceTree = "<group>"; };
+		C5A73F993F55DAD3E7DAB99BDD13DB43 /* SwiftCamScanner-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftCamScanner-prefix.pch"; sourceTree = "<group>"; };
 		C84BDB8918C5B4DAEDDE4238A807422D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		C8728069A17B92A90652905E04EC191E /* heap.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = heap.h; path = ios/include/flann/heap.h; sourceTree = "<group>"; };
 		CA71619306FEF99A2249EDB486740FD2 /* Pods-SwiftCamScanner_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-SwiftCamScanner_Tests.modulemap"; sourceTree = "<group>"; };
@@ -917,6 +917,7 @@
 		D074DE687225228BE9CAD62F7CA7D52B /* imgproc_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = imgproc_c.h; path = ios/include/imgproc/imgproc_c.h; sourceTree = "<group>"; };
 		D0B4534D1228006D3A36BF3024D69768 /* intrin_cpp.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = intrin_cpp.hpp; path = ios/include/core/hal/intrin_cpp.hpp; sourceTree = "<group>"; };
 		D191E8B55E55743BDBEE5F23B6237EE2 /* photo.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = photo.hpp; path = ios/include/photo.hpp; sourceTree = "<group>"; };
+		D1ED220D4270587B73C51F2E944E48FD /* CropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CropView.swift; path = SwiftCamScanner/Classes/CropView.swift; sourceTree = "<group>"; };
 		D2473BCFA0FC5CC4B38B00EA30BE267B /* flann.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = flann.hpp; path = ios/include/flann.hpp; sourceTree = "<group>"; };
 		D2B8C79EF07BD99C3081CC07FBE72A03 /* ocl.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = ocl.hpp; path = ios/include/core/ocl.hpp; sourceTree = "<group>"; };
 		D5F2317724CB0C62D61E27603BCF388B /* imgcodecs.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = imgcodecs.hpp; path = ios/include/imgcodecs.hpp; sourceTree = "<group>"; };
@@ -941,7 +942,6 @@
 		EFB64C145E8754571BE4ADBF61A9E655 /* Pods-SwiftCamScanner_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SwiftCamScanner_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		EFD497294DB6D238D69206417B56A8E6 /* sampling.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sampling.h; path = ios/include/flann/sampling.h; sourceTree = "<group>"; };
 		F10F12AA738657F4733F34A7B82BBC08 /* private.cuda.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = private.cuda.hpp; path = ios/include/core/private.cuda.hpp; sourceTree = "<group>"; };
-		F14B7617ACDB15FF8A07DEF33B7DA8F7 /* SwiftCamScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftCamScanner.modulemap; sourceTree = "<group>"; };
 		F28781C563E302CA5E08B56156DF1702 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F30B0BDB17AFBD3F1B16615B0702330A /* frame_source.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = frame_source.hpp; path = ios/include/videostab/frame_source.hpp; sourceTree = "<group>"; };
 		F3D0D6E9237C8D3A9864865219DE075F /* calib3d.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = calib3d.hpp; path = ios/include/calib3d.hpp; sourceTree = "<group>"; };
@@ -952,8 +952,8 @@
 		F613C089638D95A6DBACBC9E1F97EAAF /* fast_marching.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = fast_marching.hpp; path = ios/include/videostab/fast_marching.hpp; sourceTree = "<group>"; };
 		F7ECBCCBE941405AA463EC7C7C5A330E /* affine.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = affine.hpp; path = ios/include/core/affine.hpp; sourceTree = "<group>"; };
 		FD3FF51190BEF2F0FE34E6C2ADF4CA53 /* photo_c.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = photo_c.h; path = ios/include/photo/photo_c.h; sourceTree = "<group>"; };
-		FE6671792EB688F5ED02350A7C415DBA /* CropView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CropView.swift; sourceTree = "<group>"; };
 		FE7623FEF2B116C4A531E9439BD7F197 /* opencv2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = opencv2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE9486961EEAD6981848BDDEEA8DE206 /* SwiftCamScanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = SwiftCamScanner.modulemap; sourceTree = "<group>"; };
 		FEE4FB9124640BBC21A574FC5E275ACD /* shape_distance.hpp */ = {isa = PBXFileReference; includeInIndex = 1; name = shape_distance.hpp; path = ios/include/shape/shape_distance.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -1046,12 +1046,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		4BA3458E332569D82C272F301FD2C9FC /* Development Pods */ = {
+		501FC63F53106FFD04B6EDF66715C0B6 /* SwiftCamScanner */ = {
 			isa = PBXGroup;
 			children = (
-				85B830F138572E4A0E0BA8388505594D /* SwiftCamScanner */,
+				22448D4100BA3F8B941C519E41A9AC3D /* CamScanner-Bridging-Header.h */,
+				D1ED220D4270587B73C51F2E944E48FD /* CropView.swift */,
+				6A45D521DA024EADEF4798459F697A82 /* OpenCVWrapper.h */,
+				0A3FDB503262F15F6C605863BDE5EC1D /* OpenCVWrapper.mm */,
+				D4A4E3D91D4639E5BBB91B87B23079BD /* Support Files */,
 			);
-			name = "Development Pods";
+			name = SwiftCamScanner;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		5F17ED9D51A57158D578CE24C4D38FB8 /* Products */ = {
@@ -1063,6 +1068,14 @@
 				87D707CEB01405CB8B4C55B5E187D47D /* SwiftCamScanner.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		63DCBA8A0E93759B24DBF1A5D9ED6FEE /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				501FC63F53106FFD04B6EDF66715C0B6 /* SwiftCamScanner */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		6819A4B714376773BDB283D37DE04EE3 /* Frameworks */ = {
@@ -1256,22 +1269,12 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				4BA3458E332569D82C272F301FD2C9FC /* Development Pods */,
+				63DCBA8A0E93759B24DBF1A5D9ED6FEE /* Development Pods */,
 				6819A4B714376773BDB283D37DE04EE3 /* Frameworks */,
 				BB66D6D7CD3A9E2A9FDCAEA62E302608 /* Pods */,
 				5F17ED9D51A57158D578CE24C4D38FB8 /* Products */,
 				72BFBFD2E98596ABCFC3183D4415D2C7 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		85B830F138572E4A0E0BA8388505594D /* SwiftCamScanner */ = {
-			isa = PBXGroup;
-			children = (
-				9E7B46F418115D8A7CF090C8AF9E923C /* Support Files */,
-				FD9718C5C3577D04E22E9830DD8AFEA8 /* SwiftCamScanner */,
-			);
-			name = SwiftCamScanner;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		85CA81463EB55B1F121666E6833820A2 /* Support Files */ = {
@@ -1286,20 +1289,6 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/OpenCV";
-			sourceTree = "<group>";
-		};
-		9E7B46F418115D8A7CF090C8AF9E923C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				24DEC4A4CB48CC66471274EE46B775A6 /* Info.plist */,
-				F14B7617ACDB15FF8A07DEF33B7DA8F7 /* SwiftCamScanner.modulemap */,
-				C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */,
-				000B19105216E0A6E68D0A8D381A032C /* SwiftCamScanner-dummy.m */,
-				9393053B985A9445E7ED1C70FE10659E /* SwiftCamScanner-prefix.pch */,
-				A8C91DF5C4F1D3150D5751A07B2C43B8 /* SwiftCamScanner-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SwiftCamScanner";
 			sourceTree = "<group>";
 		};
 		AA03576B0542D2CE50ACB790D9D7ECC1 /* OpenCV */ = {
@@ -1335,25 +1324,18 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		F9628D114C1A5CB8BE8415D83F7984F0 /* Classes */ = {
+		D4A4E3D91D4639E5BBB91B87B23079BD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				62A2DAEFDC5A01926F3E8153E6982850 /* CamScanner-Bridging-Header.h */,
-				FE6671792EB688F5ED02350A7C415DBA /* CropView.swift */,
-				63345712959359C44EFFA8B1B94BB482 /* OpenCVWrapper.h */,
-				0FBD717D60A5240A53BA416A1DC6D123 /* OpenCVWrapper.mm */,
+				1059F26B33BA62955B67954EEA7E346B /* Info.plist */,
+				FE9486961EEAD6981848BDDEEA8DE206 /* SwiftCamScanner.modulemap */,
+				A4CC777A46E13ACDF5836A26DCD53339 /* SwiftCamScanner.xcconfig */,
+				4B1590AD223653517B9659BC321CDCAF /* SwiftCamScanner-dummy.m */,
+				C5A73F993F55DAD3E7DAB99BDD13DB43 /* SwiftCamScanner-prefix.pch */,
+				782D9F16F586C487820D0CF5A59D0D16 /* SwiftCamScanner-umbrella.h */,
 			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		FD9718C5C3577D04E22E9830DD8AFEA8 /* SwiftCamScanner */ = {
-			isa = PBXGroup;
-			children = (
-				F9628D114C1A5CB8BE8415D83F7984F0 /* Classes */,
-			);
-			name = SwiftCamScanner;
-			path = SwiftCamScanner;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/SwiftCamScanner";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1543,13 +1525,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9F10FBB94DBDB2FD8D59E19E0B1DE356 /* Headers */ = {
+		DD8B6692B66BFE3DEEEDEB802F6F2422 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9E25AAA01D2D03231FE277E461ED00C2 /* CamScanner-Bridging-Header.h in Headers */,
-				0A8B4B8D5EDBE056AEC3786FF828AD5C /* OpenCVWrapper.h in Headers */,
-				ED3C180338AF5AD996C3CDF1D019D91A /* SwiftCamScanner-umbrella.h in Headers */,
+				44712EAC9DEC607362D4EEBFCC5F5DCF /* CamScanner-Bridging-Header.h in Headers */,
+				04FC6EB73CB7C2B82BEA4F5CBA1B43A3 /* OpenCVWrapper.h in Headers */,
+				A713C763C8B7F76970477BA8951E620B /* SwiftCamScanner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1633,9 +1615,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F5ED9DFE38F7E6E2B8EADDB0238AF6C0 /* Build configuration list for PBXNativeTarget "SwiftCamScanner" */;
 			buildPhases = (
-				830661CBF5D323B8C515A23F5F311C70 /* Sources */,
+				6CAC9AFA0010D69156128734B39E56CA /* Sources */,
 				DB3A8F705F1F2C7327B4CCECBA807B3D /* Frameworks */,
-				9F10FBB94DBDB2FD8D59E19E0B1DE356 /* Headers */,
+				DD8B6692B66BFE3DEEEDEB802F6F2422 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -1694,13 +1676,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		830661CBF5D323B8C515A23F5F311C70 /* Sources */ = {
+		6CAC9AFA0010D69156128734B39E56CA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E664DA45064719B50C90FE9726D2A1F /* CropView.swift in Sources */,
-				407D14FDCD81647B875C4C7CEB1E49B5 /* OpenCVWrapper.mm in Sources */,
-				71494120D3160BC0A1CE0A0AB1DF6329 /* SwiftCamScanner-dummy.m in Sources */,
+				68D33CBEAA5D08CF386C8AAAB1BD7110 /* CropView.swift in Sources */,
+				15D108A5207B4C9BF4A22A939B3209EF /* OpenCVWrapper.mm in Sources */,
+				41BD441C72CC2BE66A4F0423D2EDDDF7 /* SwiftCamScanner-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1736,7 +1718,7 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0C870DE9980E7F49CF480BB935DBBE67 /* Release */ = {
+		47E3A3B6946F0CF69AFDD82725814669 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBA753C1EF970729C21BB0480CFA05B0 /* OpenCV.xcconfig */;
 			buildSettings = {
@@ -1762,95 +1744,13 @@
 				PRODUCT_NAME = opencv2;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		13F1785D13399DDBB4520B7FB07A3B5E /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftCamScanner/SwiftCamScanner-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftCamScanner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftCamScanner/SwiftCamScanner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftCamScanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		345CC476DF4A7516DBD2220CF5035FF3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"POD_CONFIGURATION_DEBUG=1",
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
 		};
 		5BFA1C166AF17ADF9AA1354ABE2B1BBF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1890,7 +1790,7 @@
 			};
 			name = Release;
 		};
-		624FBE401DA3A0CBBE2C7F4DBDFAF79A /* Debug */ = {
+		689CD0167A853E2E096A5DA533C68285 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CBA753C1EF970729C21BB0480CFA05B0 /* OpenCV.xcconfig */;
 			buildSettings = {
@@ -1916,6 +1816,7 @@
 				PRODUCT_NAME = opencv2;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -2003,16 +1904,65 @@
 			};
 			name = Release;
 		};
-		D022C1187AE191A6DCD0D7D993B34411 /* Release */ = {
+		A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3F206FC8F6F44986E1727674286AA5D /* SwiftCamScanner.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		E0EFB848A9DE794B0EC3E33E6CA225C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4CC777A46E13ACDF5836A26DCD53339 /* SwiftCamScanner.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2025,17 +1975,18 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MODULEMAP_FILE = "Target Support Files/SwiftCamScanner/SwiftCamScanner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = SwiftCamScanner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		E978E714E4602496448B60D732DB2FF0 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2112,6 +2063,41 @@
 			};
 			name = Debug;
 		};
+		FF0C1A9C26431795DB132C4E369ED63E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4CC777A46E13ACDF5836A26DCD53339 /* SwiftCamScanner.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftCamScanner/SwiftCamScanner-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftCamScanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftCamScanner/SwiftCamScanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftCamScanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -2127,7 +2113,7 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				345CC476DF4A7516DBD2220CF5035FF3 /* Debug */,
+				A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */,
 				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -2145,8 +2131,8 @@
 		A95A33185D4591946D6311AFD74C0B9F /* Build configuration list for PBXNativeTarget "OpenCV" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				624FBE401DA3A0CBBE2C7F4DBDFAF79A /* Debug */,
-				0C870DE9980E7F49CF480BB935DBBE67 /* Release */,
+				689CD0167A853E2E096A5DA533C68285 /* Debug */,
+				47E3A3B6946F0CF69AFDD82725814669 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -2154,8 +2140,8 @@
 		F5ED9DFE38F7E6E2B8EADDB0238AF6C0 /* Build configuration list for PBXNativeTarget "SwiftCamScanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				13F1785D13399DDBB4520B7FB07A3B5E /* Debug */,
-				D022C1187AE191A6DCD0D7D993B34411 /* Release */,
+				E0EFB848A9DE794B0EC3E33E6CA225C1 /* Debug */,
+				FF0C1A9C26431795DB132C4E369ED63E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
