@@ -21,11 +21,11 @@ class CameraView: UIView {
     
     func setupCamera(){
         
-        captureSession.sessionPreset = AVCaptureSessionPresetHigh
-        let camera = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        captureSession.sessionPreset = AVCaptureSession.Preset.high
+        let camera = AVCaptureDevice.default(for: AVMediaType.video)
         
         do {
-            let input = try AVCaptureDeviceInput(device: camera)
+            let input = try AVCaptureDeviceInput(device: camera!)
             if captureSession.canAddInput(input) {
                 captureSession.addInput(input)
                 activeInput = input
@@ -41,7 +41,7 @@ class CameraView: UIView {
         
         previewLayer = AVCaptureVideoPreviewLayer(session: captureSession)
         previewLayer.frame = self.bounds
-        previewLayer.videoGravity = AVLayerVideoGravityResizeAspectFill
+        previewLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
         self.layer.addSublayer(previewLayer)
         
         let tapForFocus = UITapGestureRecognizer(target: self, action: #selector(tapToFocus(_:)))
@@ -69,10 +69,10 @@ class CameraView: UIView {
     }
     
     // MARK: Focus Methods
-    func tapToFocus(_ recognizer: UIGestureRecognizer) {
+    @objc func tapToFocus(_ recognizer: UIGestureRecognizer) {
         if activeInput.device.isFocusPointOfInterestSupported {
             let point = recognizer.location(in: self)
-            let pointOfInterest = previewLayer.captureDevicePointOfInterest(for: point)
+            let pointOfInterest = previewLayer.captureDevicePointConverted(fromLayerPoint: point)
             showMarkerAtPoint(point, marker: focusMarker)
             focusAtPoint(pointOfInterest)
         }
@@ -80,13 +80,13 @@ class CameraView: UIView {
     
     func focusAtPoint(_ point: CGPoint) {
         let device = activeInput.device
-        if (device?.isFocusPointOfInterestSupported)! &&
-            (device?.isFocusModeSupported(AVCaptureFocusMode.autoFocus))! {
+        if (device.isFocusPointOfInterestSupported) &&
+            (device.isFocusModeSupported(AVCaptureDevice.FocusMode.autoFocus)) {
             do {
-                try device?.lockForConfiguration()
-                device?.focusPointOfInterest = point
-                device?.focusMode = AVCaptureFocusMode.autoFocus
-                device?.unlockForConfiguration()
+                try device.lockForConfiguration()
+                device.focusPointOfInterest = point
+                device.focusMode = AVCaptureDevice.FocusMode.autoFocus
+                device.unlockForConfiguration()
             } catch {
                 print("Error focusing on POI: \(error)")
             }
@@ -113,15 +113,15 @@ class CameraView: UIView {
     }
     
     func capturePhoto(completionHandler:@escaping(_ image: UIImage?)->Void){
-        let connection = imageOutput.connection(withMediaType: AVMediaTypeVideo)
+        let connection = imageOutput.connection(with: AVMediaType.video)
         if (connection?.isVideoOrientationSupported)! {
             connection?.videoOrientation = getOrientation()
         }
         
-        imageOutput.captureStillImageAsynchronously(from: connection) {
+        imageOutput.captureStillImageAsynchronously(from: connection!) {
             (sampleBuffer: CMSampleBuffer?, error: Error?) -> Void in
             if sampleBuffer != nil {
-                let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
+                let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer!)
                 let image = UIImage(data: imageData!)
                 completionHandler(image)
             } else {

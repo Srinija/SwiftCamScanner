@@ -129,7 +129,7 @@ public class CropView: UIView {
         self.addGestureRecognizer(gestureRecognizer)
     }
     
-    internal func panGesture(gesture : UIPanGestureRecognizer){
+    @objc internal func panGesture(gesture : UIPanGestureRecognizer){
         let point = gesture.location(in: self)
         if(gesture.state == UIGestureRecognizerState.began){
             selectedIndex = nil

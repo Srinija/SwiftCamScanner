@@ -43,7 +43,7 @@ class CameraViewController: UIViewController {
     
     
     @IBAction func onFlashTap(_ sender: UIButton) {
-        let device = AVCaptureDevice.defaultDevice(withMediaType: AVMediaTypeVideo)
+        let device = AVCaptureDevice.default(for: AVMediaType.video)
         if let device = device {
             if(!device.hasTorch){ return }
             do {
