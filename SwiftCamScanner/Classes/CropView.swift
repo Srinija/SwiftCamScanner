@@ -10,9 +10,21 @@ import UIKit
 public class CropView: UIView {
     
     //Editable Variables
-    public var borderColor: CGColor = UIColor.blue.cgColor
+    public var rectangleBorderColor = UIColor.blue
+    public var rectangleFillColor = UIColor.clear
+    public var circleBorderColor = UIColor.white
+    public var circleBackgroundColor = UIColor.black
+    public var selectedCircleBorderColor = UIColor.blue
+    public var selectedCircleBackgroundColor = UIColor.blue
     
+    public var rectangleBorderWidth:CGFloat = 2.0
+    public var circleBorderWidth:CGFloat = 1.0
     
+    public var circleBorderRadius:CGFloat = 10
+    public var circleAlpha:CGFloat = 0.65
+    public var rectangleAlpha:CGFloat = 1
+    
+//    public var showOnlyCornerCircles = false
     
     var cropPoints = [CGPoint]()
     var cropCircles = [UIView]()
@@ -65,38 +77,34 @@ public class CropView: UIView {
         
         while(i<=8){
             let cropCircle = UIView()
-            cropCircle.alpha = 0.65
-            cropCircle.layer.cornerRadius = 10
-            cropCircle.frame.size = CGSize(width: 20, height: 20)
-            cropCircle.layer.borderWidth = 1
-            cropCircle.layer.borderColor = UIColor.white.cgColor
-            cropCircle.backgroundColor = UIColor.black
+            cropCircle.alpha = circleAlpha
+            cropCircle.layer.cornerRadius = circleBorderRadius
+            cropCircle.frame.size = CGSize(width: circleBorderRadius*2, height: circleBorderRadius*2)
+            cropCircle.layer.borderWidth = circleBorderWidth
+            cropCircle.layer.borderColor = circleBorderColor.cgColor
+            cropCircle.backgroundColor = circleBackgroundColor
             /*
              1----2----3
-             |             |
-             8            4
-             |             |
+             |         |
+             8         4
+             |         |
              7----6----5
              */
             switch i{
             case 1:
                 cropCircle.center = endPoints[0]
-                cropCircle.backgroundColor = UIColor.black
             case 2:
                 cropCircle.center = centerOf(firstPoint: endPoints[0], secondPoint: endPoints[1])
             case 3:
                 cropCircle.center = endPoints[1]
-                cropCircle.backgroundColor = UIColor.black
             case 4:
                 cropCircle.center = centerOf(firstPoint: endPoints[1], secondPoint: endPoints[2])
             case 5:
                 cropCircle.center = endPoints[2]
-                cropCircle.backgroundColor = UIColor.black
             case 6:
                 cropCircle.center = centerOf(firstPoint: endPoints[2], secondPoint: endPoints[3])
             case 7:
                 cropCircle.center = endPoints[3]
-                cropCircle.backgroundColor = UIColor.black
             case 8:
                 cropCircle.center = centerOf(firstPoint: endPoints[3], secondPoint: endPoints[0])
             default:
@@ -133,14 +141,18 @@ public class CropView: UIView {
                     let pt1 = cropCircles[selectedIndex! - 1].center
                     let pt2 = cropCircles[(selectedIndex! == 7 ? 0 : selectedIndex! + 1)].center
                     m = ((Double)(pt1.y - pt2.y)/(Double)(pt2.x - pt1.x))
-                    cropCircles[selectedIndex!].backgroundColor = UIColor.blue
+                    cropCircles[selectedIndex!].backgroundColor = selectedCircleBackgroundColor
+                    cropCircles[selectedIndex!].layer.borderColor = selectedCircleBorderColor.cgColor
+
                     break
                 }
             }
             if(selectedIndex == nil){
                 selectedIndex = getClosestCorner(point: point)
                 oldPoint = point
-                cropCircles[selectedIndex!].backgroundColor = UIColor.blue
+                cropCircles[selectedIndex!].backgroundColor = selectedCircleBackgroundColor
+                cropCircles[selectedIndex!].layer.borderColor = selectedCircleBorderColor.cgColor
+
             }
         }
         if let selectedIndex = selectedIndex {
@@ -170,7 +182,8 @@ public class CropView: UIView {
         
         if(gesture.state == UIGestureRecognizerState.ended){
             if let selectedIndex = selectedIndex{
-                cropCircles[selectedIndex].backgroundColor = UIColor.black
+                cropCircles[selectedIndex].backgroundColor = circleBackgroundColor
+                cropCircles[selectedIndex].layer.borderColor = circleBorderColor.cgColor
             }
             selectedIndex = nil
             
@@ -202,9 +215,9 @@ public class CropView: UIView {
         
         //Are B and D on either sides of AC
         if(checkIfOppositeSides(p1: B,p2: D,l1: A,l2: C) && checkIfOppositeSides(p1: A,p2: C,l1: B,l2: D)){
-            border.strokeColor = borderColor
+            border.strokeColor = rectangleBorderColor.cgColor
         }else if(!checkIfOppositeSides(p1: B,p2: D,l1: A,l2: C) && !checkIfOppositeSides(p1: A,p2: C,l1: B,l2: D)){
-            border.strokeColor = borderColor
+            border.strokeColor = rectangleBorderColor.cgColor
             reorderEndPoints()
         } else{
             border.strokeColor = UIColor.red.cgColor
@@ -286,8 +299,8 @@ public class CropView: UIView {
     
     private func addBorderRectangle(){
         border.fillColor = UIColor.clear.cgColor
-        border.lineWidth = 2.0
-        border.strokeColor = borderColor
+        border.lineWidth = rectangleBorderWidth
+        border.strokeColor = rectangleBorderColor.withAlphaComponent(rectangleAlpha).cgColor
         self.layer.addSublayer(border)
     }
     
@@ -306,7 +319,7 @@ public class CropView: UIView {
     public func cropAndTransform(completionHandler :@escaping(_ image : UIImage) -> Void){
         /*
          0 -- 1
-         |      |
+         |    |
          3 -- 2
          */
         reorderEndPoints()
