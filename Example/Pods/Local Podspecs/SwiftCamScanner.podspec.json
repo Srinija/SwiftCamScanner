@@ -1,6 +1,6 @@
 {
   "name": "SwiftCamScanner",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "summary": "A document scanner that uses OpenCV, in Swift",
   "description": "Creates scanner apps that can detect rectangles, crop and transformation selected regions",
   "homepage": "https://github.com/Srinija/SwiftCamScanner",
@@ -11,7 +11,7 @@
   "authors": "Srinija Ammapalli",
   "source": {
     "git": "https://github.com/Srinija/SwiftCamScanner.git",
-    "tag": "0.1.1"
+    "tag": "0.2.0"
   },
   "platforms": {
     "ios": "8.0"

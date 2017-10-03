@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
 s.name             = 'SwiftCamScanner'
-s.version          = '0.1.1'
+s.version          = '0.2.0'
 s.summary          = 'A document scanner that uses OpenCV, in Swift'
 s.description      = 'Creates scanner apps that can detect rectangles, crop and transformation selected regions'
 s.homepage         = 'https://github.com/Srinija/SwiftCamScanner'

@@ -2,7 +2,7 @@ PODS:
   - OpenCV (3.2.0):
     - OpenCV/Dynamic (= 3.2.0)
   - OpenCV/Dynamic (3.2.0)
-  - SwiftCamScanner (0.1.1):
+  - SwiftCamScanner (0.2.0):
     - OpenCV
 
 DEPENDENCIES:
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   OpenCV: 0f7ab403d1e81769bc6f4f524c3c6928ecb1fdb8
-  SwiftCamScanner: e8168d6a95fd1da98c7d47d0934c5815d247cd28
+  SwiftCamScanner: 4dbf2ee5f6024605215e9341d853b26e53e869e1
 
 PODFILE CHECKSUM: 48c2f6553e499b4ef1b8677ed8bc67da8c5bb669
 
