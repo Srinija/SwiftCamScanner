@@ -23,7 +23,12 @@ public class CropView: UIView {
     public var circleBorderRadius:CGFloat = 10
     public var circleAlpha:CGFloat = 0.65
     public var rectangleAlpha:CGFloat = 1
-    
+
+    public override var contentMode: UIViewContentMode {
+        didSet {
+            self.cropImageView.contentMode = contentMode
+        }
+    }
 
     //MARK:Local Variables
     var cropPoints = [CGPoint]()
@@ -48,7 +53,7 @@ public class CropView: UIView {
     public func setUpImage(image : UIImage){
         if(!self.subviews.contains(cropImageView)){
             cropImageView = UIImageView(image: normalizedImage(image: image))
-            cropImageView.contentMode = .scaleToFill
+            cropImageView.contentMode = self.contentMode
             cropImageView.frame = self.bounds
             self.addSubview(cropImageView)
             cropFrame = cropImageView.frame
@@ -113,6 +118,8 @@ public class CropView: UIView {
         let y = cropImageView.frame.origin.y
         let width = cropImageView.frame.width
         let height = cropImageView.frame.height
+        
+        assert(cropImageView.frame.size == .zero, "Your view has zero size!")
         
         let points = OpenCVWrapper.getLargestSquarePoints(cropImageView.image, cropImageView.frame.size)
         var endPoints = [CGPoint]()
