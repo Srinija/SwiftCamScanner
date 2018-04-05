@@ -119,7 +119,7 @@ public class CropView: UIView {
         let width = cropImageView.frame.width
         let height = cropImageView.frame.height
         
-        assert(cropImageView.frame.size == .zero, "Your view has zero size!")
+        assert(cropImageView.frame.size != .zero, "Your view has zero size!")
         
         let points = OpenCVWrapper.getLargestSquarePoints(cropImageView.image, cropImageView.frame.size)
         var endPoints = [CGPoint]()
