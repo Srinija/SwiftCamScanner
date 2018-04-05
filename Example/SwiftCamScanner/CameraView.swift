@@ -18,20 +18,22 @@ class CameraView: UIView {
     var activeInput: AVCaptureDeviceInput!
     var focusMarker: UIImageView!
     
-    
-    func setupCamera(){
-        
+    func setupCamera() {
         captureSession.sessionPreset = AVCaptureSession.Preset.high
-        let camera = AVCaptureDevice.default(for: AVMediaType.video)
         
+        guard let camera = AVCaptureDevice.default(for: AVMediaType.video) else {
+            fatalError("No vidoe device found.")
+        }
+
         do {
-            let input = try AVCaptureDeviceInput(device: camera!)
+            let input = try AVCaptureDeviceInput(device: camera)
             if captureSession.canAddInput(input) {
                 captureSession.addInput(input)
                 activeInput = input
             }
         } catch {
-            print("Error setting device input: \(error)")
+            print("Error setting device input: \(error.localizedDescription)")
+            return
         }
         
         imageOutput.outputSettings = [AVVideoCodecKey : AVVideoCodecJPEG]
@@ -112,7 +114,7 @@ class CameraView: UIView {
         }
     }
     
-    func capturePhoto(completionHandler:@escaping(_ image: UIImage?)->Void){
+    func capturePhoto(completionHandler: @escaping(_ image: UIImage?) ->() ) {
         let connection = imageOutput.connection(with: AVMediaType.video)
         if (connection?.isVideoOrientationSupported)! {
             connection?.videoOrientation = getOrientation()
