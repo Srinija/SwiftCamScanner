@@ -43,7 +43,7 @@ using namespace std;
     
     imageMat = cvMat;
 
-     cv::resize(imageMat, imageMat, cvSize(size.width, size.height));
+     cv::resize(imageMat, imageMat, cv::Size(size.width, size.height));
     
 //    UIImageToMat(image, imageMat);
     
@@ -120,7 +120,7 @@ void getRectangles(cv::Mat& image, std::vector<std::vector<cv::Point> >&rectangl
     // blur will enhance edge detection
     
     cv::Mat blurred(image);
-    GaussianBlur(image, blurred, cvSize(11,11), 0);
+    GaussianBlur(image, blurred, cv::Size(11,11), 0);
     
     cv::Mat gray0(blurred.size(), CV_8U), gray;
     std::vector<std::vector<cv::Point> > contours;
@@ -151,7 +151,7 @@ void getRectangles(cv::Mat& image, std::vector<std::vector<cv::Point> >&rectangl
             }
             
             // Find contours and store them in a list
-            findContours(gray, contours, CV_RETR_LIST, CV_CHAIN_APPROX_SIMPLE);
+            findContours(gray, contours, cv::RETR_LIST, cv::CHAIN_APPROX_SIMPLE);
             
             // Test contours
             std::vector<cv::Point> approx;
@@ -244,7 +244,7 @@ double angle( cv::Point pt1, cv::Point pt2, cv::Point pt0 ) {
     
     imageMat = cvMat;
     
-    cv::Mat newImageMat = cv::Mat( cvSize(newWidth,newHeight), CV_8UC4);
+    cv::Mat newImageMat = cv::Mat( cv::Size(newWidth,newHeight), CV_8UC4);
     
     cv::Point2f src[4], dst[4];
     src[0].x = corners[0].x;
@@ -267,7 +267,7 @@ double angle( cv::Point pt1, cv::Point pt2, cv::Point pt0 ) {
  
     
     
-    cv::warpPerspective(imageMat, newImageMat, cv::getPerspectiveTransform(src, dst), cvSize(newWidth, newHeight));
+    cv::warpPerspective(imageMat, newImageMat, cv::getPerspectiveTransform(src, dst), cv::Size(newWidth, newHeight));
     
     //Transform to UIImage
     
